@@ -149,7 +149,7 @@ export function Hero() {
             <div className="mt-16 flex justify-center">
               <p className="relative rounded-full bg-zinc-800 px-4 py-1.5 text-sm leading-6 text-gray-300">
                 <span className="hidden md:inline">
-                  Made possible with our sponsors and partners
+                  Made possible with our partners
                 </span>
                 <a href="#sponsors" className="font-semibold text-white">
                   <span aria-hidden="true" className="absolute inset-0" /> Our

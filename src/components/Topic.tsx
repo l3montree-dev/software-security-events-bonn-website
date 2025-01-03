@@ -6,7 +6,7 @@ export default function Topic() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-l3-600">
-                Das Thema 2024: Open Source Software Security
+                The Topic
               </h2>
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
                 Is Open Source Crucial for the Future of Technology? How can we
