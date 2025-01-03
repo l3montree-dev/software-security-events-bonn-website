@@ -27,8 +27,8 @@ export default function Faqs() {
           Häufig gestellte Fragen
         </h2>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
-          You have another question and can't find the answer you're looking
-          for? are looking for? Then{' '}
+          You have another question and can&apos;t find the answer you&apos;re
+          looking for? are looking for? Then{' '}
           <a
             href="mailto:info@l3montree.com"
             target="_blank"

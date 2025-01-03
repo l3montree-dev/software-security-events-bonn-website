@@ -1,6 +1,5 @@
 import Faqs from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
-import LastTimeImpressions from '@/components/LastTimeImpressions'
 import LastTimeSponsors from '@/components/Speaker'
 import { Schedule } from '@/components/Schedule'
 import { Sponsors } from '@/components/Sponsors'

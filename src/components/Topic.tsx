@@ -13,22 +13,22 @@ export default function Topic() {
                 as a community tackle security, policy, and business models and
                 shape the evolution of OSS.
               </h3>
-              <p class="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
+              <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
                 Open source is no longer just a development philosophy; it is at
                 the heart of global technological advancements. However, as the
                 adoption of open source continues to grow, so too do the
                 challenges related to security, governance, and its integration
                 into business operations. In this session, we will address:
               </p>
-              <ul class="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                <li class="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+              <ul className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
                   <strong>Open Source Security:</strong> How can we ensure that
                   open source projects remain secure in an increasingly complex
                   and hostile digital landscape? What are the tools, strategies,
                   and best practices for managing open source security risks?
                 </li>
 
-                <li class="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
                   <strong>Open Source Policies:</strong> What role do
                   policymakers play in shaping the future of open source in
                   Europe and globally? How can governments and institutions
@@ -36,26 +36,26 @@ export default function Topic() {
                   safeguarding public and private interests?
                 </li>
 
-                <li class="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
                   <strong>Open Source as a Business Model:</strong> Open source
-                  is no longer just a tech movement; it’s a sustainable business
-                  model for many organizations. We’ll explore successful open
-                  source business strategies, monetization models, and how
-                  companies can build and maintain thriving businesses around
-                  open source.
+                  is no longer just a tech movement; it&apos;s a sustainable
+                  business model for many organizations. We&apos;ll explore
+                  successful open source business strategies, monetization
+                  models, and how companies can build and maintain thriving
+                  businesses around open source.
                 </li>
               </ul>
 
-              <p class="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                Join us for this dynamic session where we’ll not only highlight
-                the latest challenges and opportunities but also pave the way
-                for collaboration across sectors to drive the future of open
-                source forward with confidence and security. Whether you’re a
-                developer, policymaker, business leader, or open source
-                enthusiast, this is an event you won’t want to miss.
+              <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+                Join us for this dynamic session where we&apos;ll not only
+                highlight the latest challenges and opportunities but also pave
+                the way for collaboration across sectors to drive the future of
+                open source forward with confidence and security. Whether
+                you&apos;re a developer, policymaker, business leader, or open
+                source enthusiast, this is an event you won&apos;t want to miss.
               </p>
 
-              <p class="mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 text-base leading-8 text-zinc-800">
                 We look forward to an engaging and thought-provoking discussion
                 in Bonn as part of the EU Open Source Week!
               </p>

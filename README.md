@@ -32,3 +32,5 @@ Website: https://open-source-bonn.de
 Register here: https://pretix.eu/l3montree/eu-oss-week/
 
 Join our [Discord community](https://discord.gg/BCBjCvgk) for updates and networking.
+
+---
