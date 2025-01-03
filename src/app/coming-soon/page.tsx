@@ -4,7 +4,7 @@ import LastTimeImpressions from '@/components/LastTimeImpressions'
 import Newsletter from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
 import { Sponsors } from '@/components/Sponsors'
-import ThisYearsProblem from '@/components/ThisYearsProblem'
+import ThisYearsProblem from '@/components/Topic'
 import Image from 'next/image'
 
 export default function Home() {

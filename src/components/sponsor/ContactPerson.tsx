@@ -52,7 +52,7 @@ export default function ContactPerson() {
                   E-Mail:{' '}
                   <a
                     className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
-                    href="mailto:sponsor@cybersecurity-hackathon.de?subject=Cybersecurity Hackathon 2024 Sponsoring"
+                    href="mailto:frederic.noppe@l3montree.com?subject= EU OSS Offsin Sponsoring"
                   >
                     sponsor@cybersecurity-hackathon.de
                   </a>

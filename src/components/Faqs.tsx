@@ -1,39 +1,21 @@
 const faqs = [
   {
     id: 1,
-    question: 'Was ist ein Hackathon?',
+    question: 'Whats the EU Open Source week?',
     answer:
-      'Ein Hackathon ist ein intensives, meist mehrtägiges Event, bei dem Technologie-Enthusiasten zusammenkommen, um innovative Lösungen für spezifische Herausforderungen zu entwickeln. Bei einem Hackathon geht es oft darum, innerhalb eines begrenzten Zeitraums (meist 24–48 Stunden) ein starkes Lösungskonzept und im Idealfall einen Prototyp zu erstellen.',
+      'Every year, at the end of January and the beginning of February, thousands of people from Europe and around the world gather in Brussels to discuss open source and open technologies. The main attraction is FOSDEM, Europe’s largest open source conference, which has inspired a range of side events, social activities, and workshops. For those interested in open technology, digital policy, and EU developments, OpenForum Europe’s EU Open Source Policy Summit brings together open source leaders and policymakers. Together, these events make up the EU Open Source Week.',
   },
   {
     id: 2,
-    question: 'Wer kann Teilnehmen?',
+    question: 'Who can participate?',
     answer:
-      'Grundsätzlich jede und jeder, der Interesse hat! Wenn du eine Leidenschaft für Technologie hast, dann bist du herzlich willkommen. Aufgrund des diesjährigen Themas sind Erfahrungen mit Open-Source-Software von Vorteil, aber nicht zwingend erforderlich. Auch Teilnehmende aus anderen Bereichen wie Wirtschaft oder Design sind willkommen - ein diverses Team bringt oft große Vorteile mit sich! Nicht nur Studierende, sondern Menschen jeden Alters können teilnehmen. Es gilt unser Code of Conduct, um ein respektvolles und inklusives Umfeld zu gewährleisten.',
+      'Basically anyone who is interested! Participation is possible on site in Bonn or online. In either case, please buy a ticket in our shop.',
   },
   {
     id: 3,
-    question: 'Muss ich Programmieren können?',
+    question: 'What about food and drink?',
     answer:
-      'Nein, du musst nicht programmieren können. Da es dieses Jahr um Open-Source-Software-Sicherheit geht, kann ein Teammitglied mit Programmiererfahrung vorteilhaft sein. Erfolgreiche Teams sind allerdings eher divers aufgestellt und die Teammitglieder bringen verschiedene Blickwinkel ein. Wenn du also einen anderen Hintergrund mitbringst, kann das für dein Team sehr wertvoll sein!',
-  },
-  {
-    id: 4,
-    question: 'Kann ich mich mit einem bestehenden Team anmelden?',
-    answer:
-      'Grundsätzlich kannst du dich mit einem Team anmelden. Meldet euch dafür bitte einzeln an und schreibt uns danach eine kurze Nachricht an hello@l3montree.com mit den Namen eurer Teammitglieder. ',
-  },
-  {
-    id: 5,
-    question: 'Was sollte ich an Equipment mitbringen?',
-    answer:
-      'Einen Internetzugang und Screens sind vor Ort. Bringt also einfach das mit, was ihr zum Arbeiten braucht - klassisch: Laptop, ggf. Tablet, ...',
-  },
-  {
-    id: 6,
-    question: 'Wie siehts mit Essen und Trinken aus?',
-    answer:
-      'Wir versorgen euch (kostenlos) mit Mittag- und Abendessen. Wirf auch gerne einen Blick in den vorläufigen Zeitplan weiter oben. Es wird immer zumindest eine vegetarische Option geben. Getränke sind auch ausreichend vor Ort (verschiedene Softdrinks, Kaffee, Wasser etc.). Die Location ist sehr zentral in Bonn gelegen und fußläufig sind verschiedene Restaurants, Cafés und Supermärkte erreichbar, falls ihr etwas Spezielles oder größere Mengen braucht.',
+      'We will provide you with snacks and drinks (free of charge) on site.',
   },
 ]
 
@@ -45,20 +27,20 @@ export default function Faqs() {
           Häufig gestellte Fragen
         </h2>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
-          Du hast eine andere Frage und kannst die Antwort nicht finden, die du
-          suchst? Dann{' '}
+          You have another question and can't find the answer you're looking
+          for? are looking for? Then{' '}
           <a
-            href="mailto:community@cybersecurity-hackathon.de"
+            href="mailto:info@l3montree.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
           >
-            schreibe uns gerne eine E-Mail
+            please send us an e-mail
           </a>
           .
         </p>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
-          Bei allen Veranstaltungen von L3montree gilt unser{' '}
+          For all L3montree events our{' '}
           <a
             href="https://github.com/l3montree-dev/devguard/blob/main/CODE_OF_CONDUCT.md"
             target="_blank"

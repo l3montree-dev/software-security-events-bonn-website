@@ -34,3 +34,4 @@ Form a team or participate solo.
 ---
 
 Let’s hack for a safer digital world!
+# eu-open-source-week-offside-event-bonn-website

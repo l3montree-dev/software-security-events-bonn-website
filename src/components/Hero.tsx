@@ -23,52 +23,56 @@ export function Hero() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-32">
+        <div className="mx-auto max-w-[70%] py-32 sm:py-48 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Cybersecurity Hackathon 2024
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-3xl">
+              EU Open Source Week - Offside Event Bonn
             </h1>
-            <p className="mt-6 text-lg text-gray-200">
-              Lasst uns gemeinsam Lösungen für die spannendsten Probleme der
-              Cybersecurity Welt finden! Der &quot;Cybersecurity Hackathon&quot;
-              ist das jährliche Hackathon-Event in der Region Köln-Bonn:
-            </p>
-            <p className="mt-4 text-lg font-semibold text-l3-400">
-              Preisgeld: 3.000 € für das Gewinnerteam
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              Open Source Security & Open Source as a business model
+            </h2>
+            <p className="text-l mt-4 text-white">
+              As part of the <strong>EU Open Source Week</strong>, we are
+              excited to invite you to our Offside Event in{' '}
+              <strong>Bonn</strong>, where we will dive deep into the
+              intersection of <strong>Open Source Security</strong>,{' '}
+              <strong>Open Source Policies</strong>, and{' '}
+              <strong>Open Source as a Reliable Business Model</strong>. This
+              exclusive event aims to bring together thought leaders,
+              policymakers, business innovators, and technologists to explore
+              how open source is shaping the future of technology—and how we can
+              ensure it remains secure, sustainable, and a trusted foundation
+              for businesses of all sizes.
             </p>
             <p className="text-l mt-4 text-white">
               Location:{' '}
               <a
-                href="https://maps.app.goo.gl/NidUD6xNoRGNovmQA"
+                href="https://maps.app.goo.gl/6AY3vJ9h1jjVihG19"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
               >
-                DIGITALHUB.DE, Am Hauptbahnhof 6, 53111 Bonn
+                DIGITALHUB.DE, Rheinwerkallee 6, 53227 Bonn
               </a>
             </p>
-            <p className="mt-4 text-lg text-gray-200">
-              48 Stunden Zeit, coole Leute, spannende technische
-              Problemstellungen + Networking, Drinks &apos;n Food und eine große
-              Abschlussparty
-            </p>
+
             <div className="justify-center gap-10 sm:inline-block lg:flex">
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Button
-                  href="https://pretix.eu/l3montree/cybers-hack-2024/"
+                  href="https://pretix.eu/l3montree/eu-oss-week/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Kostenlos teilnehmen
+                  Free participation on site
                 </Button>
               </div>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Button
-                  href="https://pretix.eu/l3montree/cybers-hack-2024/"
+                  href="https://pretix.eu/l3montree/eu-oss-week/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Besucherticket
+                  Free participation online
                 </Button>
               </div>
               <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -76,7 +80,7 @@ export function Hero() {
                   className="border border-l3-500 bg-transparent text-l3-500 hover:border-l3-400 hover:bg-transparent hover:text-l3-400"
                   href="/sponsor"
                 >
-                  Sponsor werden
+                  Become a sponsor
                 </Button>
               </div>
             </div>
@@ -84,7 +88,21 @@ export function Hero() {
         </div>
         <div className="-mt-20 py-20 lg:-mt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-7">
+            <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+              <a
+                href="https://www.l3montree.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="order-3 sm:order-1"
+              >
+                <Image
+                  alt="L3montree Logo"
+                  src="/l3montree-logo-ce.svg"
+                  width={158}
+                  height={48}
+                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
+                />
+              </a>
               <a
                 href="https://www.digitalhub.de/"
                 target="_blank"
@@ -127,71 +145,15 @@ export function Hero() {
                   className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
                 />
               </a>
-              <a
-                href="https://zendis.de/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-1 sm:order-4"
-              >
-                <Image
-                  alt="ZenDiS GmbH Logo"
-                  src="/zendis-w.png"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://www.sovereigntechfund.de/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-2 sm:order-5"
-              >
-                <Image
-                  alt="Sovereign Tech Fund Logo"
-                  src="/stf-white.svg"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://www.uni-bonn.de/de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-8 sm:order-6"
-              >
-                <Image
-                  alt="Universität Bonn Logo"
-                  src="/uni-bonn-w.svg"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://www.h-brs.de/de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-9 sm:order-7"
-              >
-                <Image
-                  alt="Hochschule Bonn-Rhein-Sieg Logo"
-                  src="/hbrs-w.png"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
             </div>
             <div className="mt-16 flex justify-center">
               <p className="relative rounded-full bg-zinc-800 px-4 py-1.5 text-sm leading-6 text-gray-300">
                 <span className="hidden md:inline">
-                  Ermöglicht von unseren Sponsoren und Partnern
+                  Made possible with our sponsors and partners
                 </span>
                 <a href="#sponsors" className="font-semibold text-white">
-                  <span aria-hidden="true" className="absolute inset-0" />{' '}
-                  Unsere Sponsoren <span aria-hidden="true">&rarr;</span>
+                  <span aria-hidden="true" className="absolute inset-0" /> Our
+                  sponsors <span aria-hidden="true">&rarr;</span>
                 </a>
               </p>
             </div>

@@ -1,9 +1,10 @@
 import Faqs from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
 import LastTimeImpressions from '@/components/LastTimeImpressions'
+import LastTimeSponsors from '@/components/Speaker'
 import { Schedule } from '@/components/Schedule'
 import { Sponsors } from '@/components/Sponsors'
-import ThisYearsProblem from '@/components/ThisYearsProblem'
+import Topic from '@/components/Topic'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -17,9 +18,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ThisYearsProblem />
+      <Topic />
+      <LastTimeSponsors />
       <Schedule />
-      <LastTimeImpressions />
       <Sponsors />
       <Faqs />
     </>

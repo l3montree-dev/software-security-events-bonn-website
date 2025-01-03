@@ -21,8 +21,7 @@ export function Header() {
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-blue-600/10 py-4 font-mono text-sm font-semibold text-l3-500 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
           <div className="mx-auto flex items-center gap-4 px-4">
             <p>
-              <time dateTime="2024-11-08">08.</time> -{' '}
-              <time dateTime="2024-11-10">10. November 2024</time>
+              <time dateTime="2024-11-08">30.01.2025</time>
             </p>
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
             <p>Bonn, NRW</p>
@@ -30,11 +29,11 @@ export function Header() {
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <Button
-            href="https://pretix.eu/l3montree/cybers-hack-2024/"
+            href="https://pretix.eu/l3montree/eu-oss-week/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kostenlos teilnehmen
+            Participate for free
           </Button>
         </div>
       </Container>

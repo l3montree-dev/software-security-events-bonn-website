@@ -22,163 +22,41 @@ interface Day {
 
 const schedule: Array<Day> = [
   {
-    date: 'Fr. 08. November',
+    date: 'Thursday 30. June',
     dateTime: '2024-11-08',
-    summary:
-      'Der Freitag startet mit der Begrüßung und Teamfindung, gefolgt von einem kreativen Workshop, Abendessen und dem Beginn der offenen Arbeitsphase.',
+    summary: '',
     timeSlots: [
       {
-        name: 'Begrüßung & Problemvorstellung',
+        name: 'Welcome & Opening',
         description: null,
-        start: '17:00',
-        end: '18:30',
+        start: '18:00',
+        end: '18:15',
         openForOthers: false,
         id: 1,
       },
       {
-        name: 'Teamfindung',
+        name: 'Talks (tba)',
         description: null,
-        start: '18:30',
-        end: '19:00',
+        start: '18:15',
+        end: '19:15',
         openForOthers: false,
         id: 2,
       },
       {
-        name: 'Workshop: Kreativtechniken',
+        name: 'Discussion',
         description: null,
-        start: '19:00',
-        end: '19:30',
+        start: '19:15',
+        end: '20:00',
         openForOthers: false,
         id: 3,
       },
       {
-        name: 'Abendessen',
+        name: 'Networtking with Food & Drinks',
         description: '🥬 🥔 🥙 🧆 🌮 🍔',
-        start: '19:30',
-        end: '20:30',
+        start: '20:00',
+        end: '22:00',
         openForOthers: false,
         id: 4,
-      },
-      {
-        name: 'Beginn der Arbeitsphase',
-        description: '🚀',
-        start: '20:30',
-        end: 'offen',
-        openForOthers: false,
-        id: 5,
-      },
-    ],
-  },
-  {
-    date: 'Sa. 09. November',
-    dateTime: '2024-11-09',
-    summary:
-      'Am Samstag steht die intensive Arbeitsphase im Mittelpunkt. Unser Team steht euch den ganzen Tag für Rückfragen zur Verfügung. Ein Pitch-Workshop bereitet euch auf Sonntag vor.',
-    timeSlots: [
-      {
-        name: 'Arbeitsphase',
-        description: '🚀',
-        start: 'offen',
-        end: '14:00',
-        openForOthers: false,
-        id: 8,
-      },
-      {
-        name: 'Mittagessen',
-        description: '🥬 🥔 🥙 🧆 🌮 🍔',
-        start: '14:00',
-        end: '15:00',
-        openForOthers: false,
-        id: 9,
-      },
-      {
-        name: 'Arbeitsphase',
-        description: '🚀',
-        start: '15:00',
-        end: '17:00',
-        openForOthers: false,
-        id: 10,
-      },
-      {
-        name: 'Workshop: Boost your Pitch',
-        description: null,
-        start: '18:00',
-        end: '18:30',
-        openForOthers: false,
-        id: 11,
-      },
-      {
-        name: 'Abendessen',
-        description: '🥬 🥔 🥙 🧆 🌮 🍔',
-        start: '18:30',
-        end: '19:30',
-        openForOthers: false,
-        id: 12,
-      },
-      {
-        name: 'Arbeitsphase',
-        description: '🚀',
-        start: '19:30',
-        end: 'offen',
-        openForOthers: false,
-        id: 13,
-      },
-    ],
-  },
-  {
-    date: 'So. 10. November',
-    dateTime: '2024-11-10',
-    summary:
-      'Der Sonntag beginnt mit einer letzten Arbeitsphase und Frühstück, gefolgt von Partnerpräsentationen, Pitches, einem Buffet, der Preisverleihung und einer Networking-Party zum Abschluss.',
-    timeSlots: [
-      {
-        name: 'Arbeitsphase',
-        description: '🚀',
-        start: 'offen',
-        end: '12:00',
-        openForOthers: false,
-        id: 14,
-      },
-      {
-        name: 'Partnervorstellungen',
-        description: 'Sponsoren & Partner stellen sich vor',
-        start: '12:00',
-        end: '13:00',
-        openForOthers: true,
-        id: 16,
-      },
-      {
-        name: 'Pitches',
-        description: 'Die Teams präsentieren ihre Ideen',
-        start: '13:00',
-        end: '15:00',
-        openForOthers: true,
-        id: 17,
-      },
-      {
-        name: 'Buffet & Drinks',
-        description: '🍕 🍣 🍷 🍺 🍹 🍸',
-        start: '15:00',
-        end: '15:30',
-        openForOthers: true,
-        id: 18,
-      },
-      {
-        name: 'Preisverleihung',
-        description: '🏆',
-        start: '15:30',
-        end: '16:00',
-        openForOthers: true,
-        id: 19,
-      },
-      {
-        name: '🎊 Networking & Abschlussparty 🎉',
-        description:
-          'Austausch mit anderen Teilnehmern, Besuchern und Sponsoren. Musik, Drinks & Snacks.',
-        start: '16:00',
-        end: 'offen',
-        openForOthers: true,
-        id: 20,
       },
     ],
   },
@@ -267,7 +145,7 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-zinc-900 px-10 py-14 text-center',
+        'mx-auto max-w-[40%] space-y-8 bg-zinc-900 px-10 py-14 text-center',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -314,7 +192,7 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
 
 function ScheduleStatic() {
   return (
-    <div className="hidden lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div className="hidden lg:grid lg:grid-cols-1 lg:gap-x-8">
       {schedule.map((day) => (
         <section key={day.dateTime}>
           <DaySummary day={day} />
@@ -330,20 +208,13 @@ export function Schedule() {
     <section
       id="schedule"
       aria-label="Schedule"
-      className="bg-zinc-950 py-20 sm:py-32"
+      className="bg-zinc-950 py-20 text-center sm:py-32"
     >
-      <Container className="relative z-10">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-white">
-            Der Zeitplan im Überblick
-          </h2>
-          <p className="mt-4 font-display text-xl tracking-tight text-zinc-400">
-            Erlebe drei Tage voller Herausforderungen, intensiver Arbeitsphasen
-            und Networking. Triff neue Leute, erweitere dein Netzwerk und
-            gewinne mit deinem Team das Preisgeld.
-          </p>
-        </div>
-      </Container>
+      <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
+        <h2 className="text-center font-display text-4xl font-medium tracking-tighter text-white">
+          Event - Schedule
+        </h2>
+      </div>
       <div className="relative mt-14 sm:mt-20">
         <Container className="relative">
           <ScheduleTabbed />
