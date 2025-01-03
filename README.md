@@ -1,4 +1,4 @@
-# Cybersecurity Hackathon
+# EU Open Source Week - Offside Event Bonn
 Welcome to the EU Open Source Week - Offside Event Bonn official repository! This Event brings together cybersecurity enthusiasts, developers, and experts to connect about some of the most pressing challenges in the field. The event encourages collaboration, innovation, and the development of cutting-edge solutions to enhance cybersecurity practices and technologies.
 
 ## Overview
