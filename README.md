@@ -32,11 +32,3 @@ Website: https://open-source-bonn.de
 Register on our website.
 
 Join our [Discord community](https://discord.gg/BCBjCvgk) for updates and networking.
-
----
-<<<<<<< HEAD
-
-Let’s hack for a safer digital world!
-# eu-open-source-week-offside-event-bonn-website
-=======
->>>>>>> c06154b495122c72a822cdaf2dce1bb6217262bd
