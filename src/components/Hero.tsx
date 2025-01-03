@@ -29,7 +29,7 @@ export function Hero() {
               EU Open Source Week - Offside Event Bonn
             </h1>
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Open Source Security & Open Source as a business model
+              Open Source Security, - Policy & Open Source as a business model
             </h2>
             <p className="text-l mt-4 text-white">
               As part of the -
