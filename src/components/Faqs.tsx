@@ -24,7 +24,7 @@ export default function Faqs() {
     <div className="bg-zinc-950">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
         <h2 className="font-display text-4xl font-medium tracking-tighter text-white">
-          Häufig gestellte Fragen
+          FAQs
         </h2>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
           You have another question and can&apos;t find the answer you&apos;re

@@ -78,9 +78,9 @@ export function Hero() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Button
                   className="border border-l3-500 bg-transparent text-l3-500 hover:border-l3-400 hover:bg-transparent hover:text-l3-400"
-                  href="/sponsor"
+                  href="mailto:info@l3montree.com"
                 >
-                  Become a sponsor
+                  Become a partner
                 </Button>
               </div>
             </div>
@@ -151,9 +151,9 @@ export function Hero() {
                 <span className="hidden md:inline">
                   Made possible with our partners
                 </span>
-                <a href="#sponsors" className="font-semibold text-white">
+                <a href="#partners" className="font-semibold text-white">
                   <span aria-hidden="true" className="absolute inset-0" /> Our
-                  sponsors <span aria-hidden="true">&rarr;</span>
+                  Partners <span aria-hidden="true">&rarr;</span>
                 </a>
               </p>
             </div>
