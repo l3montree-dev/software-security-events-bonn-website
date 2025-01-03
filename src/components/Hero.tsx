@@ -32,8 +32,16 @@ export function Hero() {
               Open Source Security & Open Source as a business model
             </h2>
             <p className="text-l mt-4 text-white">
-              As part of the <strong>EU Open Source Week</strong>, we are
-              excited to invite you to our Offside Event in{' '}
+              As part of the -
+              <a
+                href="https://opensourceweek.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
+              >
+                <strong>EU Open Source Week</strong>
+              </a>
+              -, we are excited to invite you to our Offside Event in{' '}
               <strong>Bonn</strong>, where we will dive deep into the
               intersection of <strong>Open Source Security</strong>,{' '}
               <strong>Open Source Policies</strong>, and{' '}

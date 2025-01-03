@@ -19,12 +19,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Cybersecurity Hackathon',
-    default:
-      'Cybersecurity Hackathon 2024 - 08. bis 10. November in Bonn - Open Source Software Security',
+    template: '%s - EU Open Source Week - Offside Event Bonn',
+    default: 'EU Open Source Week - Offside Event Bonn',
   },
   description:
-    'Der Cybersecurity Hackathon 2024 in Bonn ist ein Event für alle, die sich für Open-Source-Software-Sicherheit interessieren. Sei dabei und entwickle innovative Lösungen!',
+    'As part of the EU Open Source Week, we are excited to invite you to our Offside Event in Bonn, where we will dive deep into the intersection of Open Source Security, Open Source Policies, and Open Source as a Reliable Business Model.',
 }
 
 const env = process.env.NODE_ENV
@@ -32,9 +31,9 @@ const env = process.env.NODE_ENV
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Event',
-  name: 'Cybersecurity Hackathon 2024',
-  startDate: '2024-11-08T17:00',
-  endDate: '2024-11-10T23:00',
+  name: 'EU Open Source Week - Offside Event Bonn',
+  startDate: '2025-01-30T18:00',
+  endDate: '2024-01-30T22:00',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
   location: {
@@ -42,16 +41,16 @@ const structuredData = {
     name: 'DIGITALHUB.DE',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Am Hauptbahnhof 6',
+      streetAddress: 'Rheinwerkallee 6',
       addressLocality: 'Bonn',
-      postalCode: '53111',
+      postalCode: '53227',
       addressRegion: 'NRW',
       addressCountry: 'DE',
     },
   },
   image: ['https://cybersecurity-hackathon.de/teilnehmende-2023.jpg'],
   description:
-    'Nimm am Cybersecurity Hackathon 2024 in Bonn vom 8. - 10. November teil! Entwickle Lösungen für OSS Sicherheit, vernetze dich mit Experten und gewinne 3k € Preisgeld. Kostenlose Teilnahme, spannende Workshops und eine großartige Atmosphäre erwarten dich.',
+    'As part of the EU Open Source Week, we are excited to invite you to our Offside Event in Bonn, where we will dive deep into the intersection of Open Source Security, Open Source Policies, and Open Source as a Reliable Business Model.',
   organizer: {
     '@type': 'Organization',
     name: 'L3montree Cybersecurity',
