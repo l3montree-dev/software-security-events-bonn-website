@@ -29,6 +29,6 @@ Location: Bonn, NRW, Germany
 Website: https://open-source-bonn.de
 
 ## How to Participate
-Register on our website.
+Register here: https://pretix.eu/l3montree/eu-oss-week/
 
 Join our [Discord community](https://discord.gg/BCBjCvgk) for updates and networking.
