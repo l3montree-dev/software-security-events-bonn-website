@@ -7,10 +7,9 @@ import Topic from '@/components/Topic'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title:
-    'Cybersecurity Hackathon 2024 | Bonn | Open Source Software Sicherheit',
+  title: 'EU Open Source Week - Offside Event Bonn',
   description:
-    'Nimm am Cybersecurity Hackathon 2024 in Bonn vom 8. - 10. November teil! Entwickle Lösungen für OSS Sicherheit, vernetze dich mit Experten und gewinne 3k € Preisgeld. Kostenlose Teilnahme, spannende Workshops und eine großartige Atmosphäre erwarten dich.',
+    'Open Source Security, - Policy & Open Source as a business model',
 }
 
 export default function Home() {
