@@ -81,6 +81,17 @@ export default function RootLayout({
           ></script>
         )}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta
+          property="og:title"
+          content="EU Open Source Week - Offside Event Bonn"
+        />
+        <meta property="og:type" content="Event" />
+        <meta property="og:url" content="http://www.oss-bonn.de/" />
+        <meta property="og:image" content="l3montree-logo.svg" />
+        <meta
+          property="og:description"
+          content="As part of the -EU Open Source Week-, we are excited to invite you to our Offside Event in Bonn, where we will dive deep into the intersection of Open Source Security, Open Source Policies, and Open Source as a Reliable Business Model. This exclusive event aims to bring together thought leaders, policymakers, business innovators, and technologists to explore how open source is shaping the future of technology—and how we can ensure it remains secure, sustainable, and a trusted foundation for businesses of all sizes."
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
