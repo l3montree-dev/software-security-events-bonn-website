@@ -83,7 +83,7 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           property="og:title"
-          content="EU Open Source Week - Offside Event Bonn"
+          content="EU Open Source Week - Offsite Event Bonn"
         />
         <meta property="og:type" content="Event" />
         <meta property="og:url" content="http://www.oss-bonn.de/" />

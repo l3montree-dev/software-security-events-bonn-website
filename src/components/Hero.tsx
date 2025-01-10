@@ -26,7 +26,7 @@ export function Hero() {
         <div className="mx-auto max-w-[70%] py-32 sm:py-48 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-3xl">
-              EU Open Source Week - Offside Event Bonn
+              EU Open Source Week - Offsite Event Bonn
             </h1>
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Open Source Security, - Policy & Open Source as a business model
@@ -41,7 +41,7 @@ export function Hero() {
               >
                 <strong>EU Open Source Week</strong>
               </a>
-              -, we are excited to invite you to our Offside Event in{' '}
+              -, we are excited to invite you to our Offsite Event in{' '}
               <strong>Bonn</strong>, where we will dive deep into the
               intersection of <strong>Open Source Security</strong>,{' '}
               <strong>Open Source Policies</strong>, and{' '}
