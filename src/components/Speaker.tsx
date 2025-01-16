@@ -38,7 +38,7 @@ export default function Speaker() {
               CEO WhereGroup GmbH
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">
-              Topic: To be announced.
+              Topic: Open source software as a business model
             </p>
           </div>
 
