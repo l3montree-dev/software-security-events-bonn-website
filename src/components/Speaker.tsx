@@ -77,6 +77,8 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
+              <span className="font-bold">Neal H. Walfield</span>
+              <br />
               Co-Founder Sequoia PGP
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">
