@@ -38,7 +38,7 @@ export default function Speaker() {
               CEO WhereGroup GmbH
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">
-              Topic: Open source software as a business model
+              Open source software as a business model
             </p>
           </div>
 
@@ -82,7 +82,7 @@ export default function Speaker() {
               Co-Founder Sequoia PGP
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">
-              Topic: Interacting with FOSS Projects: Setting and Respecting
+              Interacting with FOSS Projects: Setting and Respecting
               Expectations
             </p>
           </div>
