@@ -24,7 +24,7 @@ export default function Speaker() {
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Dummy"
+                alt="Peter Stamm"
                 src="/Profil_Peter_Stamm.jpg"
                 layout="fill"
                 objectFit="cover"
@@ -46,7 +46,7 @@ export default function Speaker() {
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Dummy"
+                alt="Sebastian Kawelke"
                 src="/Profil_Sebastian_Kawelke.jpeg"
                 layout="fill"
                 objectFit="cover"
@@ -68,8 +68,8 @@ export default function Speaker() {
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Dummy"
-                src="/dummy_person_white.png"
+                alt="Neal H. Walfield"
+                src="/Profil_Neal_H._Walfield"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -77,7 +77,7 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              To be announced
+              Co-Founder Sequoia PGP
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">Pending.</p>
           </div>
@@ -97,7 +97,10 @@ export default function Speaker() {
             <h3 className="text-lg font-semibold text-zinc-100">
               To be announced
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">Pending.</p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              Topic: Interacting with FOSS Projects: Setting and Respecting
+              Expectations
+            </p>
           </div>
         </div>
       </div>
