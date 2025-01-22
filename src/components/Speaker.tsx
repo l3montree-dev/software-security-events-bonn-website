@@ -69,7 +69,7 @@ export default function Speaker() {
             <div className="relative h-0 w-full pb-[100%]">
               <Image
                 alt="Neal H. Walfield"
-                src="/Profil_Neal_H._Walfield"
+                src="/Profil_Neal_H._Walfield.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -79,7 +79,10 @@ export default function Speaker() {
             <h3 className="text-lg font-semibold text-zinc-100">
               Co-Founder Sequoia PGP
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">Pending.</p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              Topic: Interacting with FOSS Projects: Setting and Respecting
+              Expectations
+            </p>
           </div>
 
           {/* Fourth Block */}
@@ -97,10 +100,7 @@ export default function Speaker() {
             <h3 className="text-lg font-semibold text-zinc-100">
               To be announced
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Topic: Interacting with FOSS Projects: Setting and Respecting
-              Expectations
-            </p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">Pending</p>
           </div>
         </div>
       </div>
