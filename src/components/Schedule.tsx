@@ -85,70 +85,6 @@ const schedule: Array<Day> = [
   },
 ]
 
-function ScheduleTabbed() {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
-
-  useEffect(() => {
-    let smMediaQuery = window.matchMedia('(min-width: 640px)')
-
-    function onMediaQueryChange({ matches }: { matches: boolean }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(smMediaQuery)
-    smMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      smMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
-
-  return (
-    <TabGroup
-      className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"
-      vertical={tabOrientation === 'vertical'}
-    >
-      <TabList className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
-        {({ selectedIndex }) => (
-          <>
-            {schedule.map((day, dayIndex) => (
-              <div
-                key={day.dateTime}
-                className={clsx(
-                  'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
-                  dayIndex !== selectedIndex && 'opacity-70',
-                )}
-              >
-                <DaySummary
-                  day={{
-                    ...day,
-                    date: (
-                      <Tab className="ui-not-focus-visible:outline-none">
-                        <span className="absolute inset-0" />
-                        {day.date}
-                      </Tab>
-                    ),
-                  }}
-                />
-              </div>
-            ))}
-          </>
-        )}
-      </TabList>
-      <TabPanels>
-        {schedule.map((day) => (
-          <TabPanel
-            key={day.dateTime}
-            className="ui-not-focus-visible:outline-none"
-          >
-            <TimeSlots day={day} />
-          </TabPanel>
-        ))}
-      </TabPanels>
-    </TabGroup>
-  )
-}
-
 function DaySummary({ day }: { day: Day }) {
   return (
     <>
@@ -168,7 +104,7 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
       role="list"
       className={clsx(
         className,
-        'mx-auto max-w-[40%] space-y-8 bg-zinc-900 px-10 py-14 text-center',
+        'space-y-8 bg-zinc-900 px-10 py-14 text-center lg:mx-auto lg:max-w-[40%]',
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -220,9 +156,9 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
 
 function ScheduleStatic() {
   return (
-    <div className="hidden lg:grid lg:grid-cols-1 lg:gap-x-8">
+    <div className="lg:grid lg:grid-cols-1 lg:gap-x-8">
       {schedule.map((day) => (
-        <section key={day.dateTime}>
+        <section key={day.dateTime} className="px-2">
           <DaySummary day={day} />
           <TimeSlots day={day} className="mt-10" />
         </section>
@@ -245,7 +181,6 @@ export function Schedule() {
       </div>
       <div className="relative mt-14 sm:mt-20">
         <Container className="relative">
-          <ScheduleTabbed />
           <ScheduleStatic />
         </Container>
       </div>
