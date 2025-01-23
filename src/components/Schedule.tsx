@@ -13,6 +13,7 @@ interface Day {
   timeSlots: Array<{
     name: string
     description: string | null
+    description2: string | null
     start: string
     end: string
     openForOthers: boolean
@@ -29,34 +30,56 @@ const schedule: Array<Day> = [
       {
         name: 'Welcome & Opening',
         description: null,
+        description2: null,
         start: '18:00',
         end: '18:15',
         openForOthers: false,
         id: 1,
       },
       {
-        name: 'Talks (tba)',
-        description: null,
+        name: 'Interacting with FOSS Projects:',
+        description: 'Setting and Respecting Expectations',
+        description2: 'Neal H. Walfield',
         start: '18:15',
-        end: '19:15',
+        end: '18:40',
         openForOthers: false,
         id: 2,
       },
       {
-        name: 'Discussion',
-        description: null,
-        start: '19:15',
-        end: '20:00',
+        name: 'Open source software as a business model',
+        description: '(held in german)',
+        description2: 'Peter Stamm',
+        start: '18:40',
+        end: '19:05',
         openForOthers: false,
         id: 3,
       },
       {
+        name: 'Talks 3',
+        description: 'tba',
+        description2: null,
+        start: '19:05',
+        end: '19:30',
+        openForOthers: false,
+        id: 4,
+      },
+      {
+        name: 'Security is a necessity',
+        description: 'Open source software in public administration',
+        description2: 'Sebastian Kawelke',
+        start: '19:30',
+        end: '20:00',
+        openForOthers: false,
+        id: 5,
+      },
+      {
         name: 'Networtking with Food & Drinks',
         description: '🥬 🥔 🥙 🧆 🌮 🍔',
+        description2: null,
         start: '20:00',
         end: '22:00',
         openForOthers: false,
-        id: 4,
+        id: 6,
       },
     ],
   },
@@ -151,7 +174,7 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
         <li
           key={timeSlot.id}
-          aria-label={`TOP: ${timeSlot.name}; Beschreibung: ${timeSlot.description}; Start um ${timeSlot.start} bis ${timeSlot.end}`}
+          aria-label={`TOP: ${timeSlot.name}; Beschreibung: ${timeSlot.description};Beschreibung: ${timeSlot.description2} Start um ${timeSlot.start} bis ${timeSlot.end}`}
         >
           {timeSlotIndex > 0 && (
             <div className="mx-auto mb-8 h-px w-48 bg-white/20" />
@@ -160,8 +183,13 @@ function TimeSlots({ day, className }: { day: Day; className?: string }) {
             {timeSlot.name}
           </h4>
           {timeSlot.description && (
-            <p className="mt-1 tracking-tight text-zinc-100">
+            <p className="text-lg font-semibold tracking-tight text-zinc-100">
               {timeSlot.description}
+            </p>
+          )}
+          {timeSlot.description2 && (
+            <p className="mt-1 tracking-tight text-zinc-100">
+              {timeSlot.description2}
             </p>
           )}
           {timeSlot.openForOthers && (

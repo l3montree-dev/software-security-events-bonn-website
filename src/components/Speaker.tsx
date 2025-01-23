@@ -60,7 +60,8 @@ export default function Speaker() {
               CEO L3montree Cybersecurity
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">
-              Topic: To be announced.
+              Security is a necessity - open source software in public
+              administration .
             </p>
           </div>
 

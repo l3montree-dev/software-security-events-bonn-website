@@ -28,7 +28,8 @@ export function Hero() {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-3xl">
               EU Open Source Week - Offsite Event Bonn
             </h1>
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-6xl">
               Open Source Security, - Policy & Open Source as a business model
             </h2>
             <p className="text-l mt-4 text-white">
