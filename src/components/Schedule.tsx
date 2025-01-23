@@ -55,7 +55,7 @@ const schedule: Array<Day> = [
         id: 3,
       },
       {
-        name: 'Talks 3',
+        name: 'Talk 3',
         description: 'tba',
         description2: null,
         start: '19:05',
@@ -174,11 +174,9 @@ export function Schedule() {
       aria-label="Schedule"
       className="bg-zinc-950 py-20 text-center sm:py-32"
     >
-      <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-        <h2 className="text-center font-display text-4xl font-medium tracking-tighter text-white">
-          Event - Schedule
-        </h2>
-      </div>
+      <h2 className="text-center font-display text-4xl font-medium tracking-tighter text-white">
+        Event - Schedule
+      </h2>
       <div className="relative mt-14 sm:mt-20">
         <Container className="relative">
           <ScheduleStatic />
