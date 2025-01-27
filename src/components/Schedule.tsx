@@ -23,7 +23,7 @@ interface Day {
 
 const schedule: Array<Day> = [
   {
-    date: 'Thursday 30. June',
+    date: 'Thursday 30. January',
     dateTime: '2024-11-08',
     summary: '',
     timeSlots: [
