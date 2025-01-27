@@ -92,8 +92,8 @@ export default function Speaker() {
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Dummy"
-                src="/dummy_person_white.png"
+                alt="David Luhmer"
+                src="/David_Luhmer_Profil.jpeg"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -101,9 +101,13 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              To be announced
+              <span className="font-bold">David Luhmer</span>
+              <br />
+              Maintainer & <br />
+              Team Lead DevOps
+              <br /> WetterOnline GmbH
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">Pending</p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
         </div>
       </div>
