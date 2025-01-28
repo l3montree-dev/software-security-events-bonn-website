@@ -55,9 +55,9 @@ const schedule: Array<Day> = [
         id: 3,
       },
       {
-        name: 'tba',
-        description: 'David Luhmer',
-        description2: null,
+        name: 'Maintaining an open source application',
+        description: ' A look behind the scenes',
+        description2: 'David Luhmer',
         start: '19:05',
         end: '19:30',
         openForOthers: false,
