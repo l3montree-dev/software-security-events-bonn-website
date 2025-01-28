@@ -103,9 +103,9 @@ export default function Speaker() {
             <h3 className="text-lg font-semibold text-zinc-100">
               <span className="font-bold">David Luhmer</span>
               <br />
-              Maintainer & <br />
+              Maintainer: Nextcloud News App for Android & <br />
               Team Lead DevOps
-              <br /> WetterOnline GmbH
+              <br />
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>

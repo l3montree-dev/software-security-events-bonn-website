@@ -55,8 +55,8 @@ const schedule: Array<Day> = [
         id: 3,
       },
       {
-        name: 'Talk 3',
-        description: 'tba',
+        name: 'tba',
+        description: 'David Luhmer',
         description2: null,
         start: '19:05',
         end: '19:30',
