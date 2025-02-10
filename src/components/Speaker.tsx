@@ -113,6 +113,9 @@ export default function Speaker() {
               Team Lead DevOps
               <br />
             </h3>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              Maintaining an open source application - a look behind the scenes
+            </p>
             <a
               href="/Maintaining an open source application - a look behind the scenes.pdf"
               download
