@@ -63,7 +63,7 @@ export default function Speaker() {
               Securing Public Services: The Power of Open Source
             </p>
             <a
-              href="public/Securing public Services - The Power of Open Source.pdf"
+              href="/Securing public Services - The Power of Open Source.pdf"
               download
               className="mt-4 inline-block rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
             >
@@ -114,7 +114,7 @@ export default function Speaker() {
               <br />
             </h3>
             <a
-              href="public/Maintaining an open source application - a look behind the scenes.pdf"
+              href="/Maintaining an open source application - a look behind the scenes.pdf"
               download
               className="mt-4 inline-block rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
             >
