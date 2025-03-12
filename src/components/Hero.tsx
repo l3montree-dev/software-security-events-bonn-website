@@ -26,32 +26,37 @@ export function Hero() {
         <div className="mx-auto max-w-[70%] py-32 sm:py-48 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-3xl">
-              EU Open Source Week - Offsite Event Bonn
+              Software & Cyber-Security Event Bonn
             </h1>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-6xl">
-              Open Source Security, - Policy & Open Source as a business model
+              Cybersecurity <br />
+              AfterWorkshop
             </h2>
             <p className="text-l mt-4 text-white">
-              As part of the -
+              Als Teil der AfterWorkshop Reihe des{' '}
               <a
-                href="https://opensourceweek.eu/"
+                href="https://www.digitalhub.de/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
               >
-                <strong>EU Open Source Week</strong>
+                DigitalHub Bonn
               </a>
-              -, we are excited to invite you to our Offsite Event in{' '}
-              <strong>Bonn</strong>, where we will dive deep into the
-              intersection of <strong>Open Source Security</strong>,{' '}
-              <strong>Open Source Policies</strong>, and{' '}
-              <strong>Open Source as a Reliable Business Model</strong>. This
-              exclusive event aims to bring together thought leaders,
-              policymakers, business innovators, and technologists to explore
-              how open source is shaping the future of technology—and how we can
-              ensure it remains secure, sustainable, and a trusted foundation
-              for businesses of all sizes.
+              , geht es in diesem Event um das Thema{' '}
+              <strong> Software & Cyber-Security</strong>.
+              <br />
+              Vier Expert*innen geben in spannenden Impulsvorträgen wertvolle
+              Einblicke in effiziente und sichere Softwareentwicklung und -tests
+              – sowohl aus der Sicht von Managern als auch von Entwicklern. Sie
+              beleuchten Best Practices für kleine und große Unternehmen,
+              zeigen, wie Sicherheitslücken durch Penetrationstests nachträglich
+              aufgedeckt werden können, und erläutern Methoden zur Erkennung von
+              Angriffen auf die eigenen Systeme.
+              <br />
+              <div style={{ marginBottom: '0.5cm' }}></div>
+              💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
+              und Networking!
             </p>
             <p className="text-l mt-4 text-white">
               Location:{' '}
@@ -61,35 +66,18 @@ export function Hero() {
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
               >
-                DIGITALHUB.DE, Rheinwerkallee 6, 53227 Bonn
+                DIGITALHUB.DE, Hauptbahnhof 6, 53111 Bonn
               </a>
             </p>
 
             <div className="justify-center gap-10 sm:inline-block lg:flex">
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Button
-                  href="https://pretix.eu/l3montree/eu-oss-week/"
+                  href="https://www.eventbrite.de/e/afterworkshop-zum-thema-cyber-security-tickets-1279678525919?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Free participation on site
-                </Button>
-              </div>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button
-                  href="https://pretix.eu/l3montree/eu-oss-week/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Free participation online
-                </Button>
-              </div>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button
-                  className="border border-l3-500 bg-transparent text-l3-500 hover:border-l3-400 hover:bg-transparent hover:text-l3-400"
-                  href="mailto:info@l3montree.com"
-                >
-                  Become a partner
+                  Kostenloses Ticket sichern
                 </Button>
               </div>
             </div>
@@ -158,11 +146,11 @@ export function Hero() {
             <div className="mt-16 flex justify-center">
               <p className="relative rounded-full bg-zinc-800 px-4 py-1.5 text-sm leading-6 text-gray-300">
                 <span className="hidden md:inline">
-                  Made possible with our partners
+                  Ermöglicht durch unsere
                 </span>
                 <a href="#partners" className="font-semibold text-white">
-                  <span aria-hidden="true" className="absolute inset-0" /> Our
-                  Partners <span aria-hidden="true">&rarr;</span>
+                  <span aria-hidden="true" className="absolute inset-0" />{' '}
+                  Partner <span aria-hidden="true">&rarr;</span>
                 </a>
               </p>
             </div>

@@ -1,3 +1,5 @@
+import { Button } from './Button'
+
 export default function Topic() {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -6,59 +8,69 @@ export default function Topic() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-l3-600">
-                The Topic
+                Cybersecurity AfterWorkshop
               </h2>
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-                Is Open Source Crucial for the Future of Technology? How can we
-                as a community tackle security, policy, and business models and
-                shape the evolution of OSS.
+                Lust auf geballtes Know-How & Networking?
               </h3>
               <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
-                Open source is no longer just a development philosophy; it is at
-                the heart of global technological advancements. However, as the
-                adoption of open source continues to grow, so too do the
-                challenges related to security, governance, and its integration
-                into business operations. In this session, we will address:
+                Cybersecurity geht uns alle an – egal ob Start-up oder
+                Großkonzern! In diesem AfterWorkshop des DigitalHub Bonn zeigen
+                euch vier Expert*innen, worauf es bei sicherer
+                Softwareentwicklung und -tests wirklich ankommt. Kompakt,
+                praxisnah und auf den Punkt – holt euch das Wissen, um eure
+                Software und IT sicherer zu machen!
               </p>
-              <ul className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                  <strong>Open Source Security:</strong> How can we ensure that
-                  open source projects remain secure in an increasingly complex
-                  and hostile digital landscape? What are the tools, strategies,
-                  and best practices for managing open source security risks?
+              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
+                <li>
+                  <strong>Security by Design:</strong>
+                  <br />
+                  Sicherheit von Dev bis Ops
                 </li>
-
-                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                  <strong>Open Source Policies:</strong> What role do
-                  policymakers play in shaping the future of open source in
-                  Europe and globally? How can governments and institutions
-                  foster an ecosystem that promotes innovation while
-                  safeguarding public and private interests?
+                <li>
+                  <strong>
+                    Automatisierte Sicherheit im Entwicklungsprozess:
+                  </strong>
+                  <br />
+                  Mehr Security mit jedem Commit
                 </li>
-
-                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                  <strong>Open Source as a Business Model:</strong> Open source
-                  is no longer just a tech movement; it&apos;s a sustainable
-                  business model for many organizations. We&apos;ll explore
-                  successful open source business strategies, monetization
-                  models, and how companies can build and maintain thriving
-                  businesses around open source.
+                <li>
+                  <strong>Softwaretesting durch Red-Teams:</strong>
+                  <br />
+                  Was kommt nach den Schwachstellenscans
+                </li>
+                <li>
+                  <strong>Security Monitoring & Management:</strong>
+                  <br />
+                  Wie man den Überblick über seine Endgeräte behält
                 </li>
               </ul>
 
               <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                Join us for this dynamic session where we&apos;ll not only
-                highlight the latest challenges and opportunities but also pave
-                the way for collaboration across sectors to drive the future of
-                open source forward with confidence and security. Whether
-                you&apos;re a developer, policymaker, business leader, or open
-                source enthusiast, this is an event you won&apos;t want to miss.
+                Im Anschluss an die Talks wird es bei Food & Drinks die
+                Möglichkeit für vertiefende Fragen und Networking geben.
               </p>
+            </div>
+            <div style={{ marginBottom: '1cm' }}></div>
+            <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
+              Vergangene Events
+            </h3>
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <Button
+                href="../second"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EU Open Source Week - Offsite Event Bonn
+              </Button>
 
-              <p className="mt-6 text-base leading-8 text-zinc-800">
-                We look forward to an engaging and thought-provoking discussion
-                in Bonn as part of the EU Open Source Week!
-              </p>
+              <Button
+                href="https://gitlab.opencode.de/cybersecurity-hackathon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Source Security Hackathon 2024
+              </Button>
             </div>
           </div>
           <video

@@ -1,21 +1,20 @@
 const faqs = [
   {
     id: 1,
-    question: 'Whats the EU Open Source week?',
+    question: 'Was ist der AfterWorkshop?',
     answer:
-      'Every year, at the end of January and the beginning of February, thousands of people from Europe and around the world gather in Brussels to discuss open source and open technologies. The main attraction is FOSDEM, Europe’s largest open source conference, which has inspired a range of side events, social activities, and workshops. For those interested in open technology, digital policy, and EU developments, OpenForum Europe’s EU Open Source Policy Summit brings together open source leaders and policymakers. Together, these events make up the EU Open Source Week.',
+      'Das Eventformat der AfterWorkshops ist ein Format des DigitalHubs Bonn, bei dem es monatlich, interaktives Workshops und zu verschiedensten Themen geben wird.',
   },
   {
     id: 2,
-    question: 'Who can participate?',
+    question: 'Wer kann bei dem Event teilnehmen?',
     answer:
-      'Basically anyone who is interested! Participation is possible on site in Bonn or online. In either case, please buy a ticket in our shop.',
+      'Jeder, der interessiert ist! Die Teilnahme ist komplett kostenlos, bitte Registriere Dich aber über den Ticketshop.',
   },
   {
     id: 3,
-    question: 'What about food and drink?',
-    answer:
-      'We will provide you with snacks and drinks (free of charge) on site.',
+    question: 'Wie sieht es mit Essen und Trinken aus?',
+    answer: 'Wir versorgen Sie vor Ort mit Snacks und Getränken (kostenlos).',
   },
 ]
 
@@ -27,20 +26,19 @@ export default function Faqs() {
           FAQs
         </h2>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
-          You have another question and can&apos;t find the answer you&apos;re
-          looking for? are looking for? Then{' '}
+          Du hast Fragen zum Event, auf die Du hier keine Antwort findest?{' '}
           <a
             href="mailto:info@l3montree.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
           >
-            please send us an e-mail
+            Dann sende uns einfach eine E-mail
           </a>
           .
         </p>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
-          For all L3montree events our{' '}
+          Für alle L3montree Events gilt dieser{' '}
           <a
             href="https://github.com/l3montree-dev/devguard/blob/main/CODE_OF_CONDUCT.md"
             target="_blank"

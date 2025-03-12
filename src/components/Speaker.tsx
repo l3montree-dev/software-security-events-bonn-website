@@ -24,8 +24,8 @@ export default function Speaker() {
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Peter Stamm"
-                src="/Profil_Peter_Stamm.jpg"
+                alt="Nina Malkomes"
+                src="/dummy_person_white.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -33,21 +33,19 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">Peter Stamm</span>
+              <span className="font-bold">Nina Malkomes</span>
               <br />
-              CEO WhereGroup GmbH
+              Managing Consultant <br /> HiSolutions AG
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Open source software as a business model (held in german)
-            </p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
 
           {/* Second Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Sebastian Kawelke"
-                src="/Profil_Sebastian_Kawelke.jpeg"
+                alt="Tim Bastin"
+                src="/tim_bastin_profil.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -55,28 +53,19 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">Sebastian Kawelke</span>
+              <span className="font-bold">Tim Bastin</span>
               <br />
-              CEO L3montree Cybersecurity
+              CTO <br /> L3montree Cybersecurity
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Securing Public Services: The Power of Open Source
-            </p>
-            <a
-              href="/Securing public Services - The Power of Open Source.pdf"
-              download
-              className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
-            >
-              Download Presentation
-            </a>
+            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
 
           {/* Third Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Neal H. Walfield"
-                src="/Profil_Neal_H._Walfield.png"
+                alt="Moritz Samrock"
+                src="/moritz_samrock_profil.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -84,22 +73,19 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">Neal H. Walfield</span>
+              <span className="font-bold">Moritz Samrock</span>
               <br />
-              Co-Founder Sequoia PGP
+              Hacker & Red-Teamer <br /> Laokoon SecurITy GmbH
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Interacting with FOSS Projects: Setting and Respecting
-              Expectations
-            </p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
 
           {/* Fourth Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="David Luhmer"
-                src="/David_Luhmer_Profil.jpeg"
+                alt="Nico Mak"
+                src="/nico_mak_profil.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -107,22 +93,13 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">David Luhmer</span>
+              <span className="font-bold">Nico Mak</span>
               <br />
-              Maintainer: Nextcloud News App for Android & <br />
-              Team Lead DevOps
+              Geschäftsführer <br />
+              0x101 Cyber Security
               <br />
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Maintaining an open source application - a look behind the scenes
-            </p>
-            <a
-              href="/Maintaining an open source application - a look behind the scenes.pdf"
-              download
-              className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
-            >
-              Download Presentation
-            </a>
+            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
         </div>
       </div>

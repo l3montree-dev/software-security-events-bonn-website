@@ -9,26 +9,28 @@ export function Sponsors() {
       className="bg-white py-12 sm:py-32"
     >
       <Container>
-        <h2 className="text-left font-display text-4xl font-medium tracking-tighter text-black">
+        <h2 className="text-center font-display text-4xl font-medium tracking-tighter text-black">
           Partner 2025
         </h2>
 
-        <div className="mt-20 grid grid-cols-1 items-center gap-y-10 lg:grid-cols-2">
-          <div className="mx-auto w-full max-w-xl lg:mx-0">
-            <p className="mt-6 text-base leading-8 text-zinc-600">
-              The sponsors are the supporting pillars of the events. With their
-              generous support, they make it possible us to create an
-              extraordinary event.
+        <div className="mt-20 items-center gap-y-10">
+          <div className="mx-auto w-full max-w-xl text-center">
+            <p className="mt-6 text-center text-base leading-8 text-zinc-800">
+              Die Partner sind die tragenden Säulen der Veranstaltungen. Mit
+              ihrer Unterstützung machen sie es möglich, eine außergewöhnliche
+              Veranstaltung wie diese zu schaffen.
             </p>
           </div>
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-1 items-center gap-x-12 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:pl-8">
+          <br />
+          <br />
+          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:pl-8">
             <a
               href="https://www.digitalhub.de/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                className="lg:max-h-26 max-h-24 w-full object-contain object-center lg:max-h-24 lg:object-right"
+                className="max-h-24 w-full object-contain object-center"
                 src="/digitalhub.svg"
                 alt="DigitalHub Bonn Logo"
                 width={104}
@@ -41,9 +43,35 @@ export function Sponsors() {
               rel="noopener noreferrer"
             >
               <Image
-                className="lg:max-h-26 max-h-24 w-full object-contain object-center lg:max-h-24 lg:object-right"
+                className="max-h-24 w-full object-contain object-center"
                 src="/ccb-logo.png"
                 alt="Cybersecurity Cluster Bonn e.V. Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+            <a
+              href="https://laokoon-security.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/laokoon-security-logo.png"
+                alt="Laokoon SecurITy GmbH Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+            <a
+              href="https://netlockrmm.com/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/logo_0x101.png"
+                alt="0x101 Cybersecurity Logo"
                 width={158}
                 height={48}
               />
