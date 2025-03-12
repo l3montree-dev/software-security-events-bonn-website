@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-03-12
+
+- changes website for a new Event
+- puts old website to the backround
+
+
 ## 2024-05-31
 
 - Fix `npm audit` warnings
