@@ -7,9 +7,8 @@ import Topic from '@/components/Topic'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'EU Open Source Week - Offside Event Bonn',
-  description:
-    'Open Source Security, - Policy & Open Source as a business model',
+  title: 'Software Security Events Bonn',
+  description: 'Open Source & Software Security Events in Bonn und Umgebung',
 }
 
 export default function Home() {
