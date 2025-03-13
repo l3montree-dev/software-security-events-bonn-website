@@ -54,7 +54,7 @@ export function Hero() {
               aufgedeckt werden können, und erläutern Methoden zur Erkennung von
               Angriffen auf die eigenen Systeme.
               <br />
-              <div style={{ marginBottom: '0.5cm' }}></div>
+              <div style={{ marginBottom: '0.6cm' }}></div>
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
               und Networking!
             </p>
