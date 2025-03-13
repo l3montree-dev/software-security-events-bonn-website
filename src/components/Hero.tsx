@@ -33,7 +33,7 @@ export function Hero() {
               Cybersecurity <br />
               AfterWorkshop
             </h2>
-            <p className="text-l mt-4 text-white">
+            <p className="text-l mx-auto mt-4 max-w-[70%] text-center text-white">
               Als Teil der AfterWorkshop Reihe des{' '}
               <a
                 href="https://www.digitalhub.de/"
@@ -57,6 +57,7 @@ export function Hero() {
               <div style={{ marginBottom: '0.6cm' }}></div>
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
               und Networking!
+              <div style={{ marginBottom: '0.6cm' }}></div>
             </p>
             <p className="text-l mt-4 text-white">
               Location:{' '}
