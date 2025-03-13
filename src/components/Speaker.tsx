@@ -25,7 +25,7 @@ export default function Speaker() {
             <div className="relative h-0 w-full pb-[100%]">
               <Image
                 alt="Nina Malkomes"
-                src="/dummy_person_white.png"
+                src="/Nina_Malkomes_profil.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"

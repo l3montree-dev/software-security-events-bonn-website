@@ -94,7 +94,7 @@ export function Hero() {
               >
                 <Image
                   alt="L3montree Logo"
-                  src="/l3montree-logo-ce.svg"
+                  src="/l3montree-logo.svg"
                   width={158}
                   height={48}
                   className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
