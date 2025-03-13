@@ -2,12 +2,13 @@
 name: DevGuard Workflow
 
 on:
-  push:
- 
+    push:
+
 jobs:
-  devguard-scanner:
-    uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
-    with:
-        asset-name: "l3montree-cybersecurity/projects/devguard/assets/devguard-web"
-    secrets:
-        devguard-token: ${{ secrets.DEVGUARD_TOKEN }} 
+    devguard-scanner:
+        uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
+        with:
+            asset-name: "l3montree-cybersecurity/projects/software-security-events-bonn-website/assets/software-security-events-bonn-website"
+            api-url: https://api.main.devguard.org
+        secrets:
+            devguard-token: ${{ secrets.DEVGUARD_TOKEN }} 
