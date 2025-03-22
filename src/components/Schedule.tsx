@@ -73,7 +73,7 @@ const schedule: Array<Day> = [
         id: 5,
       },
       {
-        name: 'Networtking with Food & Drinks',
+        name: 'Networking with Food & Drinks',
         description: '🥬 🥔 🥙 🧆 🌮 🍔',
         description2: null,
         start: '20:00',
