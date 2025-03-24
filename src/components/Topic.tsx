@@ -20,6 +20,9 @@ export default function Topic() {
                 Softwareentwicklung und -tests wirklich ankommt. Kompakt,
                 praxisnah und auf den Punkt – holt euch das Wissen, um eure
                 Software und IT sicherer zu machen!
+                <br />
+                <br />
+                <strong> Die Themen sind unter anderem: </strong>
               </p>
               <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>

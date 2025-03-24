@@ -18,8 +18,8 @@ export default function Speaker() {
         </h2>
         <VerticalSpace />
 
-        {/* Grid for 4 items */}
-        <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-auto lg:max-w-none lg:grid-cols-4">
+        {/* Grid for 6 items */}
+        <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-auto lg:max-w-none lg:grid-cols-3">
           {/* First Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
@@ -39,7 +39,6 @@ export default function Speaker() {
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
-
           {/* Second Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
@@ -59,7 +58,6 @@ export default function Speaker() {
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
-
           {/* Third Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
@@ -79,7 +77,6 @@ export default function Speaker() {
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
           </div>
-
           {/* Fourth Block */}
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
@@ -100,6 +97,46 @@ export default function Speaker() {
               <br />
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
+          </div>
+          {/* Fifth Block */}
+          <div className="text-center">
+            <div className="relative h-0 w-full pb-[100%]">
+              <Image
+                alt="Fifth Person"
+                src="/dummy_person_white.png"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+              />
+            </div>
+            <VerticalSpace />
+            <h3 className="text-lg font-semibold text-zinc-100">
+              <span className="font-bold">TBA</span>
+              <br />
+              tba
+              <br />
+            </h3>
+            <p className="mt-2 text-base leading-8 text-zinc-300"></p>
+          </div>
+          {/* Sixth Block */}
+          <div className="text-center">
+            <div className="relative h-0 w-full pb-[100%]">
+              <Image
+                alt="Sixth Person"
+                src="/dummy_person_white.png"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+              />
+            </div>
+            <VerticalSpace />
+            <h3 className="text-lg font-semibold text-zinc-100">
+              <span className="font-bold">TBA</span>
+              <br />
+              tba
+              <br />
+            </h3>
+            <p className="mt-2 text-base leading-8 text-zinc-300"></p>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export function Sponsors() {
           </div>
           <br />
           <br />
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:pl-8">
+          <div className="mx-auto grid w-full max-w-2xl grid-cols-3 items-center gap-x-12 gap-y-16 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:pl-8">
             <a
               href="https://www.digitalhub.de/"
               target="_blank"
@@ -59,6 +59,19 @@ export function Sponsors() {
                 className="max-h-24 w-full object-contain object-center"
                 src="/laokoon-security-logo.png"
                 alt="Laokoon SecurITy GmbH Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+            <a
+              href="https://www.hisolutions.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/logo_his2.png"
+                alt="HiSolutions Logo"
                 width={158}
                 height={48}
               />

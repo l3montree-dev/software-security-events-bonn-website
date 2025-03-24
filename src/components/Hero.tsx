@@ -46,7 +46,7 @@ export function Hero() {
               , geht es in diesem Event um das Thema{' '}
               <strong> Software & Cyber-Security</strong>.
               <br />
-              Vier Expert*innen geben in spannenden Impulsvorträgen wertvolle
+              Expert*innen geben in spannenden Impulsvorträgen wertvolle
               Einblicke in effiziente und sichere Softwareentwicklung und -tests
               – sowohl aus der Sicht von Managern als auch von Entwicklern. Sie
               beleuchten Best Practices für kleine und große Unternehmen,
