@@ -55,8 +55,8 @@ const schedule: Array<Day> = [
         id: 3,
       },
       {
-        name: 'TBA',
-        description: ' ',
+        name: 'Mythos Penetrationstest',
+        description: ' Offensive Sicherheitsmaßnahmen im Überblick',
         description2: 'Moritz Samrock',
         start: '18:50',
         end: '19:10',
