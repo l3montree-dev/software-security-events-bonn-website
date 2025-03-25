@@ -75,7 +75,10 @@ export default function Speaker() {
               <br />
               Hacker & Red-Teamer <br /> Laokoon SecurITy GmbH
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              Mythos Penetrationstest <br /> Offensive Sicherheitsmaßnahmen im
+              Überblick
+            </p>
           </div>
           {/* Fourth Block */}
           <div className="text-center">

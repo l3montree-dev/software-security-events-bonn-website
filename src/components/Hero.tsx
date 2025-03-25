@@ -46,6 +46,7 @@ export function Hero() {
               , geht es in diesem Event um das Thema{' '}
               <strong> Software & Cyber-Security</strong>.
               <br />
+              <div style={{ marginBottom: '0.6cm' }}></div>
               Expert*innen geben in spannenden Impulsvorträgen wertvolle
               Einblicke in effiziente und sichere Softwareentwicklung und -tests
               – sowohl aus der Sicht von Managern als auch von Entwicklern. Sie
