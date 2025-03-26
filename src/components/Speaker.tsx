@@ -105,8 +105,8 @@ export default function Speaker() {
           <div className="text-center">
             <div className="relative h-0 w-full pb-[100%]">
               <Image
-                alt="Fifth Person"
-                src="/dummy_person_white.png"
+                alt="Alexander Haunhorst Profilbild"
+                src="/Alexander_Haunhorst-Profil.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
@@ -114,12 +114,15 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">TBA</span>
+              <span className="font-bold">Alexander Haunhorst</span>
               <br />
-              tba
+              CTO <br />
+              Valutis Technologies GmbH
               <br />
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300"></p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              Hardwareentwicklung - so sicher nicht
+            </p>
           </div>
           {/* Sixth Block */}
           <div className="text-center">

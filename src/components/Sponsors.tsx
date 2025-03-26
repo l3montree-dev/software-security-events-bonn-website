@@ -89,6 +89,19 @@ export function Sponsors() {
                 height={48}
               />
             </a>
+            <a
+              href="https://valutistech.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/valutis_logo_black.svg"
+                alt="valutis Logo"
+                width={158}
+                height={48}
+              />
+            </a>
           </div>
         </div>
       </Container>

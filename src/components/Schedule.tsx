@@ -73,9 +73,9 @@ const schedule: Array<Day> = [
         id: 5,
       },
       {
-        name: 'TBA',
-        description: ' ',
-        description2: 'TBA',
+        name: 'Hardwareentwicklung',
+        description: 'So sicher nicht',
+        description2: 'Alexander Haunhorst',
         start: '19:30',
         end: '19:50',
         openForOthers: false,
