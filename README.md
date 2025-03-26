@@ -3,7 +3,11 @@ To further promote exchange within the cybersecurity community, we organize even
 
 
 ## After-Work(shop)
-tba.
+Als Teil der AfterWorkshop Reihe des DigitalHub Bonn, geht es in diesem Event um das Thema Software & Cyber-Security.
+
+Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern. Sie beleuchten Best Practices für kleine und große Unternehmen, zeigen, wie Sicherheitslücken durch Penetrationstests nachträglich aufgedeckt werden können, und erläutern Methoden zur Erkennung von Angriffen auf die eigenen Systeme.
+
+💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen und Networking!
 
 
 
@@ -18,7 +22,7 @@ Held on January 30, 2025, in Bonn, Germany, this event brought together cybersec
 
 
 
-Website: https://open-source-bonn.de
+Website: https://oss-bonn.de
 
 
 

@@ -19,11 +19,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - EU Open Source Week - Offside Event Bonn',
-    default: 'EU Open Source Week - Offside Event Bonn',
+    template: 'Cyber- & Softwaresecurity Event - Bonn',
+    default: 'Cyber- & Softwaresecurity Event - Bonn',
   },
   description:
-    'As part of the EU Open Source Week, we are excited to invite you to our Offside Event in Bonn, where we will dive deep into the intersection of Open Source Security, Open Source Policies, and Open Source as a Reliable Business Model.',
+    'Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern.',
 }
 
 const env = process.env.NODE_ENV
@@ -31,7 +31,7 @@ const env = process.env.NODE_ENV
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Event',
-  name: 'EU Open Source Week - Offside Event Bonn',
+  name: 'Cyber- & Softwaresecurity Event - Bonn',
   startDate: '2025-01-30T18:00',
   endDate: '2024-01-30T22:00',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -41,16 +41,16 @@ const structuredData = {
     name: 'DIGITALHUB.DE',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Rheinwerkallee 6',
+      streetAddress: 'Am Hauptbahnhof 6',
       addressLocality: 'Bonn',
-      postalCode: '53227',
+      postalCode: '53111',
       addressRegion: 'NRW',
       addressCountry: 'DE',
     },
   },
-  image: ['https://cybersecurity-hackathon.de/teilnehmende-2023.jpg'],
+  image: ['/l3montree-logo.svg'],
   description:
-    'As part of the EU Open Source Week, we are excited to invite you to our Offside Event in Bonn, where we will dive deep into the intersection of Open Source Security, Open Source Policies, and Open Source as a Reliable Business Model.',
+    'Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern.',
   organizer: {
     '@type': 'Organization',
     name: 'L3montree Cybersecurity',
@@ -83,14 +83,14 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta
           property="og:title"
-          content="EU Open Source Week - Offsite Event Bonn"
+          content="Cyber- & Softwaresecurity Event - Bonn"
         />
         <meta property="og:type" content="Event" />
         <meta property="og:url" content="http://www.oss-bonn.de/" />
         <meta property="og:image" content="l3montree-logo.svg" />
         <meta
           property="og:description"
-          content="As part of the -EU Open Source Week-, we are excited to invite you to our Offside Event in Bonn, where we will dive deep into the intersection of Open Source Security, Open Source Policies, and Open Source as a Reliable Business Model. This exclusive event aims to bring together thought leaders, policymakers, business innovators, and technologists to explore how open source is shaping the future of technology—and how we can ensure it remains secure, sustainable, and a trusted foundation for businesses of all sizes."
+          content="Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern."
         />
         <script
           type="application/ld+json"
