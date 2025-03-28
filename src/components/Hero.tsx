@@ -85,8 +85,13 @@ export function Hero() {
             </div>
           </div>
         </div>
+
         <div className="-mt-20 py-20 lg:-mt-12">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 className="mt-4 justify-center text-xl font-semibold tracking-tight text-white sm:text-xl">
+              Presented by:
+            </h2>
+            <div style={{ marginBottom: '0.6cm' }}></div>
             <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
               <a
                 href="https://www.l3montree.com/"
@@ -144,17 +149,6 @@ export function Hero() {
                   className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
                 />
               </a>
-            </div>
-            <div className="mt-16 flex justify-center">
-              <p className="relative rounded-full bg-zinc-800 px-4 py-1.5 text-sm leading-6 text-gray-300">
-                <span className="hidden md:inline">
-                  Ermöglicht durch unsere
-                </span>
-                <a href="#partners" className="font-semibold text-white">
-                  <span aria-hidden="true" className="absolute inset-0" />{' '}
-                  Partner <span aria-hidden="true">&rarr;</span>
-                </a>
-              </p>
             </div>
           </div>
         </div>
