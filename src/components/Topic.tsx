@@ -87,7 +87,7 @@ export default function Topic() {
             </div>
           </div>
           <video
-            src="/hands-6.mp4"
+            src="/data-gold.mp4"
             className="hidden w-[48rem] max-w-none rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 lg:block"
             width={1216}
             height={721}
