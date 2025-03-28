@@ -137,9 +137,9 @@ export default function Speaker() {
             </div>
             <VerticalSpace />
             <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">TBA</span>
+              <span className="font-bold">Alexander Goth</span>
               <br />
-              tba
+              BusinessCode
               <br />
             </h3>
             <p className="mt-2 text-base leading-8 text-zinc-300"></p>

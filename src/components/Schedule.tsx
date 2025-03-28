@@ -84,7 +84,7 @@ const schedule: Array<Day> = [
       {
         name: 'TBA',
         description: ' ',
-        description2: 'TBA',
+        description2: 'Alexander Goth',
         start: '19:50',
         end: '20:10',
         openForOthers: false,

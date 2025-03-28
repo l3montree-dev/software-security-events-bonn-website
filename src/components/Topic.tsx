@@ -47,6 +47,16 @@ export default function Topic() {
                   <br />
                   Wie man den Überblick über seine Endgeräte behält
                 </li>
+                <li>
+                  <strong>Hardwaresecurity:</strong>
+                  <br />
+                  Wie entwickel ich sicheren Code für Hardware?
+                </li>
+                <li>
+                  <strong>Verschlüsselung:</strong>
+                  <br />
+                  Vertrauchlichkeit der Daten auch in der Zukunft wahren!
+                </li>
               </ul>
 
               <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
