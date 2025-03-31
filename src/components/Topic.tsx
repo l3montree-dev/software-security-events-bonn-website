@@ -53,9 +53,9 @@ export default function Topic() {
                   Wie entwickel ich sicheren Code für Hardware?
                 </li>
                 <li>
-                  <strong>Verschlüsselung:</strong>
+                  <strong>Homomorphe Verschlüsselung:</strong>
                   <br />
-                  Vertrauchlichkeit der Daten auch in der Zukunft wahren!
+                  Ganzheitliche Vertraulichkeit bei Rechenoperationen erreichen
                 </li>
               </ul>
 

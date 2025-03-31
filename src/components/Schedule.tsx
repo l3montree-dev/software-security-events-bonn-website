@@ -82,8 +82,8 @@ const schedule: Array<Day> = [
         id: 6,
       },
       {
-        name: 'TBA',
-        description: ' ',
+        name: 'Homomorphe Verschlüsselung in der Praxis:',
+        description: 'Grundlagen, Einsatzmöglichkeiten und Herausforderungen',
         description2: 'Alexander Goth',
         start: '19:50',
         end: '20:10',
