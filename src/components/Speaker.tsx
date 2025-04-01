@@ -129,7 +129,7 @@ export default function Speaker() {
             <div className="relative h-0 w-full pb-[100%]">
               <Image
                 alt="Sixth Person"
-                src="/dummy_person_white.png"
+                src="/Alexander_Goth_Profil.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full"
