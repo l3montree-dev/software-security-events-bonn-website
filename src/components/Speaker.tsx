@@ -37,7 +37,10 @@ export default function Speaker() {
               <br />
               Managing Consultant <br /> HiSolutions AG
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              DevSecOps - Mehr als nur Tools <br /> Zwischen Mindest und
+              Methodik
+            </p>
           </div>
           {/* Second Block */}
           <div className="text-center">

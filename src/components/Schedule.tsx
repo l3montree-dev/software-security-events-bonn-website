@@ -37,8 +37,8 @@ const schedule: Array<Day> = [
         id: 1,
       },
       {
-        name: 'TBA',
-        description: ' ',
+        name: 'DevSecOps - Mehr als nur Tools',
+        description: 'Zwischen Mindest und Methodik',
         description2: 'Nina Malkomes',
         start: '18:10',
         end: '18:30',
