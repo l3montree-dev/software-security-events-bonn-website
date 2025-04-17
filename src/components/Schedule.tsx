@@ -64,8 +64,9 @@ const schedule: Array<Day> = [
         id: 4,
       },
       {
-        name: 'TBA',
-        description: ' ',
+        name: 'The Server Is Owned – But Your Clients Aren’t',
+        description:
+          'Wie moderne Software selbst kompromittierte Update-Kanäle überlebt',
         description2: 'Nico Mak',
         start: '19:10',
         end: '19:30',

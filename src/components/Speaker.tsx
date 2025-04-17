@@ -102,7 +102,10 @@ export default function Speaker() {
               0x101 Cyber Security
               <br />
             </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">tba</p>
+            <p className="mt-2 text-base leading-8 text-zinc-300">
+              The Server Is Owned – But Your Clients Aren’t: Wie moderne
+              Software selbst kompromittierte Update-Kanäle überlebt
+            </p>
           </div>
           {/* Fifth Block */}
           <div className="text-center">
