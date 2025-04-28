@@ -1,7 +1,7 @@
 import Faqs from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
-import LastTimeSponsors from '@/components/Speaker'
 import { Schedule } from '@/components/Schedule'
+import Speakers from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
 import Topic from '@/components/Topic'
 import { Metadata } from 'next'
@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Hero />
       <Topic />
-      <LastTimeSponsors />
+      <Speakers />
       <Schedule />
       <Sponsors />
       <Faqs />

@@ -23,17 +23,16 @@ export function Hero() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-[70%] py-32 sm:py-48 lg:py-32">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-3xl">
+        <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:px-8 lg:py-32">
+          <div className="text-start">
+            <h1 className="text-4xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
               Software & Cyber-Security Event Bonn
             </h1>
-
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-6xl">
+            <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
               Cybersecurity <br />
               AfterWorkshop
             </h2>
-            <p className="text-l mx-auto mt-4 max-w-[70%] text-center text-white">
+            <p className="text-l mx-auto mt-20 text-white max-sm:border-t max-sm:border-zinc-600 max-sm:pt-4">
               Als Teil der AfterWorkshop Reihe des{' '}
               <a
                 href="https://www.digitalhub.de/"
@@ -45,8 +44,8 @@ export function Hero() {
               </a>
               , geht es in diesem Event um das Thema{' '}
               <strong> Software & Cyber-Security</strong>.
-              <br />
-              <div style={{ marginBottom: '0.6cm' }}></div>
+            </p>
+            <p className="text-l mx-auto mt-4 text-white">
               Expert*innen geben in spannenden Impulsvorträgen wertvolle
               Einblicke in effiziente und sichere Softwareentwicklung und -tests
               – sowohl aus der Sicht von Managern als auch von Entwicklern. Sie
@@ -54,11 +53,10 @@ export function Hero() {
               zeigen, wie Sicherheitslücken durch Penetrationstests nachträglich
               aufgedeckt werden können, und erläutern Methoden zur Erkennung von
               Angriffen auf die eigenen Systeme.
-              <br />
-              <div style={{ marginBottom: '0.6cm' }}></div>
+            </p>
+            <p className="text-l mx-auto mt-4 text-white">
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
               und Networking!
-              <div style={{ marginBottom: '0.6cm' }}></div>
             </p>
             <p className="text-l mt-4 text-white">
               Location:{' '}
@@ -72,8 +70,8 @@ export function Hero() {
               </a>
             </p>
 
-            <div className="justify-center gap-10 sm:inline-block lg:flex">
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="justify-center gap-10">
+              <div className="mt-10 flex items-center justify-start gap-x-6">
                 <Button
                   href="https://www.eventbrite.de/e/afterworkshop-zum-thema-cyber-security-tickets-1279678525919?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
                   target="_blank"
@@ -86,9 +84,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="-mt-20 py-20 lg:-mt-12">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="mt-4 justify-center text-xl font-semibold tracking-tight text-white sm:text-xl">
+        <div className="-mt-20 pb-16 lg:-mt-12">
+          <div className="mx-auto max-w-7xl lg:px-8">
+            <h2 className="mt-4 justify-center text-lg font-semibold tracking-tight text-white">
               Presented by:
             </h2>
             <div style={{ marginBottom: '0.6cm' }}></div>
@@ -104,7 +102,7 @@ export function Hero() {
                   src="/l3montree-logo.svg"
                   width={158}
                   height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
+                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                 />
               </a>
               <a

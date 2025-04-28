@@ -193,7 +193,7 @@ export function Schedule() {
       aria-label="Schedule"
       className="bg-zinc-950 py-20 text-center sm:py-32"
     >
-      <h2 className="text-center font-display text-4xl font-medium tracking-tighter text-white">
+      <h2 className="text-center font-display text-4xl font-medium tracking-tight text-white">
         Event - Schedule
       </h2>
       <div className="relative mt-14 sm:mt-20">
