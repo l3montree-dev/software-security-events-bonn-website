@@ -93,6 +93,7 @@ export default function Topic() {
             height={721}
             autoPlay
             muted
+            loop
           />
         </div>
       </div>
