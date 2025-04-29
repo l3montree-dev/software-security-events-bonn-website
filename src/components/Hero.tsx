@@ -61,7 +61,7 @@ export function Hero() {
             <p className="text-l mt-4 text-white">
               Location:{' '}
               <a
-                href="https://maps.app.goo.gl/6AY3vJ9h1jjVihG19"
+                href="https://maps.app.goo.gl/9F8Hw4MyQVvfTjVw8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
