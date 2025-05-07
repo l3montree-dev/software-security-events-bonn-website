@@ -46,8 +46,9 @@ const schedule: Array<Day> = [
         id: 2,
       },
       {
-        name: 'TBA',
-        description: ' ',
+        name: 'Automatisierte Sicherheit per DevSecOps',
+        description:
+          'So wird die CI-Pipeline zur Basis für sichere Softwareentwicklung',
         description2: 'Tim Bastin',
         start: '18:30',
         end: '18:50',

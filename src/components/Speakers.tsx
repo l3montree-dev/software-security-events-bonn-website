@@ -11,7 +11,7 @@ const people = [
     name: 'Tim Bastin',
     role: 'CTO, L3montree Cybersecurity',
     imageUrl: '/tim_bastin_profil.png',
-    topic: 'tba',
+    topic: 'So wird die CI-Pipeline zur Basis für sichere Softwareentwicklung',
   },
   {
     name: 'Moritz Samrock',
