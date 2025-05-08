@@ -14,7 +14,7 @@ const people = [
     imageUrl: '/tim_bastin_profil.png',
     topic: 'So wird die CI-Pipeline zur Basis für sichere Softwareentwicklung',
     pdfFile:
-      '/pdfs/So_wird_die_CI-Pipeline_zur_Basis_für_sichere_Softwareentwicklung.pdf',
+      '/pdfs/So_wird_die_CI-Pipeline_zur_Basis_fuer_sichere_Softwareentwicklung.pdf',
   },
   {
     name: 'Moritz Samrock',
@@ -45,7 +45,7 @@ const people = [
     imageUrl: '/Alexander_Goth_Profil.jpg',
     topic:
       'Homomorphe Verschlüsselung in der Praxis: Grundlagen, Einsatzmöglichkeiten und Herausforderungen',
-    pdfFile: '/pdfs/Homomorphe_Verschlüsselung.pdf',
+    pdfFile: '/pdfs/Homomorphe_Verschluesselung.pdf',
   },
 ]
 
