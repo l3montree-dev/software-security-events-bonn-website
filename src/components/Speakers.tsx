@@ -6,12 +6,15 @@ const people = [
     role: 'Managing Consultant, HiSolutions AG',
     imageUrl: '/Nina_Malkomes_profil.png',
     topic: 'DevSecOps - Mehr als nur Tools - Zwischen Mindest und Methodik',
+    pdfFile: '/pdfs/DevSecOps-Mehr-als-nur-Tools.pdf',
   },
   {
     name: 'Tim Bastin',
     role: 'CTO, L3montree Cybersecurity',
     imageUrl: '/tim_bastin_profil.png',
     topic: 'So wird die CI-Pipeline zur Basis für sichere Softwareentwicklung',
+    pdfFile:
+      '/pdfs/So_wird_die_CI-Pipeline_zur_Basis_für_sichere_Softwareentwicklung.pdf',
   },
   {
     name: 'Moritz Samrock',
@@ -19,6 +22,7 @@ const people = [
     imageUrl: '/moritz_samrock_profil.png',
     topic:
       'Mythos Penetrationstest - Offensive Sicherheitsmaßnahmen im Überblick',
+    pdfFile: '/pdfs/MythosPT.pdf',
   },
   {
     name: 'Nico Mak',
@@ -26,12 +30,14 @@ const people = [
     imageUrl: '/nico_mak_profil.png',
     topic:
       'The Server Is Owned - But Your Clients Aren’t: Wie moderne Software selbst kompromittierte Update-Kanäle überlebt',
+    pdfFile: '/pdfs/The_Server_Is_Owned-But_Your_Clients_Aren_t.pdf',
   },
   {
     name: 'Alexander Haunhorst',
     role: 'CTO, Valutis Technologies GmbH',
     imageUrl: '/Alexander_Haunhorst-Profil.png',
     topic: 'Hardwareentwicklung - so sicher nicht',
+    pdfFile: '/pdfs/Hardwaresicherheit.pdf',
   },
   {
     name: 'Alexander Goth',
@@ -39,6 +45,7 @@ const people = [
     imageUrl: '/Alexander_Goth_Profil.jpg',
     topic:
       'Homomorphe Verschlüsselung in der Praxis: Grundlagen, Einsatzmöglichkeiten und Herausforderungen',
+    pdfFile: '/pdfs/Homomorphe_Verschlüsselung.pdf',
   },
 ]
 
@@ -79,6 +86,15 @@ export default function Speakers() {
               <p className="mt-2 border-t border-zinc-600 p-2 text-sm/6 font-semibold text-zinc-200">
                 &quot;{person.topic}&quot;
               </p>
+              {person.pdfFile && (
+                <a
+                  href={person.pdfFile}
+                  download
+                  className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
+                >
+                  Download Presentation
+                </a>
+              )}
             </li>
           ))}
         </ul>
