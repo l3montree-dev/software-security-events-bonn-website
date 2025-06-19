@@ -32,8 +32,8 @@ export function Footer() {
             </a>
           </div>
           <p className="mt-4">
-            Copyright &copy; {new Date().getFullYear()} l3montree UG
-            (haftungsbeschränkt). All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} L3montree GmbH. All
+            rights reserved.
           </p>
         </div>
       </Container>

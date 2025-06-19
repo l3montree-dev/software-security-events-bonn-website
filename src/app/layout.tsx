@@ -32,8 +32,8 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Event',
   name: 'Cyber- & Softwaresecurity Event - Bonn',
-  startDate: '2025-01-30T18:00',
-  endDate: '2024-01-30T22:00',
+  startDate: '2025-08-12T18:00',
+  endDate: '2025-08-12T22:00',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
   location: {
@@ -41,9 +41,9 @@ const structuredData = {
     name: 'DIGITALHUB.DE',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Am Hauptbahnhof 6',
+      streetAddress: 'Rheinwerkallee 6',
       addressLocality: 'Bonn',
-      postalCode: '53111',
+      postalCode: '53227',
       addressRegion: 'NRW',
       addressCountry: 'DE',
     },

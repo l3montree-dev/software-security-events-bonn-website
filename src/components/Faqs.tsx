@@ -1,20 +1,20 @@
 const faqs = [
   {
     id: 1,
-    question: 'Was ist der AfterWorkshop?',
+    question: 'Was ist ein OSS-Bonn Event?',
     answer:
-      'Das Eventformat der AfterWorkshops ist ein Format des DigitalHubs Bonn, bei dem es monatlich, interaktives Workshops und zu verschiedensten Themen geben wird.',
+      'Das OSS-Bonn Eventformat ist ein Format das aus der Kooperation von L3montree Cybersecurity, dem DigitalHubs Bonn und des Cyber Security Clusters Bonn e.V. ins Leben gerufen wurde und regelmäßig abendliche Events zu verschiedensten Themen aus dem Bereich der Informatik und Cybersecurity veranstaltet.',
   },
   {
     id: 2,
     question: 'Wer kann bei dem Event teilnehmen?',
     answer:
-      'Jeder, der interessiert ist! Die Teilnahme ist komplett kostenlos, bitte Registriere Dich aber über den Ticketshop.',
+      'Jeder, der interessiert ist! Die Teilnahme ist komplett kostenlos, bitte Registriere Dich aber über den Ticketshop. Die Daten werden NICHT zu werbezwecken gespeichert und dienen lediglich der Event-Organisation.',
   },
   {
     id: 3,
     question: 'Wie sieht es mit Essen und Trinken aus?',
-    answer: 'Wir versorgen Sie vor Ort mit Snacks und Getränken (kostenlos).',
+    answer: 'Wir versorgen Euch vor Ort mit Snacks und Getränken (kostenlos).',
   },
 ]
 

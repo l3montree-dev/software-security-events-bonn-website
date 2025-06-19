@@ -23,7 +23,7 @@ export function Sponsors() {
           </div>
           <br />
           <br />
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 px-6 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:pl-8">
+          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 px-6 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:pl-8">
             <a
               href="https://www.digitalhub.de/"
               target="_blank"
@@ -51,71 +51,6 @@ export function Sponsors() {
               />
             </a>
             <a
-              href="https://laokoon-security.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/laokoon-security-logo.png"
-                alt="Laokoon SecurITy GmbH Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.hisolutions.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo_his2.png"
-                alt="HiSolutions Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://netlockrmm.com/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo_0x101.png"
-                alt="0x101 Cybersecurity Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://valutistech.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/valutis_logo_black.svg"
-                alt="valutis Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.business-code.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/bcdPlusTextLogo.svg"
-                alt="BusinessCode Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
               href="https://www.l3montree.de/"
               target="_blank"
               rel="noopener noreferrer"
@@ -124,6 +59,20 @@ export function Sponsors() {
                 className="max-h-24 w-full object-contain object-center"
                 src="/l3montree.svg"
                 alt="L3montree Cybersecurtiy Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+
+            <a
+              href="https://www.anykey.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/anykey_logo.png"
+                alt="anykey Logo"
                 width={158}
                 height={48}
               />

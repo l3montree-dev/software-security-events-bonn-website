@@ -15,24 +15,24 @@ const cspHeader = `
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true,
-    images: {
-        minimumCacheTTL: 60 * 60 * 24 * 30,
-    },
-    async headers() {
-        return [
+  reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    minimumCacheTTL: 60 * 60 * 24 * 30,
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
           {
-            source: '/(.*)',
-            headers: [
-              {
-                key: 'Content-Security-Policy',
-                value: cspHeader.replace(/\n/g, ''),
-              },
-            ],
+            key: 'Content-Security-Policy',
+            value: cspHeader.replace(/\n/g, ''),
           },
-        ]
+        ],
       },
+    ]
+  },
 }
 
 module.exports = nextConfig

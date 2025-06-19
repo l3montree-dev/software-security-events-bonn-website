@@ -29,30 +29,33 @@ export function Hero() {
               Software & Cyber-Security Event Bonn
             </h1>
             <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
-              Cybersecurity <br />
-              AfterWorkshop
+              Cyber-Grill
+            </h2>
+            <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
+              a Phish & Chips Satelite
             </h2>
             <p className="text-l mx-auto mt-20 text-white max-sm:border-t max-sm:border-zinc-600 max-sm:pt-4">
-              Als Teil der AfterWorkshop Reihe des{' '}
+              Im Vorlauf des{' '}
               <a
-                href="https://www.digitalhub.de/"
+                href="https://www.digitalhub.de/phish-chips"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
               >
-                DigitalHub Bonn
-              </a>
-              , geht es in diesem Event um das Thema{' '}
-              <strong> Software & Cyber-Security</strong>.
+                Phish & Chips Cybersecurity Konferenz
+              </a>{' '}
+              des DigitalHub Bonn, geht es in diesem Event um das Thema{' '}
+              <strong> digitale Souveränität in der Cyber-Security</strong>.
             </p>
             <p className="text-l mx-auto mt-4 text-white">
-              Expert*innen geben in spannenden Impulsvorträgen wertvolle
-              Einblicke in effiziente und sichere Softwareentwicklung und -tests
-              – sowohl aus der Sicht von Managern als auch von Entwicklern. Sie
-              beleuchten Best Practices für kleine und große Unternehmen,
-              zeigen, wie Sicherheitslücken durch Penetrationstests nachträglich
-              aufgedeckt werden können, und erläutern Methoden zur Erkennung von
-              Angriffen auf die eigenen Systeme.
+              Expert*innen geben in kompakten Impulsvorträgen wertvolle
+              Einblicke in Strategien zur Stärkung digitaler Souveränität – aus
+              Sicht von Unternehmen, Entwicklerinnen und Entscheider*innen. Sie
+              zeigen, wie technologische Abhängigkeiten reduziert, Lieferketten
+              abgesichert und vertrauenswürdige Sicherheitsarchitekturen mit
+              europäischen Komponenten aufgebaut werden können. Außerdem
+              diskutieren sie die Rolle von Open-Source-Software und die Frage:
+              Wer kontrolliert eigentlich den Code?
             </p>
             <p className="text-l mx-auto mt-4 text-white">
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
@@ -61,12 +64,12 @@ export function Hero() {
             <p className="text-l mt-4 text-white">
               Location:{' '}
               <a
-                href="https://maps.app.goo.gl/9F8Hw4MyQVvfTjVw8"
+                href="https://maps.app.goo.gl/Avz3bxHrK6i6JcHQ8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
               >
-                DIGITALHUB.DE, Hauptbahnhof 6, 53111 Bonn
+                DIGITALHUB.DE, Rheinwerkallee 6, 53227 Bonn
               </a>
             </p>
 

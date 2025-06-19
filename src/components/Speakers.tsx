@@ -2,50 +2,32 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'Nina Malkomes',
-    role: 'Managing Consultant, HiSolutions AG',
-    imageUrl: '/Nina_Malkomes_profil.png',
-    topic: 'DevSecOps - Mehr als nur Tools - Zwischen Mindest und Methodik',
-    pdfFile: '/pdfs/DevSecOps-Mehr-als-nur-Tools.pdf',
+    name: 'tba',
+    role: '-',
+    imageUrl: '/dummy_person_white.png',
+    topic: '-',
+    pdfFile: '',
   },
   {
-    name: 'Tim Bastin',
-    role: 'CTO, L3montree Cybersecurity',
-    imageUrl: '/tim_bastin_profil.png',
-    topic: 'So wird die CI-Pipeline zur Basis für sichere Softwareentwicklung',
-    pdfFile:
-      '/pdfs/So_wird_die_CI-Pipeline_zur_Basis_fuer_sichere_Softwareentwicklung.pdf',
+    name: 'Sebastian Kawelke',
+    role: 'CEO L3montree',
+    imageUrl: '/profilbild-sebastian.png',
+    topic: 'Topic: tba',
+    pdfFile: '',
   },
   {
-    name: 'Moritz Samrock',
-    role: 'Hacker & Red-Teamer, Laokoon SecurITy GmbH',
-    imageUrl: '/moritz_samrock_profil.png',
-    topic:
-      'Mythos Penetrationstest - Offensive Sicherheitsmaßnahmen im Überblick',
-    pdfFile: '/pdfs/MythosPT.pdf',
+    name: 'tba',
+    role: '-',
+    imageUrl: '/dummy_person_white.png',
+    topic: '-',
+    pdfFile: '',
   },
   {
-    name: 'Nico Mak',
-    role: 'Geschäftsführer, 0x101 Cyber Security',
-    imageUrl: '/nico_mak_profil.png',
-    topic:
-      'The Server Is Owned - But Your Clients Aren’t: Wie moderne Software selbst kompromittierte Update-Kanäle überlebt',
-    pdfFile: '/pdfs/The_Server_Is_Owned-But_Your_Clients_Aren_t.pdf',
-  },
-  {
-    name: 'Alexander Haunhorst',
-    role: 'CTO, Valutis Technologies GmbH',
-    imageUrl: '/Alexander_Haunhorst-Profil.png',
-    topic: 'Hardwareentwicklung - so sicher nicht',
-    pdfFile: '/pdfs/Hardwaresicherheit.pdf',
-  },
-  {
-    name: 'Alexander Goth',
-    role: 'Data Architect, BusinessCode GmbH',
-    imageUrl: '/Alexander_Goth_Profil.jpg',
-    topic:
-      'Homomorphe Verschlüsselung in der Praxis: Grundlagen, Einsatzmöglichkeiten und Herausforderungen',
-    pdfFile: '/pdfs/Homomorphe_Verschluesselung.pdf',
+    name: 'tba',
+    role: '-',
+    imageUrl: '/dummy_person_white.png',
+    topic: '-',
+    pdfFile: '',
   },
 ]
 
@@ -65,7 +47,7 @@ export default function Speakers() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8"
         >
           {people.map((person) => (
             <li
