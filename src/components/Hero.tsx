@@ -29,7 +29,7 @@ export function Hero() {
               Software & Cyber-Security Event Bonn
             </h1>
             <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
-              Cyber-Grill
+              Digitale Souveränität in der Cybersecurity
             </h2>
             <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
               a Phish & Chips Satelite
