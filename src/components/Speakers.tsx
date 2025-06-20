@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'tba',
+    name: 'anykey GmbH',
     role: '-',
     imageUrl: '/dummy_person_white.png',
     topic: '-',
