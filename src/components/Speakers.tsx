@@ -3,9 +3,10 @@ import Image from 'next/image'
 const people = [
   {
     name: 'anykey GmbH',
-    role: '-',
-    imageUrl: '/dummy_person_white.png',
-    topic: '-',
+    role: 'CEO anykey GmbH - Mitglied ITK-Ausschuss des DIHK',
+    imageUrl: '/profilbild_stephan-wirtz.png',
+    topic:
+      'Von Brüssel bis zum Serverraum – wie erhalte ich digitale Souveränität.',
     pdfFile: '',
   },
   {

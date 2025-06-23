@@ -71,7 +71,7 @@ export function Sponsors() {
             >
               <Image
                 className="max-h-24 w-full object-contain object-center"
-                src="/anykey_logo.png"
+                src="/logo-anykey.png"
                 alt="anykey Logo"
                 width={158}
                 height={48}
