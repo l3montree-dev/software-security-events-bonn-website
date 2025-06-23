@@ -63,7 +63,6 @@ export function Sponsors() {
                 height={48}
               />
             </a>
-
             <a
               href="https://www.anykey.de/"
               target="_blank"

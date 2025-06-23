@@ -11,7 +11,7 @@ const people = [
   },
   {
     name: 'Sebastian Kawelke',
-    role: 'CEO L3montree',
+    role: 'CEO L3montree GmbH',
     imageUrl: '/profilbild-sebastian.png',
     topic: 'Topic: tba',
     pdfFile: '',
