@@ -76,7 +76,7 @@ export function Hero() {
             <div className="justify-center gap-10">
               <div className="mt-10 flex items-center justify-start gap-x-6">
                 <Button
-                  href="https://www.eventbrite.de/e/afterworkshop-zum-thema-cyber-security-tickets-1279678525919?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+                  href="https://www.eventbrite.de/e/digitale-souveranitat-in-der-cybersecurity-a-phish-chips-satelite-tickets-1431188837339?aff=oddtdtcreator&utm-source=cp&utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

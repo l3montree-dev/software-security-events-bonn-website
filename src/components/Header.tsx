@@ -29,7 +29,7 @@ export function Header() {
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
           <Button
-            href="https://www.eventbrite.de/e/afterworkshop-zum-thema-cyber-security-tickets-1279678525919?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+            href="https://www.eventbrite.de/e/digitale-souveranitat-in-der-cybersecurity-a-phish-chips-satelite-tickets-1431188837339?aff=oddtdtcreator&utm-source=cp&utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing"
             target="_blank"
             rel="noopener noreferrer"
           >
