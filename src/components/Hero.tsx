@@ -32,7 +32,7 @@ export function Hero() {
               Digitale Souveränität in der Cybersecurity
             </h2>
             <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
-              a Phish & Chips Satelite
+              a Phish & Chips Satellite
             </h2>
             <p className="text-l mx-auto mt-20 text-white max-sm:border-t max-sm:border-zinc-600 max-sm:pt-4">
               Im Vorlauf des{' '}
