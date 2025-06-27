@@ -17,8 +17,8 @@ export default function Home() {
       <Hero />
       <Topic />
       <Speakers />
-      <Schedule />
       <Sponsors />
+      <Schedule />
       <Faqs />
     </>
   )
