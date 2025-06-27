@@ -25,7 +25,7 @@ const people = [
   },
   {
     name: 'tba',
-    role: '-',
+    role: 'BusinessCode GmbH',
     imageUrl: '/dummy_person_white.png',
     topic: '-',
     pdfFile: '',
