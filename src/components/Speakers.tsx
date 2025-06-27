@@ -17,10 +17,10 @@ const people = [
     pdfFile: '',
   },
   {
-    name: 'tba',
-    role: '-',
-    imageUrl: '/dummy_person_white.png',
-    topic: '-',
+    name: 'Stefan Pilarczyk',
+    role: 'Head of Cyber Security - BRL BOEGE ROHDE LUEBBEHUESEN',
+    imageUrl: '/profilbild-stefan_pilarczyk.png',
+    topic: 'Topic: tba',
     pdfFile: '',
   },
   {
