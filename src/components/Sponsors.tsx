@@ -89,6 +89,19 @@ export function Sponsors() {
                 height={48}
               />
             </a>
+            <a
+              href="https://www.brl.de/de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/BRL-logo.png"
+                alt="BRL BOEGE ROHDE LUEBBEHUESEN Logo"
+                width={158}
+                height={48}
+              />
+            </a>
           </div>
         </div>
       </Container>
