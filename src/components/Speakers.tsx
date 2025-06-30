@@ -27,7 +27,7 @@ const people = [
     name: 'tba',
     role: 'BusinessCode GmbH',
     imageUrl: '/dummy_person_white.png',
-    topic: '-',
+    topic: 'Topic: tba',
     pdfFile: '',
   },
 ]
