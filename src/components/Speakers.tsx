@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'anykey GmbH',
+    name: 'Stephan Wirtz',
     role: 'CEO anykey GmbH - Mitglied ITK-Ausschuss des DIHK',
     imageUrl: '/profilbild_stephan-wirtz.png',
     topic:
