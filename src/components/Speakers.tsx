@@ -24,9 +24,9 @@ const people = [
     pdfFile: '',
   },
   {
-    name: 'tba',
+    name: 'Harald Wagener',
     role: 'BusinessCode GmbH',
-    imageUrl: '/dummy_person_white.png',
+    imageUrl: '/profilbild-harald_wagener.png',
     topic: 'Topic: tba',
     pdfFile: '',
   },
