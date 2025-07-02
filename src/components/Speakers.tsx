@@ -27,7 +27,7 @@ const people = [
     name: 'Harald Wagener',
     role: 'BusinessCode GmbH',
     imageUrl: '/profilbild-harald_wagener.png',
-    topic: 'Topic: tba',
+    topic: 'Die souveräne Supply Chain in der Software-Entwicklung',
     pdfFile: '',
   },
 ]
