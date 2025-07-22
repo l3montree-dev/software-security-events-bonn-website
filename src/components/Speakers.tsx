@@ -20,7 +20,7 @@ const people = [
     name: 'Stefan Pilarczyk',
     role: 'Head of Cyber Security - BRL BOEGE ROHDE LUEBBEHUESEN',
     imageUrl: '/profilbild-stefan_pilarczyk.png',
-    topic: 'Topic: tba',
+    topic: 'Sicher? Sicher nicht! Das Dilemma mit der digitalen Souveränität.',
     pdfFile: '',
   },
   {
