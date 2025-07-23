@@ -84,6 +84,9 @@ export function Hero() {
                 </Button>
               </div>
             </div>
+            <div className="mt-6 text-center text-3xl font-bold tracking-tight text-white">
+              Informationen zur Konferenz
+            </div>
             <a
               href="https://www.digitalhub.de/phish-chips"
               target="_blank"
