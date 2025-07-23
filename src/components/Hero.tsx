@@ -84,10 +84,27 @@ export function Hero() {
                 </Button>
               </div>
             </div>
+            <a
+              href="https://www.digitalhub.de/phish-chips"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/pnc_banner.jpg"
+                alt="Beschreibung"
+                height={1000}
+                width={800}
+                className="mx-auto mt-[1cm] h-auto w-full max-w-[600px] cursor-pointer rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              />
+            </a>
+            <p className="mt-4 text-center text-base text-white">
+              Sichere Dir 25% Rabatt auf Dein Ticket – Code:{' '}
+              <strong>L3montree25P&amp;C</strong> 🤫
+            </p>
           </div>
         </div>
 
-        <div className="-mt-20 pb-16 lg:-mt-12">
+        <div className="-mt-10 pb-16 lg:-mt-12">
           <div className="mx-auto max-w-7xl lg:px-8">
             <h2 className="mt-4 justify-center text-lg font-semibold tracking-tight text-white">
               Presented by:
