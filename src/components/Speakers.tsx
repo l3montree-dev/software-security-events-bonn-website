@@ -13,7 +13,8 @@ const people = [
     name: 'Sebastian Kawelke',
     role: 'CEO L3montree GmbH',
     imageUrl: '/profilbild-sebastian.png',
-    topic: 'Topic: tba',
+    topic:
+      'Sichere Lieferketten und digitale Souveränität - Aktuelle Initiativen aus der öffentlichen Verwaltung',
     pdfFile: '',
   },
   {
