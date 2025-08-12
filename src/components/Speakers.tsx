@@ -15,21 +15,21 @@ const people = [
     imageUrl: '/profilbild-sebastian.png',
     topic:
       'Sichere Lieferketten und digitale Souveränität - Aktuelle Initiativen aus der öffentlichen Verwaltung',
-    pdfFile: '',
+    pdfFile: '/pdfs/OSS-Event-Digitale-Souveränität-Initiativen_ÖV.pdf',
   },
   {
     name: 'Stefan Pilarczyk',
     role: 'Head of Cyber Security - BRL BOEGE ROHDE LUEBBEHUESEN',
     imageUrl: '/profilbild-stefan_pilarczyk.png',
     topic: 'Sicher? Sicher nicht! Das Dilemma mit der digitalen Souveränität.',
-    pdfFile: '',
+    pdfFile: '/pdfs/das_dilemma_mit_der_digitalen_souveränität.pdf',
   },
   {
     name: 'Harald Wagener',
     role: 'BusinessCode GmbH',
     imageUrl: '/profilbild-harald_wagener.png',
     topic: 'Die souveräne Supply Chain in der Software-Entwicklung',
-    pdfFile: '',
+    pdfFile: '/pdfs/Die_souveraene_supply_chain.pdf',
   },
 ]
 
