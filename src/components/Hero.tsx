@@ -57,7 +57,7 @@ export function Hero() {
               </ul>
               <br />
               Diese Fragen und weitere Fragen werden in diesem OSS-Bonn Event
-              thematisiert und beantwortet…
+              thematisiert und beantwortet!
             </p>
             <p className="text-l mx-auto mt-16 text-white">
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
