@@ -26,6 +26,7 @@ jobs:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
 
     container-scanning:
+        needs: build-image
         uses: l3montree-dev/devguard-action/.github/workflows/container-scanning.yml@main
         with:
             asset-name: "l3montree-cybersecurity/projects/l3montree-intern/assets/oss-events"
