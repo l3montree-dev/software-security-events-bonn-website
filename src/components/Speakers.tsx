@@ -2,34 +2,32 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'Stephan Wirtz',
-    role: 'CEO anykey GmbH - Mitglied ITK-Ausschuss des DIHK',
-    imageUrl: '/profilbild_stephan-wirtz.png',
-    topic:
-      'Von Brüssel bis zum Serverraum – wie erhalte ich digitale Souveränität.',
+    name: 'Lisa Fröhlich',
+    role: 'Corporate Communications @ Link11',
+    imageUrl: '/profilbild_lisa_fröhlich.png',
+    topic: 'Botnet reloaded',
     pdfFile: '',
   },
   {
-    name: 'Sebastian Kawelke',
-    role: 'CEO L3montree GmbH',
-    imageUrl: '/profilbild-sebastian.png',
-    topic:
-      'Sichere Lieferketten und digitale Souveränität - Aktuelle Initiativen aus der öffentlichen Verwaltung',
-    pdfFile: '/pdfs/OSS-Event-Digitale-Souveränität-Initiativen_ÖV.pdf',
+    name: 'Sebastian Kokott',
+    role: 'Senior IT & Security Consultant @ CONET',
+    imageUrl: '/profilbild_sebastian_kokott.png',
+    topic: 'tba',
+    pdfFile: '',
   },
   {
-    name: 'Stefan Pilarczyk',
-    role: 'Head of Cyber Security - BRL BOEGE ROHDE LUEBBEHUESEN',
-    imageUrl: '/profilbild-stefan_pilarczyk.png',
-    topic: 'Sicher? Sicher nicht! Das Dilemma mit der digitalen Souveränität.',
-    pdfFile: '/pdfs/das_dilemma_mit_der_digitalen_souveränität.pdf',
+    name: 'tba',
+    role: '-',
+    imageUrl: '/dummy_person_white.png',
+    topic: 'tba',
+    pdfFile: '',
   },
   {
-    name: 'Harald Wagener',
-    role: 'BusinessCode GmbH',
-    imageUrl: '/profilbild-harald_wagener.png',
-    topic: 'Die souveräne Supply Chain in der Software-Entwicklung',
-    pdfFile: '/pdfs/Die_souveraene_supply_chain.pdf',
+    name: 'tba',
+    role: '-',
+    imageUrl: '/dummy_person_white.png',
+    topic: 'tba',
+    pdfFile: '',
   },
 ]
 

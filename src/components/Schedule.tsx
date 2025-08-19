@@ -47,8 +47,8 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 1',
-        description: 'Von Brüssel bis zum Serverraum',
-        description2: 'wie erhalte ich digitale Souveränität?',
+        description: 'Botnet reloaded',
+        description2: '',
         start: '18:30',
         end: '19:00',
         openForOthers: false,
@@ -56,8 +56,8 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 2',
-        description: 'Sicher? Sicher nicht!',
-        description2: 'Das Dilemma mit der digitalen Souveränität',
+        description: 'tba',
+        description2: '',
         start: '19:00',
         end: '19:30',
         openForOthers: false,
@@ -65,8 +65,8 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 3',
-        description: 'Die souveräne Supply Chain',
-        description2: 'in der Software-Entwicklung',
+        description: 'tba',
+        description2: '',
         start: '19:30',
         end: '20:00',
         openForOthers: false,
@@ -74,8 +74,8 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 4',
-        description: 'Sichere Lieferketten und digitale Souveränität',
-        description2: 'Aktuelle Initiativen aus der öffentlichen Verwaltung',
+        description: 'tba',
+        description2: '',
         start: '20:00',
         end: '20:30',
         openForOthers: false,

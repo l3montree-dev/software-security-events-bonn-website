@@ -10,38 +10,41 @@ export default function Topic() {
             {/* Linke Spalte */}
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-l3-600"></h2>
-              Quo Vadis, IT-Sec?
+              Wie bin und bleibe ich sicher?
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-                Digitale Souveränität in der Cybersecurity
+                Cybersecurity in "angespannten" Zeiten
               </h3>
               <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
                 Globale Spannungen, technologische Abhängigkeiten, unsichere
-                Lieferketten – europäische Unternehmen stehen vor der
-                Herausforderung, digitale Souveränität neu zu denken. An diesem
-                Abend diskutieren Expert*innen aus Wirtschaft, Politik und Tech,
-                wie Europa sich resilient und unabhängig im Bereich
-                Cybersecurity aufstellt. Kompakt. Strategisch. Praxisnah. Wie
-                können Unternehmen mit europäischen Lösungen Sicherheit – von
-                Infrastruktur bis Cloud - zurückgewinnen?
+                Lieferketten – Das BSI bezeichnet die Lage der IT-Sicherheit in
+                Deutschland als "angespannt".
+                <br />
+                An diesem Abend diskutieren Expert*innen aus modern und
+                zukunftsfähig im Bereich der Cybersecurity aufstellt.
+                <strong> Kompakt. Strategisch. Praxisnah. </strong>
+                Was sind die aktuellen Bedrohungen und wie können Unternehmen
+                sich gegen diese schützen?
                 <br />
                 <br />
                 <strong> Die Themen sind unter anderem: </strong>
               </p>
               <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>
-                  <strong>Lieferketten absichern:</strong>
+                  <strong>
+                    Distributed Denial of Service (DDoS) as a Service
+                  </strong>
                   <br />
-                  Strategien gegen technologische Abhängigkeiten
+                  Wie Angriffe mittlerweile als Service angeboten werden.
                 </li>
                 <li>
-                  <strong>Open-Source vs. Proprietär:</strong>
+                  <strong>Compliance in der Softwaresicherheit:</strong>
                   <br />
-                  Wer kontrolliert den Code wirklich?
+                  Was wird vom Gesetzgeber gefordert und wie kann ich effizient
+                  die Anforderungen erfüllen?
                 </li>
                 <li>
-                  <strong>Sicherheitsarchitektur „Made in EU“:</strong>
+                  <strong>And more...</strong>
                   <br />
-                  Aufbau vertrauenswürdiger Systeme mit europäischen Komponenten
                 </li>
               </ul>
               <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
@@ -54,6 +57,14 @@ export default function Topic() {
               Vergangene Events
             </h3>
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <Button
+                href="../souveraen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Digitale Souveränität
+              </Button>
+
               <Button
                 href="../afterwork"
                 target="_blank"
@@ -95,19 +106,6 @@ export default function Topic() {
               width={800}
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
             />
-            <a
-              href="https://www.digitalhub.de/phish-chips"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/pnc_banner.jpg"
-                alt="Beschreibung"
-                height={1000}
-                width={800}
-                className="h-auto w-full cursor-pointer rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
-              />
-            </a>
           </div>
         </div>
       </div>

@@ -25,85 +25,63 @@ export function Hero() {
         </div>
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:px-8 lg:py-32">
           <div className="text-start">
-            <h1 className="text-4xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
+            <h1 className="text-2xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
               Software & Cyber-Security Event Bonn
             </h1>
-            <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
-              Digitale Souveränität in der Cybersecurity
+            <h2 className="mt-8 text-4xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
+              Cybersecurity Night
             </h2>
-            <h2 className="mt-8 text-3xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
-              a Phish & Chips Satellite
+            <h2 className="mt-8 text-2xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
+              Spannende Themen aus der Cybersecurity Welt
             </h2>
-            <p className="text-l mx-auto mt-20 text-white max-sm:border-t max-sm:border-zinc-600 max-sm:pt-4">
-              Im Vorlauf des{' '}
-              <a
-                href="https://www.digitalhub.de/phish-chips"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
-              >
-                Phish & Chips Cybersecurity Konferenz
-              </a>{' '}
-              des DigitalHub Bonn, geht es in diesem Event um das Thema{' '}
-              <strong> digitale Souveränität in der Cyber-Security</strong>.
-            </p>
+
             <p className="text-l mx-auto mt-4 text-white">
               Expert*innen geben in kompakten Impulsvorträgen wertvolle
-              Einblicke in Strategien zur Stärkung digitaler Souveränität – aus
-              Sicht von Unternehmen, Entwicklerinnen und Entscheider*innen. Sie
-              zeigen, wie technologische Abhängigkeiten reduziert, Lieferketten
-              abgesichert und vertrauenswürdige Sicherheitsarchitekturen mit
-              europäischen Komponenten aufgebaut werden können. Außerdem
-              diskutieren sie die Rolle von Open-Source-Software und die Frage:
-              Wer kontrolliert eigentlich den Code?
+              Einblicke in aktuelle Themen, die die Cybersecurity Community aus
+              der Sicht von Unternehmen, Entwicklerinnen und Entscheider*innen
+              bewegen.
+              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
+                <li>
+                  <strong>
+                    Was sind aktuelle Bedrohungen und wie kann ich mich gegen
+                    diese schützen?
+                  </strong>
+                </li>
+                <li>
+                  <strong>
+                    {' '}
+                    Was sind Vorgaben, die mein Unternehmen und meine Software
+                    erfüllen muss und wie kann ich diese effizient umsetzen?
+                  </strong>
+                </li>
+              </ul>
+              <br />
+              Diese Fragen und weitere Fragen werden in diesem OSS-Bonn Event
+              thematisiert und beantwortet…
             </p>
-            <p className="text-l mx-auto mt-4 text-white">
+            <p className="text-l mx-auto mt-16 text-white">
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
               und Networking!
             </p>
             <p className="text-l mt-4 text-white">
               Location:{' '}
               <a
-                href="https://maps.app.goo.gl/Avz3bxHrK6i6JcHQ8"
+                href="https://maps.app.goo.gl/9Lu7pS17AHp5wn31A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
               >
-                DIGITALHUB.DE, Rheinwerkallee 6, 53227 Bonn
+                DIGITALHUB.DE, Am Hauptbahnhof 6, 53111 Bonn
               </a>
             </p>
 
             <div className="justify-center gap-10">
               <div className="mt-10 flex items-center justify-start gap-x-6">
-                <Button
-                  href="https://www.eventbrite.de/e/digitale-souveranitat-in-der-cybersecurity-a-phish-chips-satelite-tickets-1431188837339?aff=oddtdtcreator&utm-source=cp&utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Kostenloses Ticket sichern
+                <Button href="" target="" rel="noopener noreferrer">
+                  Tickets bald verfügbar
                 </Button>
               </div>
             </div>
-            <div className="mt-6 text-center text-3xl font-bold tracking-tight text-white">
-              Informationen zur Konferenz
-            </div>
-            <a
-              href="https://www.digitalhub.de/phish-chips"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/pnc_banner.jpg"
-                alt="Beschreibung"
-                height={1000}
-                width={800}
-                className="mx-auto mt-[1cm] h-auto w-full max-w-[600px] cursor-pointer rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
-              />
-            </a>
-            <p className="mt-4 text-center text-base text-white">
-              Sichere Dir 25% Rabatt auf Dein Ticket – Code:{' '}
-              <strong>L3montree25P&amp;C</strong> 🤫
-            </p>
           </div>
         </div>
 
