@@ -23,8 +23,8 @@ interface Day {
 
 const schedule: Array<Day> = [
   {
-    date: 'Dienstag 12. August',
-    dateTime: '2025-08-12',
+    date: 'Mittwoch 24. September',
+    dateTime: '2025-09-24',
     summary: '',
     timeSlots: [
       {
