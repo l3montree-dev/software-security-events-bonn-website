@@ -12,12 +12,12 @@ export default function Topic() {
               <h2 className="text-base font-semibold leading-7 text-l3-600"></h2>
               Wie bin und bleibe ich sicher?
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-                Cybersecurity in "angespannten" Zeiten
+                Cybersecurity in &quot;angespannten&quot; Zeiten
               </h3>
               <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
                 Globale Spannungen, technologische Abhängigkeiten, unsichere
                 Lieferketten – Das BSI bezeichnet die Lage der IT-Sicherheit in
-                Deutschland als "angespannt".
+                Deutschland als &quot;angespannt&quot;.
                 <br />
                 An diesem Abend diskutieren Expert*innen aus modern und
                 zukunftsfähig im Bereich der Cybersecurity aufstellt.
