@@ -27,6 +27,17 @@ export function Header() {
             <p>Bonn, NRW</p>
           </div>
         </div>
+        <div className="justify-center gap-10">
+          <div className="mt-10 flex items-center justify-start gap-x-6">
+            <Button
+              href="https://www.eventbrite.de/e/cybersecurity-night-tickets-1616801479749?aff=oddtdtcreator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kostenloses Ticket sichern!
+            </Button>
+          </div>
+        </div>
       </Container>
     </header>
   )
