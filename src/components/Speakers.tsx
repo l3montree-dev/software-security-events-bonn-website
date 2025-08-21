@@ -12,7 +12,7 @@ const people = [
     name: 'Sebastian Kokott',
     role: 'Senior IT & Security Consultant @ CONET',
     imageUrl: '/profilbild_sebastian_kokott.png',
-    topic: 'tba',
+    topic: 'Souveräne Cloud im Bund',
     pdfFile: '',
   },
   {
