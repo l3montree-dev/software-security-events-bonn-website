@@ -24,7 +24,7 @@ export function Header() {
               <time dateTime="2025-09-24">24.09.2025</time>
             </p>
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
-            <p>Bonn, NRW</p>
+            <p>Bonn, NRW </p>
           </div>
         </div>
         <div className="justify-center gap-10">
