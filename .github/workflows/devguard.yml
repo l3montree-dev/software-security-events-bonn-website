@@ -12,7 +12,7 @@ jobs:
     find-leaked-secrets:
         uses: l3montree-dev/devguard-action/.github/workflows/secret-scanning.yml@main
         with:
-            asset-name: "telekommmmmh/projects/sadf/assets/asd"
+            asset-name: "tripventures/projects/tripventures-webapp/assets/sss"
             api-url: https://api.main.devguard.org
         secrets:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
@@ -20,23 +20,23 @@ jobs:
     dependency-scanning:
         uses: l3montree-dev/devguard-action/.github/workflows/software-composition-analysis.yml@main
         with:
-            asset-name: "telekommmmmh/projects/sadf/assets/asd"
+            asset-name: "tripventures/projects/tripventures-webapp/assets/sss"
             api-url: https://api.main.devguard.org
         secrets:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
 
-   # container-scanning:
-     #   uses: l3montree-dev/devguard-action/.github/workflows/container-scanning.yml@main
-     #   with:
-      #      asset-name: "telekommmmmh/projects/sadf/assets/asd"
-       #     api-url: https://api.main.devguard.org
-       # secrets:
-       #     devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
-#
+    container-scanning:
+        uses: l3montree-dev/devguard-action/.github/workflows/container-scanning.yml@main
+        with:
+            asset-name: "tripventures/projects/tripventures-webapp/assets/sss"
+            api-url: https://api.main.devguard.org
+        secrets:
+            devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
+
     bad-practice-finder:
         uses: l3montree-dev/devguard-action/.github/workflows/sast.yml@main
         with:
-            asset-name: "telekommmmmh/projects/sadf/assets/asd"
+            asset-name: "tripventures/projects/tripventures-webapp/assets/sss"
             api-url: https://api.main.devguard.org
         secrets:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
@@ -44,7 +44,7 @@ jobs:
     infrastructure-as-code-scanning:
         uses: l3montree-dev/devguard-action/.github/workflows/iac.yml@main
         with:
-            asset-name: "telekommmmmh/projects/sadf/assets/asd"
+            asset-name: "tripventures/projects/tripventures-webapp/assets/sss"
             api-url: https://api.main.devguard.org
         secrets:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings
@@ -52,7 +52,7 @@ jobs:
     build-image:
         uses: l3montree-dev/devguard-action/.github/workflows/build-image.yml@main
         with:
-            asset-name: "telekommmmmh/projects/sadf/assets/asd"
+            asset-name: "tripventures/projects/tripventures-webapp/assets/sss"
             api-url: https://api.main.devguard.org
         secrets:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings 
