@@ -43,16 +43,12 @@ export function Hero() {
               <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
                 <li>
                   <strong>
-                    Was sind aktuelle Bedrohungen und wie kann ich mich gegen
-                    diese schützen?
+                    Wie laufen moderne DDoS Angriffe ab und wie kann ich mich
+                    gegen diese schützen?
                   </strong>
                 </li>
                 <li>
-                  <strong>
-                    {' '}
-                    Wie kann wird die Cloud der öffentlichen Verwaltung
-                    souverän?
-                  </strong>
+                  <strong> Wie wird die Cloud des Bundes souverän?</strong>
                 </li>
                 <li>
                   <strong>
