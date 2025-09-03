@@ -34,7 +34,8 @@ export default function Topic() {
                     Distributed Denial of Service (DDoS) as a Service
                   </strong>
                   <br />
-                  Wie Angriffe mittlerweile als Service angeboten werden.
+                  Wie groß sind Angriffe auf die Verfügbarkeit aktuell und wie
+                  sie mittlerweile schon als Service angeboten werden.
                 </li>
                 <li>
                   <strong>Souveräne Cloud für den Bund</strong>
