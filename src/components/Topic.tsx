@@ -37,14 +37,18 @@ export default function Topic() {
                   Wie Angriffe mittlerweile als Service angeboten werden.
                 </li>
                 <li>
-                  <strong>Compliance in der Softwaresicherheit:</strong>
+                  <strong>Souveräne Cloud für den Bund</strong>
                   <br />
-                  Was wird vom Gesetzgeber gefordert und wie kann ich effizient
-                  die Anforderungen erfüllen?
+                  Wie kann der Bund eine Cloudinfrastruktur aufbauen ohne, dass
+                  er sich dabei in zu große Abhängigkeiten begiebt?
                 </li>
                 <li>
-                  <strong>And more...</strong>
+                  <strong>CSAF (Common Security Advisory Framework)</strong>
                   <br />
+                  Was ist das standardisierte, quelloffene und maschinenlesbare
+                  Format für Security Advisories, das die automatisierte
+                  Verteilung, Bewertung und Skalierung von Schwachstellen- und
+                  Mitigationsinformationen ermöglicht?
                 </li>
               </ul>
               <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">

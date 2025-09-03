@@ -29,10 +29,10 @@ export function Hero() {
               Software & Cyber-Security Event Bonn
             </h1>
             <h2 className="mt-8 text-4xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
-              Cybersecurity Night
+              Bonn Cybersecurity Night
             </h2>
             <h2 className="mt-8 text-2xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
-              Spannende Themen aus der Cybersecurity Welt
+              DDoS, Souveränität & sichere Software
             </h2>
 
             <p className="text-l mx-auto mt-4 text-white">
@@ -50,13 +50,20 @@ export function Hero() {
                 <li>
                   <strong>
                     {' '}
-                    Was sind Vorgaben, die mein Unternehmen und meine Software
-                    erfüllen muss und wie kann ich diese effizient umsetzen?
+                    Wie kann wird die Cloud der öffentlichen Verwaltung
+                    souverän?
+                  </strong>
+                </li>
+                <li>
+                  <strong>
+                    {' '}
+                    Wie funktioniert das moderne Schwachstellenaustauschformat
+                    CSAF (Common Security Advisory Framework)?
                   </strong>
                 </li>
               </ul>
               <br />
-              Diese Fragen und weitere Fragen werden in diesem OSS-Bonn Event
+              Diese und weitere Fragen werden in diesem OSS-Bonn Event
               thematisiert und beantwortet!
             </p>
             <p className="text-l mx-auto mt-16 text-white">
