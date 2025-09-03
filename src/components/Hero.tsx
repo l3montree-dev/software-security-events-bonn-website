@@ -25,22 +25,22 @@ export function Hero() {
         </div>
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:px-8 lg:py-32">
           <div className="text-start">
-            <h1 className="text-2xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
+            <h1 className="text-md font-semibold tracking-tight text-l3-500 sm:text-2xl">
               Software & Cyber-Security Event Bonn
             </h1>
-            <h2 className="mt-8 text-4xl font-bold tracking-tight text-white max-sm:text-center sm:text-6xl">
+            <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-6xl">
               Bonn Cybersecurity Night
             </h2>
-            <h2 className="mt-8 text-2xl font-bold tracking-tight text-white max-sm:text-center sm:text-3xl">
+            <h3 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
               DDoS, Souveränität & sichere Software
-            </h2>
+            </h3>
 
-            <p className="text-l mx-auto mt-4 text-white">
+            <p className="text-l mx-auto mt-8 text-white">
               Expert*innen geben in kompakten Impulsvorträgen wertvolle
               Einblicke in aktuelle Themen, die die Cybersecurity Community aus
               der Sicht von Unternehmen, Entwicklerinnen und Entscheider*innen
               bewegen.
-              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
+              <ul className="mt-6 list-disc space-y-1 pl-6 text-base leading-8 text-white">
                 <li>
                   <strong>
                     Wie laufen moderne DDoS Angriffe ab und wie kann ich mich
