@@ -48,7 +48,10 @@ export function Hero() {
                   </strong>
                 </li>
                 <li>
-                  <strong> Wie wird und bleibt die Cloud des Bundes souverän?</strong>
+                  <strong>
+                    {' '}
+                    Wie wird und bleibt die Cloud des Bundes souverän?
+                  </strong>
                 </li>
                 <li>
                   <strong>
