@@ -17,7 +17,7 @@ export default function Topic() {
               <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
                 Globale Spannungen, technologische Abhängigkeiten, unsichere
                 Lieferketten – Das BSI bezeichnet die Lage der IT-Sicherheit in
-                Deutschland als &quot;angespannt&quot;.
+                Deutschland als &quot;angespannt&quot;!
                 <br />
                 An diesem Abend diskutieren Expert*innen aus modern und
                 zukunftsfähig im Bereich der Cybersecurity aufstellt.
