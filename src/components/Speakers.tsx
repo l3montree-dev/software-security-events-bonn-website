@@ -16,10 +16,10 @@ const people = [
     pdfFile: '',
   },
   {
-    name: 'tba',
-    role: '-',
-    imageUrl: '/dummy_person_white.png',
-    topic: 'tba',
+    name: 'Dr. Dina Truxius',
+    role: 'Referentin Industrielle Steuerungs- und Automatisierungssysteme @ BSI',
+    imageUrl: '/Dina_Profilbild.jpeg',
+    topic: 'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
     pdfFile: '',
   },
   {

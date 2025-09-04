@@ -89,6 +89,19 @@ export function Sponsors() {
                 height={48}
               />
             </a>
+            <a
+              href="https://www.bsi.bund.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/bsi-logo.png"
+                alt="BSI Logo"
+                width={158}
+                height={48}
+              />
+            </a>
           </div>
         </div>
 

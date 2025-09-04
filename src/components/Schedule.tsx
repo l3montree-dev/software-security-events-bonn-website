@@ -56,7 +56,7 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 2',
-        description: 'tba',
+        description: 'Souveräne Cloud im Bund',
         description2: '',
         start: '19:00',
         end: '19:30',
@@ -65,7 +65,7 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 3',
-        description: 'tba',
+        description: 'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
         description2: '',
         start: '19:30',
         end: '20:00',
