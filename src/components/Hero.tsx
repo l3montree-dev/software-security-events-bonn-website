@@ -40,28 +40,29 @@ export function Hero() {
               Einblicke in aktuelle Themen, die die Cybersecurity Community aus
               der Sicht von Unternehmen, Entwicklerinnen und Entscheider*innen
               bewegen.
-              <ul className="mt-6 list-disc space-y-1 pl-6 text-base leading-8 text-white">
-                <li>
-                  <strong>
-                    Wie laufen moderne DDoS Angriffe ab und wie kann ich mich
-                    gegen diese schützen?
-                  </strong>
-                </li>
-                <li>
-                  <strong>
-                    {' '}
-                    Wie wird und bleibt die Cloud des Bundes souverän?
-                  </strong>
-                </li>
-                <li>
-                  <strong>
-                    {' '}
-                    Wie funktioniert das moderne Schwachstellenaustauschformat
-                    CSAF (Common Security Advisory Framework)?
-                  </strong>
-                </li>
-              </ul>
-              <br />
+            </p>
+            <ul className="mt-4 list-disc space-y-1 pl-6 text-base leading-8 text-white">
+              <li>
+                <strong>
+                  Wie laufen moderne DDoS Angriffe ab und wie kann ich mich
+                  gegen diese schützen?
+                </strong>
+              </li>
+              <li>
+                <strong>
+                  {' '}
+                  Wie wird und bleibt die Cloud des Bundes souverän?
+                </strong>
+              </li>
+              <li>
+                <strong>
+                  {' '}
+                  Wie funktioniert das moderne Schwachstellenaustauschformat
+                  CSAF (Common Security Advisory Framework)?
+                </strong>
+              </li>
+            </ul>
+            <p className="text-l mx-auto mt-4 text-white">
               Diese und weitere Fragen werden in diesem OSS-Bonn Event
               thematisiert und beantwortet!
             </p>
