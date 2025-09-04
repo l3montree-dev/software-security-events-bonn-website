@@ -19,7 +19,8 @@ const people = [
     name: 'Dr. Dina Truxius',
     role: 'Referentin Industrielle Steuerungs- und Automatisierungssysteme @ BSI',
     imageUrl: '/Dina_Profilbild.jpeg',
-    topic: 'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
+    topic:
+      'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
     pdfFile: '',
   },
   {

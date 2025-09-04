@@ -65,7 +65,8 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 3',
-        description: 'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
+        description:
+          'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
         description2: '',
         start: '19:30',
         end: '20:00',

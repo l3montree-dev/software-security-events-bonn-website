@@ -56,7 +56,7 @@ export function Sponsors() {
               rel="noopener noreferrer"
             >
               <Image
-                className="max-h-24 w-full object-contain object-center"
+                className="max-h-14 w-full object-contain object-center"
                 src="/l3montree.svg"
                 alt="L3montree Cybersecurtiy Logo"
                 width={158}
@@ -96,7 +96,7 @@ export function Sponsors() {
             >
               <Image
                 className="max-h-24 w-full object-contain object-center"
-                src="/bsi-logo.png"
+                src="/bsi-logo.svg"
                 alt="BSI Logo"
                 width={158}
                 height={48}
