@@ -23,13 +23,6 @@ const people = [
       'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
     pdfFile: '',
   },
-  {
-    name: 'tba',
-    role: '-',
-    imageUrl: '/dummy_person_white.png',
-    topic: 'tba',
-    pdfFile: '',
-  },
 ]
 
 export default function Speakers() {
