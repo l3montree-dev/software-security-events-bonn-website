@@ -6,14 +6,14 @@ const people = [
     role: 'Corporate Communications @ Link11',
     imageUrl: '/profilbild_lisa_fröhlich.png',
     topic: 'Botnet reloaded',
-    pdfFile: '',
+    pdfFile: '/pdfs/2509_Botnet reloaded_Cybersecurity Night Bonn_short.pdf',
   },
   {
     name: 'Sebastian Kokott',
     role: 'Senior IT & Security Consultant @ CONET',
     imageUrl: '/profilbild_sebastian_kokott.png',
     topic: 'Souveräne Cloud im Bund',
-    pdfFile: '',
+    pdfFile: '/pdfs/Souveräne_Cloud_conet.pdf',
   },
   {
     name: 'Dr. Dina Truxius',
@@ -21,7 +21,7 @@ const people = [
     imageUrl: '/Dina_Profilbild.jpeg',
     topic:
       'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
-    pdfFile: '',
+    pdfFile: '/pdfs/Truxius_CSAF.pdf',
   },
 ]
 
