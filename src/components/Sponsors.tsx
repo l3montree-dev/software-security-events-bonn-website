@@ -64,6 +64,49 @@ export function Sponsors() {
               />
             </a>
             <a
+              href="https://www.bundeswehr.de/de/organisation/cyber-und-informationsraum"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/logo-CIR.png"
+                alt="CIR Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+            <a
+              href="https://www.bwi.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/logo-BWI-2.png"
+                alt="BWI Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+          </div>
+        </div>
+
+        <h2 className="mt-40 text-center font-display text-4xl font-medium tracking-tighter text-black">
+          Past Partners
+        </h2>
+
+        <div className="mt-20 items-center gap-y-10">
+          <div className="mx-auto w-full max-w-xl text-center">
+            <p className="mt-6 text-center text-base leading-8 text-zinc-800">
+              Partner, die die beisherigen OSS-Events durch Ihre Fachvorträge
+              bereichert haben.
+            </p>
+          </div>
+          <br />
+          <br />
+          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 px-6 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5 lg:pl-8">
+            <a
               href="https://www.link11.com/de/"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,23 +145,6 @@ export function Sponsors() {
                 height={48}
               />
             </a>
-          </div>
-        </div>
-
-        <h2 className="mt-40 text-center font-display text-4xl font-medium tracking-tighter text-black">
-          Past Partners
-        </h2>
-
-        <div className="mt-20 items-center gap-y-10">
-          <div className="mx-auto w-full max-w-xl text-center">
-            <p className="mt-6 text-center text-base leading-8 text-zinc-800">
-              Partner, die die beisherigen OSS-Events durch Ihre Fachvorträge
-              bereichert haben.
-            </p>
-          </div>
-          <br />
-          <br />
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 px-6 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5 lg:pl-8">
             <a
               href="https://laokoon-security.com/"
               target="_blank"

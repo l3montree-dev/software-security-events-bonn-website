@@ -23,8 +23,8 @@ interface Day {
 
 const schedule: Array<Day> = [
   {
-    date: 'Mittwoch 24. September',
-    dateTime: '2025-09-24',
+    date: 'Dienstag 20. Januar',
+    dateTime: '2026-01-20',
     summary: '',
     timeSlots: [
       {
@@ -47,7 +47,7 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 1',
-        description: 'Botnet reloaded',
+        description: '-',
         description2: '',
         start: '18:30',
         end: '19:00',
@@ -56,17 +56,17 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 2',
-        description: 'Souveräne Cloud im Bund',
+        description:
+          'Cyber Threat Management: Es ist nicht genug zu "wissen", man muss es auch "anwenden"',
         description2: '',
         start: '19:00',
-        end: '19:30',
+        end: '19:45',
         openForOthers: false,
         id: 4,
       },
       {
         name: 'Talk 3',
-        description:
-          'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
+        description: '-',
         description2: '',
         start: '19:30',
         end: '20:00',

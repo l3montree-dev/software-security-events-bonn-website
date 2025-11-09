@@ -2,26 +2,27 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'Lisa Fröhlich',
-    role: 'Corporate Communications @ Link11',
-    imageUrl: '/profilbild_lisa_fröhlich.png',
-    topic: 'Botnet reloaded',
-    pdfFile: '/pdfs/2509_Botnet reloaded_Cybersecurity Night Bonn_short.pdf',
-  },
-  {
-    name: 'Sebastian Kokott',
-    role: 'Senior IT & Security Consultant @ CONET',
-    imageUrl: '/profilbild_sebastian_kokott.png',
-    topic: 'Souveräne Cloud im Bund',
-    pdfFile: '/pdfs/Souveräne_Cloud_conet.pdf',
-  },
-  {
-    name: 'Dr. Dina Truxius',
-    role: 'Referentin Industrielle Steuerungs- und Automatisierungssysteme @ BSI',
-    imageUrl: '/Dina_Profilbild.jpeg',
+    name: 'Peter Leffler',
+    role: 'Oberstleutnant',
+    imageUrl: '/profilbild-peter-leffler.png',
     topic:
-      'CSAF - ein Standard, der das Schwachstellenmanagement revolutioniert',
-    pdfFile: '/pdfs/Truxius_CSAF.pdf',
+      'Die (neue) Teilstreitkraft Cyber- und Informationsraum der Bundeswehr und deren Zusammenarbeit mit Partnern aus Wissenschaft & Forschung, Wirtschaft & Industrie sowie mit Vertretern anderer Behörden.',
+    pdfFile: '',
+  },
+  {
+    name: 'Matthias Wyss',
+    role: 'Leitung Cyber Defense Center',
+    imageUrl: '/MW.png',
+    topic:
+      'Cyber Threat Management: Es ist nicht genug zu "wissen", man muss es auch "anwenden"',
+    pdfFile: '',
+  },
+  {
+    name: 'TBA',
+    role: '-',
+    imageUrl: '/dummy_person_white.png',
+    topic: '-',
+    pdfFile: '',
   },
 ]
 
@@ -34,7 +35,7 @@ export default function Speakers() {
             Die SpeakerInnen
           </h2>
           <p className="mt-6 text-lg/8 text-zinc-400">
-            Hier findest du alle SpeakerInnen, die auf der Konferenz sprechen
+            Hier findest du alle SpeakerInnen, die auf dem Event sprechen
             werden. Wir freuen uns auf spannende Vorträge und interessante
             Diskussionen!
           </p>

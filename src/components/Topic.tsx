@@ -10,20 +10,20 @@ export default function Topic() {
             {/* Linke Spalte */}
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-l3-600"></h2>
-              Wie bin und bleibe ich sicher?
+              Wissen allein reicht nicht
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-                Cybersecurity in &quot;angespannten&quot; Zeiten
+                Cybersecurity in dynamischen Zeiten
               </h3>
               <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
-                Globale Spannungen, technologische Abhängigkeiten, unsichere
-                Lieferketten – Das BSI bezeichnet die Lage der IT-Sicherheit in
-                Deutschland als &quot;angespannt&quot;!
-                <br />
-                An diesem Abend diskutieren Expert*innen aus modern und
-                zukunftsfähig im Bereich der Cybersecurity aufstellt.
-                <strong> Kompakt. Strategisch. Praxisnah. </strong>
-                Was sind die aktuellen Bedrohungen und wie können Unternehmen
-                sich gegen diese schützen?
+                Die Bedrohungslage im Cyberraum ist komplex und dynamisch –
+                besonders im Defence-Bereich. Globale Konflikte, hybride
+                Angriffsszenarien und die Abhängigkeit von kritischen
+                Infrastrukturkomponenten erfordern nicht nur theoretisches
+                Wissen, sondern vor allem praktische Handlungsfähigkeit. An
+                diesem Abend diskutieren Expert*innen der Bundeswehr und des
+                BWI, wie Deutschland und seine Partner sich strategisch und
+                operativ aufstellen, um Cyberangriffe abzuwehren und Resilienz
+                zu stärken. Kompakt. Strategisch. Praxisnah.
                 <br />
                 <br />
                 <strong> Die Themen sind unter anderem: </strong>
@@ -31,25 +31,22 @@ export default function Topic() {
               <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>
                   <strong>
-                    Distributed Denial of Service (DDoS) as a Service
+                    Die (neue) Teilstreitkraft Cyber- und Informationsraum der
+                    Bundeswehr
                   </strong>
                   <br />
-                  Wie groß sind Angriffe auf die Verfügbarkeit aktuell und wie
-                  sie mittlerweile schon als Service angeboten werden.
+                  Wie gestaltet sich die Zusammenarbeit mit Wissenschaft,
+                  Forschung, Wirtschaft und anderen Behörden, um die digitale
+                  Souveränität und Handlungsfähigkeit zu sichern?
                 </li>
                 <li>
-                  <strong>Souveräne Cloud für den Bund</strong>
+                  <strong>
+                    Cyber Threat Management: Vom Wissen zur Anwendung
+                  </strong>
                   <br />
-                  Wie kann der Bund eine Cloudinfrastruktur aufbauen ohne, dass
-                  er sich dabei in zu große Abhängigkeiten begiebt?
-                </li>
-                <li>
-                  <strong>CSAF (Common Security Advisory Framework)</strong>
-                  <br />
-                  Was ist das standardisierte, quelloffene und maschinenlesbare
-                  Format für Security Advisories, das die automatisierte
-                  Verteilung, Bewertung und Skalierung von Schwachstellen- und
-                  Mitigationsinformationen ermöglicht?
+                  Warum ist es entscheidend, nicht nur Bedrohungen zu
+                  analysieren, sondern gezielt und schnell zu handeln? Wie sieht
+                  modernes Threat Management in der Praxis aus?
                 </li>
               </ul>
               <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
@@ -62,6 +59,14 @@ export default function Topic() {
               Vergangene Events
             </h3>
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <Button
+                href="../bonn-security-night"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bonn Cybersecurity Night
+              </Button>
+
               <Button
                 href="../souveraen"
                 target="_blank"

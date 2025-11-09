@@ -55,6 +55,22 @@ export default function Topic() {
             </h3>
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <Button
+                href="../bonn-security-night"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bonn Security Night
+              </Button>
+
+              <Button
+                href="../souveraen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Digitale Souveränität
+              </Button>
+
+              <Button
                 href="../afterwork"
                 target="_blank"
                 rel="noopener noreferrer"

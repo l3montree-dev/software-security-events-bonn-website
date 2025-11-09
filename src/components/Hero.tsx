@@ -29,39 +29,25 @@ export function Hero() {
               Software & Cyber-Security Event Bonn
             </h1>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-6xl">
-              Bonn Cybersecurity Night
+              Cybersecurity in Defence
             </h2>
             <h3 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
-              DDoS, Souveränität & sichere Software
+              Cybersecurity im Defence-Bereich: Strategien, Partnerschaften &
+              Praxis
             </h3>
 
             <p className="text-l mx-auto mt-8 text-white">
-              Expert*innen geben in kompakten Impulsvorträgen wertvolle
-              Einblicke in aktuelle Themen, die die Cybersecurity Community aus
-              der Sicht von Unternehmen, Entwicklerinnen und Entscheider*innen
-              bewegen.
+              Expert*innen aus Bundeswehr und BWI geben in kompakten
+              Impulsvorträgen wertvolle Einblicke in aktuelle Herausforderungen
+              und Lösungsansätze der Cybersecurity im Verteidigungssektor. Wie
+              gestaltet sich die Zusammenarbeit zwischen der neuen
+              Teilstreitkraft Cyber- und Informationsraum und Partnern aus
+              Wissenschaft, Wirtschaft und Behörden? Und warum reicht es nicht
+              aus, Bedrohungen zu kennen – wie setzt man wirksame
+              Abwehrmaßnahmen um? Diese und weitere Fragen werden in diesem
+              Event thematisiert und beantwortet!
             </p>
-            <ul className="mt-4 list-disc space-y-1 pl-6 text-base leading-8 text-white">
-              <li>
-                <strong>
-                  Wie laufen moderne DDoS Angriffe ab und wie kann ich mich
-                  gegen diese schützen?
-                </strong>
-              </li>
-              <li>
-                <strong>
-                  {' '}
-                  Wie wird und bleibt die Cloud des Bundes souverän?
-                </strong>
-              </li>
-              <li>
-                <strong>
-                  {' '}
-                  Wie funktioniert das moderne Schwachstellenaustauschformat
-                  CSAF (Common Security Advisory Framework)?
-                </strong>
-              </li>
-            </ul>
+
             <p className="text-l mx-auto mt-4 text-white">
               Diese und weitere Fragen werden in diesem OSS-Bonn Event
               thematisiert und beantwortet!
