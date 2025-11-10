@@ -107,14 +107,14 @@ export default function Topic() {
 
           <div className="flex flex-col gap-[1cm]">
             <Image
-              src="/crowd.JPG"
+              src="/talk.jpeg"
               alt="Beschreibung"
               height={1000}
               width={800}
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
             />
             <Image
-              src="/network.JPG"
+              src="/crowd.JPG"
               alt="Beschreibung"
               height={1000}
               width={800}
