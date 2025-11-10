@@ -10,7 +10,7 @@ export default function Topic() {
             {/* Linke Spalte */}
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-l3-600"></h2>
-              Wissen allein reicht nicht
+              Wissen allein reicht nicht!
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
                 Cybersecurity in dynamischen Zeiten
               </h3>
@@ -23,7 +23,8 @@ export default function Topic() {
                 diesem Abend diskutieren Expert*innen der Bundeswehr und des
                 BWI, wie Deutschland und seine Partner sich strategisch und
                 operativ aufstellen, um Cyberangriffe abzuwehren und Resilienz
-                zu stärken. Kompakt. Strategisch. Praxisnah.
+                zu stärken. <br />
+                Kompakt. Strategisch. Praxisnah.
                 <br />
                 <br />
                 <strong> Die Themen sind unter anderem: </strong>
@@ -47,6 +48,9 @@ export default function Topic() {
                   Warum ist es entscheidend, nicht nur Bedrohungen zu
                   analysieren, sondern gezielt und schnell zu handeln? Wie sieht
                   modernes Threat Management in der Praxis aus?
+                </li>
+                <li>
+                  <strong>More TBA</strong>
                 </li>
               </ul>
               <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">

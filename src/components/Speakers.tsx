@@ -14,7 +14,7 @@ const people = [
     role: 'Leitung Cyber Defense Center',
     imageUrl: '/MW.png',
     topic:
-      'Cyber Threat Management: Es ist nicht genug zu "wissen", man muss es auch "anwenden"',
+      'Cyber Threat Management: Es ist nicht genug zu WISSEN, man muss es auch ANWENDEN',
     pdfFile: '',
   },
   {

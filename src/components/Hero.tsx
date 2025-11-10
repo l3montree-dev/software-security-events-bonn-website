@@ -42,10 +42,8 @@ export function Hero() {
               und Lösungsansätze der Cybersecurity im Verteidigungssektor. Wie
               gestaltet sich die Zusammenarbeit zwischen der neuen
               Teilstreitkraft Cyber- und Informationsraum und Partnern aus
-              Wissenschaft, Wirtschaft und Behörden? Und warum reicht es nicht
-              aus, Bedrohungen zu kennen – wie setzt man wirksame
-              Abwehrmaßnahmen um? Diese und weitere Fragen werden in diesem
-              Event thematisiert und beantwortet!
+              Wissenschaft und Wirtschaft? Und warum reicht es nicht aus,
+              Bedrohungen zu kennen – wie setzt man wirksame Abwehrmaßnahmen um?
             </p>
 
             <p className="text-l mx-auto mt-4 text-white">
