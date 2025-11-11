@@ -12,7 +12,7 @@ jobs:
     call-devsecops:
         uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
         with:
-            asset-name: "l3montree-cybersecurity/projects/devguard/assets/oss-events-website"
+            asset-name: "test-57/projects/testgruppe/assets/oss-bonn-website"
             api-url: "https://api.main.devguard.org"
             web-ui: "https://main.devguard.org"
         secrets:
