@@ -18,6 +18,13 @@ const people = [
     pdfFile: '',
   },
   {
+    name: 'Sebastian Kokott',
+    role: 'Senior IT & Security Consultant @ CONET',
+    imageUrl: '/profilbild_sebastian_kokott.png',
+    topic: 'TBA',
+    pdfFile: '',
+  },
+  {
     name: 'TBA',
     role: '-',
     imageUrl: '/dummy_person_white.png',
@@ -51,10 +58,11 @@ export default function Speakers() {
             >
               <Image
                 alt={`${person.name} - ${person.role}`}
-                height={500}
-                width={500}
                 src={person.imageUrl}
-                className="mx-auto size-48 rounded-full object-cover md:size-56"
+                width={224}
+                height={224}
+                sizes="(min-width: 1024px) 14rem, (min-width: 640px) 12rem, 6rem"
+                className="mx-auto h-48 w-48 rounded-full object-cover md:h-56 md:w-56"
               />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">
                 {person.name}
