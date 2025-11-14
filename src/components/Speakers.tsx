@@ -21,7 +21,7 @@ const people = [
     name: 'Sebastian Kokott',
     role: 'Senior IT & Security Consultant @ CONET',
     imageUrl: '/profilbild_sebastian_kokott.png',
-    topic: 'TBA',
+    topic: 'Cybersicherheit im Feld',
     pdfFile: '',
   },
   {

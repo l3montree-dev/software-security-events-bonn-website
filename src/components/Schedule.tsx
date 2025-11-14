@@ -47,8 +47,10 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 1',
-        description: '-',
-        description2: '',
+        description:
+          'Die (neue) Teilstreitkraft Cyber- und Informationsraum der Bundeswehr',
+        description2:
+          'Und deren Zusammenarbeit mit Partnern aus Wissenschaft & Forschung, Wirtschaft & Industrie sowie mit Vertretern anderer Behörden.',
         start: '18:30',
         end: '19:00',
         openForOthers: false,
@@ -56,9 +58,8 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 2',
-        description:
-          'Cyber Threat Management: Es ist nicht genug zu "wissen", man muss es auch "anwenden"',
-        description2: '',
+        description: 'Cyber Threat Management:',
+        description2: 'Es ist nicht genug zu WISSEN, man muss es auch ANWENDEN',
         start: '19:00',
         end: '19:45',
         openForOthers: false,
@@ -66,7 +67,7 @@ const schedule: Array<Day> = [
       },
       {
         name: 'Talk 3',
-        description: '-',
+        description: 'Cybersicherheit im Feld',
         description2: '',
         start: '19:30',
         end: '20:00',

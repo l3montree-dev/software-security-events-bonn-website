@@ -127,7 +127,7 @@ export default function Topic() {
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
             />
             <Image
-              src="/crowd.jpg"
+              src="/crowd.jpeg"
               alt="Publikum bei einer Veranstaltung"
               height={600}
               width={900}
