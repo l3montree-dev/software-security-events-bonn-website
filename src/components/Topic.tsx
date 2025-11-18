@@ -57,7 +57,8 @@ export default function Topic() {
                   modernes Threat Management in der Praxis aus?
                 </li>
                 <li>
-                  <strong>Cybersicherheit im Feld</strong>
+                  <strong>Cybersicherheit im Feld:</strong>
+                  <br />
                   Wie lassen sich digitale Komponenten auch außerhalb fester
                   Infrastrukturen schützen? Welche Herausforderungen und
                   Lösungen gibt es um hier Sicherheit im mobilen Einsatz zu
