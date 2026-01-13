@@ -64,9 +64,6 @@ export default function Topic() {
                   Lösungen gibt es um hier Sicherheit im mobilen Einsatz zu
                   gewährleisten?
                 </li>
-                <li>
-                  <strong>More TBA</strong>
-                </li>
               </ul>
 
               <p className="mb-6 mt-6 text-base leading-8 text-zinc-800">

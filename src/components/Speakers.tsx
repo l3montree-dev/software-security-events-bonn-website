@@ -24,13 +24,6 @@ const people = [
     topic: 'Cybersicherheit im Feld',
     pdfFile: '',
   },
-  {
-    name: 'TBA',
-    role: '-',
-    imageUrl: '/dummy_person_white.png',
-    topic: '-',
-    pdfFile: '',
-  },
 ]
 
 export default function Speakers() {
