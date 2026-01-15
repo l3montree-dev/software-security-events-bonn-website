@@ -89,6 +89,33 @@ export function Sponsors() {
                 height={48}
               />
             </a>
+            <a
+              href="https://www.conet.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/conet_logo.png"
+                alt="CONET Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+            <a
+              href="https://nixcademy.com/de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="max-h-24 w-full object-contain object-center"
+                src="/nixcademy-logo.png"
+                alt="NixCademy Logo"
+                width={158}
+                height={48}
+              />
+            </a>
+          
           </div>
         </div>
 
