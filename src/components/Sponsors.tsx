@@ -115,7 +115,6 @@ export function Sponsors() {
                 height={48}
               />
             </a>
-          
           </div>
         </div>
 
