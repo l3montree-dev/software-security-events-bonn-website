@@ -67,7 +67,12 @@ export default function Topic() {
                 <li>
                   <strong>Software Supply Chain Security mit NixOS</strong>
                   <br />
-                  In hochsicheren Umgebungen stehen wir oft vor einem Dilemma: Strenge Sicherheitsanforderungen und langwierige Audits verlangsamen notwendige Updates und Patches. Wie kann NixOS helfen, dieses Dilemma zu lösen und gleichzeitig lückenlose Nachvollziehbarkeit für mission-kritische Systeme zu gewährleisten?
+                  In hochsicheren Umgebungen stehen wir oft vor einem Dilemma:
+                  Strenge Sicherheitsanforderungen und langwierige Audits
+                  verlangsamen notwendige Updates und Patches. Wie kann NixOS
+                  helfen, dieses Dilemma zu lösen und gleichzeitig lückenlose
+                  Nachvollziehbarkeit für mission-kritische Systeme zu
+                  gewährleisten?
                 </li>
               </ul>
 

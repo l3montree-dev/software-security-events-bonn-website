@@ -1,4 +1,5 @@
 import { Button } from './Button'
+import Image from 'next/image'
 
 export default function Topic() {
   return (
@@ -111,15 +112,19 @@ export default function Topic() {
             </div>
           </div>
           <div className="flex flex-col gap-[1cm]">
-            <img
+            <Image
               src="/AW_intro.jpg"
               alt="Beschreibung"
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              width={800}
+              height={600}
             />
-            <img
+            <Image
               src="/crowd.jpg"
               alt="Beschreibung"
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              width={800}
+              height={600}
             />
           </div>
         </div>

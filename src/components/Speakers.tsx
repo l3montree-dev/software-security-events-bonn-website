@@ -28,7 +28,8 @@ const people = [
     name: 'Jacek Galowicz',
     role: 'CEO @ Applicative Systems GmbH',
     imageUrl: '/profilbild_jacek_galowicz.png',
-    topic: 'Software Supply Chain Security: Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
+    topic:
+      'Software Supply Chain Security: Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
     pdfFile: '',
   },
 ]

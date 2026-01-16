@@ -68,7 +68,8 @@ const schedule: Array<Day> = [
       {
         name: 'Talk 3',
         description: 'Software Supply Chain Security',
-        description2: 'Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
+        description2:
+          'Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
         start: '19:30',
         end: '20:00',
         openForOthers: false,
@@ -83,7 +84,6 @@ const schedule: Array<Day> = [
         openForOthers: false,
         id: 6,
       },
-      
       {
         name: 'Networking with Food & Drinks',
         description: '🥬 🥔 🥙 🧆 🌮 🍔',
