@@ -7,7 +7,7 @@ const people = [
     imageUrl: '/profilbild-peter-leffler.png',
     topic:
       'Die (neue) Teilstreitkraft Cyber- und Informationsraum der Bundeswehr und deren Zusammenarbeit mit Partnern aus Wissenschaft & Forschung, Wirtschaft & Industrie sowie mit Vertretern anderer Behörden.',
-    pdfFile: '',
+    pdfFile: '/pdfs/CIR.pdf',
   },
   {
     name: 'Matthias Wyss',
@@ -15,22 +15,21 @@ const people = [
     imageUrl: '/MW.png',
     topic:
       'Cyber Threat Management: Es ist nicht genug zu WISSEN, man muss es auch ANWENDEN',
-    pdfFile: '',
+    pdfFile: '/pdfs/BWI-Cyber-Threat-Management.pdf',
   },
   {
     name: 'Sebastian Kokott',
     role: 'Senior IT & Security Consultant @ CONET',
     imageUrl: '/profilbild_sebastian_kokott.png',
     topic: 'Cybersicherheit im Feld',
-    pdfFile: '',
+    pdfFile: '/pdfs/IT-Security_Feld_Lagebild.pdf',
   },
   {
     name: 'Jacek Galowicz',
-    role: 'CEO @ Applicative Systems GmbH',
+    role: 'CEO @ Applicative Systems GmbH & NixCademy',
     imageUrl: '/profilbild_jacek_galowicz.png',
-    topic:
-      'Software Supply Chain Security: Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
-    pdfFile: '',
+    topic: 'Software Supply Chain Security: Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
+    pdfFile: '/pdfs/NixOS-Introduction.pdf',
   },
 ]
 
