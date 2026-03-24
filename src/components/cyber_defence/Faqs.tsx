@@ -1,14 +1,20 @@
 const faqs = [
   {
     id: 1,
-    question: 'Wer kann bei dem Event teilnehmen?',
+    question: 'Was ist ein OSS-Bonn Event?',
     answer:
-      'Jeder, der interessiert ist! Die Teilnahme ist dieses Mal nicht kostenlos, da wir Euch mit gutem Essen und Drinks versorgen wollen. bitte Registriere Dich über den Ticketshop.',
+      'Das OSS-Bonn Eventformat ist ein Format das aus der Kooperation von L3montree Cybersecurity, dem DigitalHubs Bonn und des Cyber Security Clusters Bonn e.V. ins Leben gerufen wurde und regelmäßig abendliche Events zu verschiedensten Themen aus dem Bereich der Informatik und Cybersecurity veranstaltet.',
   },
   {
     id: 2,
+    question: 'Wer kann bei dem Event teilnehmen?',
+    answer:
+      'Jeder, der interessiert ist! Die Teilnahme ist komplett kostenlos, bitte Registriere Dich aber über den Ticketshop. Die Daten werden NICHT zu werbezwecken gespeichert und dienen lediglich der Event-Organisation.',
+  },
+  {
+    id: 3,
     question: 'Wie sieht es mit Essen und Trinken aus?',
-    answer: 'Wir versorgen Euch vor Ort mit Essen und Getränken.',
+    answer: 'Wir versorgen Euch vor Ort mit Snacks und Getränken (kostenlos).',
   },
 ]
 
@@ -32,7 +38,7 @@ export default function Faqs() {
           .
         </p>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
-          Für alle OSS Events gilt dieser{' '}
+          Für alle L3montree Events gilt dieser{' '}
           <a
             href="https://github.com/l3montree-dev/devguard/blob/main/CODE_OF_CONDUCT.md"
             target="_blank"

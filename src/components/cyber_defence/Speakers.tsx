@@ -2,26 +2,35 @@ import Image from 'next/image'
 
 const people = [
   {
-    name: 'Peter Stamm',
-    role: 'CEO WhereGroup GmbH',
-    imageUrl: '/Profil_Peter_Stamm.jpg',
-    topic: 'Erfolgsmodell Open Source  - Wirklich selbständig sein.',
-    pdfFile: '',
-  },
-  {
-    name: 'Sascha Foerster',
-    role: 'Geschäftsführender Gesellschafter @ Bonn.digital',
-    imageUrl: '/profilbild-sascha-foerster.png',
+    name: 'Peter Leffler',
+    role: 'Oberstleutnant',
+    imageUrl: '/profilbild-peter-leffler.png',
     topic:
-      'Jenseits von Meta und Musk: Marketing mit OpenSource-Software im Fediverse',
-    pdfFile: '',
+      'Die (neue) Teilstreitkraft Cyber- und Informationsraum der Bundeswehr und deren Zusammenarbeit mit Partnern aus Wissenschaft & Forschung, Wirtschaft & Industrie sowie mit Vertretern anderer Behörden.',
+    pdfFile: '/pdfs/CIR.pdf',
   },
   {
-    name: 'TBA',
-    role: 'Software Security Expert @ L3montree',
-    imageUrl: '/dummy_person_white.png',
-    topic: 'TBA',
-    pdfFile: '',
+    name: 'Matthias Wyss',
+    role: 'Leitung Cyber Defense Center',
+    imageUrl: '/MW.png',
+    topic:
+      'Cyber Threat Management: Es ist nicht genug zu WISSEN, man muss es auch ANWENDEN',
+    pdfFile: '/pdfs/BWI-Cyber-Threat-Management.pdf',
+  },
+  {
+    name: 'Sebastian Kokott',
+    role: 'Senior IT & Security Consultant @ CONET',
+    imageUrl: '/profilbild_sebastian_kokott.png',
+    topic: 'Cybersicherheit im Feld',
+    pdfFile: '/pdfs/IT-Security_Feld_Lagebild.pdf',
+  },
+  {
+    name: 'Jacek Galowicz',
+    role: 'CEO @ Applicative Systems GmbH & NixCademy',
+    imageUrl: '/profilbild_jacek_galowicz.png',
+    topic:
+      'Software Supply Chain Security: Lückenlose Nachvollziehbarkeit für Mission-Critical Systems',
+    pdfFile: '/pdfs/NixOS-Introduction.pdf',
   },
 ]
 

@@ -9,63 +9,70 @@ export default function Topic() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-l3-600">
-                Open Source gehört die Zukunft!
+                Wissen allein reicht nicht!
               </h2>
+
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-                OSS-Meetup in Bonn
+                Cybersecurity in dynamischen Zeiten
               </h3>
+
               <p className="mb-4 mt-6 text-base leading-8 text-zinc-800">
-                Am 14. Juli 2026 findet Open-Source-Meetup Bonn statt – ein
-                Nachmittag voller spannender Impulse, Diskussionen und
-                Networking rund um die Themen Open Source und digitale
-                Souveränität.
+                Die Bedrohungslage im Cyberraum ist komplex und dynamisch –
+                besonders im Defence-Bereich. Globale Konflikte, hybride
+                Angriffsszenarien und die Abhängigkeit von kritischen
+                Infrastrukturkomponenten erfordern nicht nur theoretisches
+                Wissen, sondern vor allem praktische Handlungsfähigkeit. An
+                diesem Abend diskutieren Expert*innen der Bundeswehr und des
+                BWI, wie Deutschland und seine Partner sich strategisch und
+                operativ aufstellen, um Cyberangriffe abzuwehren und Resilienz
+                zu stärken.
               </p>
+
               <p className="mb-4 text-base leading-8 text-zinc-800">
-                Kompakt. Praxisnah. Offen.
+                Kompakt. Strategisch. Praxisnah.
               </p>
+
               <p className="mb-4 text-base leading-8 text-zinc-800">
-                <strong>Die Themen der Impulse sind unter anderem:</strong>
+                <strong>Die Themen sind unter anderem:</strong>
               </p>
+
               <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>
                   <strong>
-                    Wie setze ich Open Source Software sicher und effizient in
-                    meinem Unternehmen ein?
+                    Die (neue) Teilstreitkraft Cyber- und Informationsraum der
+                    Bundeswehr
                   </strong>
                   <br />
-                  Open Source Security ist das Haupt-Thema bei L3montree. Es
-                  gibt eine ganze Menge Open Source Tools, die die Entwicklung
-                  nicht nur sicherer, sondern auch noch compliant zu neuen
-                  Anforderungen wie zum Beispiel dem CRA machen können. Wir
-                  zeigen euch welche Tools ihr nutzen könnt.
+                  Wie gestaltet sich die Zusammenarbeit mit Wissenschaft,
+                  Forschung, Wirtschaft und anderen Behörden, um die digitale
+                  Souveränität und Handlungsfähigkeit zu sichern?
                 </li>
-              </ul>
-              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
-                <li>
-                  <strong>Erfolgsmodell Open Source</strong>
-                  <br />
-                  Wenn Sie digital wirklich unabhängig und souverän agieren
-                  wollen, führt am Geschäftsmodell Open Source kein Weg vorbei.
-                  Ein kurzer Abriss der letzten 20 Jahre und ein noch kürzerer
-                  Ausblick auf die nächsten.
-                </li>
-              </ul>
-              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>
                   <strong>
-                    Jenseits von Meta und Musk: Marketing mit
-                    OpenSource-Software im Fediverse
+                    Cyber Threat Management: Vom Wissen zur Anwendung
                   </strong>
                   <br />
-                  Die Agentur von Bonn.digital hat schon immer auf
-                  Marketing-Tools im OpenSource-Bereich gesetzt. Angefangen von
-                  WordPress auf der eigenen Domain, über Newsletter-Tools bis
-                  hin zu Social-Media-Portalen im Fediverse. Aber aufgrund der
-                  weltpolitischen Lage fragen auch immer mehr Kunden nach einer
-                  +1-Strategie an, um digital souveräner zu werden. Sascha
-                  Foerster gibt einen SpeedRun durch die Marketing-Toolbox von
-                  Bonn.digital, auf Basis von OpenSource-Software mit Fokus aufs
-                  Fediverse.
+                  Warum ist es entscheidend, nicht nur Bedrohungen zu
+                  analysieren, sondern gezielt und schnell zu handeln? Wie sieht
+                  modernes Threat Management in der Praxis aus?
+                </li>
+                <li>
+                  <strong>Cybersicherheit im Feld:</strong>
+                  <br />
+                  Wie lassen sich digitale Komponenten auch außerhalb fester
+                  Infrastrukturen schützen? Welche Herausforderungen und
+                  Lösungen gibt es um hier Sicherheit im mobilen Einsatz zu
+                  gewährleisten?
+                </li>
+                <li>
+                  <strong>Software Supply Chain Security mit NixOS</strong>
+                  <br />
+                  In hochsicheren Umgebungen stehen wir oft vor einem Dilemma:
+                  Strenge Sicherheitsanforderungen und langwierige Audits
+                  verlangsamen notwendige Updates und Patches. Wie kann NixOS
+                  helfen, dieses Dilemma zu lösen und gleichzeitig lückenlose
+                  Nachvollziehbarkeit für mission-kritische Systeme zu
+                  gewährleisten?
                 </li>
               </ul>
 
@@ -82,15 +89,6 @@ export default function Topic() {
             </h3>
 
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <Button
-                href="../cyber_defence"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Bonn Cybersecurity in Defence öffnen"
-              >
-                Cybersecurity in Defence
-              </Button>
-
               <Button
                 href="../bonn-security-night"
                 target="_blank"

@@ -98,7 +98,16 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="flex min-h-full">
-        <div className="flex w-full flex-col">{children}</div>
+        <div className="flex w-full flex-col">
+          <header className="w-full">
+            <img
+              src="/OSS-Event-Banner.png"
+              alt="OSS Event Banner"
+              className="h-auto w-full object-cover"
+            />
+          </header>
+          {children}
+        </div>
       </body>
     </html>
   )
