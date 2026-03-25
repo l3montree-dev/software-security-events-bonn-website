@@ -34,9 +34,9 @@ export function Hero() {
 
             <p className="text-l mx-auto mt-8 text-white">
               Expert*innen, Maintainer*innen und Entwickler*innen aus der OSS
-              Community in Bonn treffen sich an diesem Nachmittag, um sich in
-              lockerer Atmosphäre über die Themen Open Source und digitale
-              Souveränität zu Unterhalten. Neben Snack & Drinks gibt es
+              Community aus Bonn und Umgebung treffen sich an diesem Nachmittag,
+              um sich in lockerer Atmosphäre über die Themen Open Source und
+              digitale Souveränität zu Unterhalten. Neben Snack & Drinks gibt es
               spannende Impulsvorträge zu den Themen:
               <ul className="text-white-800 mt-6 list-disc space-y-4 pl-6 text-base leading-8">
                 <li>
@@ -81,7 +81,7 @@ export function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Kostenloses Ticket sichern!
+                  Sicher Dir Dein Ticket!
                 </Button>
               </div>
             </div>

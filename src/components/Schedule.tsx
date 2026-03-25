@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
+import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
 interface Day {
@@ -32,7 +33,7 @@ const schedule: Array<Day> = [
         description: null,
         description2: null,
         start: '17:00',
-        end: '12:20',
+        end: '17:20',
         openForOthers: false,
         id: 1,
       },
@@ -180,6 +181,16 @@ export function Schedule() {
       <div className="relative mt-14 sm:mt-20">
         <Container className="relative">
           <ScheduleStatic />
+          <div className="mt-10 flex justify-center">
+            <Button
+              className="px-6 py-4 text-lg font-semibold"
+              href="https://ticket.bonn.digital/bonndigital/ossbn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sicher Dir Dein Ticket!
+            </Button>
+          </div>
         </Container>
       </div>
     </section>
