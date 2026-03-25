@@ -81,13 +81,10 @@ export default function RootLayout({
           ></script>
         )}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta
-          property="og:title"
-          content="Cyber- & Softwaresecurity Event - Bonn"
-        />
+        <meta property="og:title" content="OSS - Event - Bonn" />
         <meta property="og:type" content="Event" />
         <meta property="og:url" content="http://www.oss-bonn.de/" />
-        <meta property="og:image" content="l3montree-logo.svg" />
+        <meta property="og:image" content="Startupweek_weiß_short.svg" />
         <meta
           property="og:description"
           content="Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern."
