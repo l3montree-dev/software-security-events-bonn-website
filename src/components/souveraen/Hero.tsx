@@ -10,6 +10,8 @@ export function Hero() {
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10"
           autoPlay
           muted
+          loop
+          playsInline
         />
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -112,13 +114,13 @@ export function Hero() {
             <h2 className="mt-4 justify-center text-lg font-semibold tracking-tight text-white">
               Presented by:
             </h2>
-            <div style={{ marginBottom: '0.6cm' }}></div>
+            <div className="mb-3"></div>
             <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
               <a
                 href="https://www.l3montree.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="order-3 sm:order-1"
+                className="order-1 sm:order-1"
               >
                 <Image
                   alt="L3montree Logo"
@@ -132,7 +134,7 @@ export function Hero() {
                 href="https://www.digitalhub.de/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="order-3 sm:order-1"
+                className="order-2 sm:order-2"
               >
                 <Image
                   alt="DigitalHub AG Bonn Logo"

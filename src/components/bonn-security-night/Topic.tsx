@@ -14,7 +14,7 @@ export default function Topic() {
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
                 Cybersecurity in &quot;angespannten&quot; Zeiten
               </h3>
-              <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 text-base leading-8 text-zinc-800">
                 Globale Spannungen, technologische Abhängigkeiten, unsichere
                 Lieferketten – Das BSI bezeichnet die Lage der IT-Sicherheit in
                 Deutschland als &quot;angespannt&quot;!
@@ -52,12 +52,12 @@ export default function Topic() {
                   Mitigationsinformationen ermöglicht?
                 </li>
               </ul>
-              <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 text-base leading-8 text-zinc-800">
                 Im Anschluss an die Talks wird es bei Food & Drinks die
                 Möglichkeit für vertiefende Fragen und Networking geben.
               </p>
             </div>
-            <div style={{ marginBottom: '1cm' }}></div>
+            <div className="mb-4"></div>
             <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
               Vergangene Events
             </h3>

@@ -15,22 +15,22 @@ export default function Topic() {
                 as a community tackle security, policy, and business models and
                 shape the evolution of OSS.
               </h3>
-              <p className="margin-bottom: 15px mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 text-base leading-8 text-zinc-800">
                 Open source is no longer just a development philosophy; it is at
                 the heart of global technological advancements. However, as the
                 adoption of open source continues to grow, so too do the
                 challenges related to security, governance, and its integration
                 into business operations. In this session, we will address:
               </p>
-              <ul className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
-                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+              <ul className="mt-6 text-base leading-8 text-zinc-800">
+                <li className="mt-6 text-base leading-8 text-zinc-800">
                   <strong>Open Source Security:</strong> How can we ensure that
                   open source projects remain secure in an increasingly complex
                   and hostile digital landscape? What are the tools, strategies,
                   and best practices for managing open source security risks?
                 </li>
 
-                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+                <li className="mt-6 text-base leading-8 text-zinc-800">
                   <strong>Open Source Policies:</strong> What role do
                   policymakers play in shaping the future of open source in
                   Europe and globally? How can governments and institutions
@@ -38,7 +38,7 @@ export default function Topic() {
                   safeguarding public and private interests?
                 </li>
 
-                <li className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+                <li className="mt-6 text-base leading-8 text-zinc-800">
                   <strong>Open Source as a Business Model:</strong> Open source
                   is no longer just a tech movement; it&apos;s a sustainable
                   business model for many organizations. We&apos;ll explore
@@ -48,7 +48,7 @@ export default function Topic() {
                 </li>
               </ul>
 
-              <p className="margin-bottom: 15px; mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 text-base leading-8 text-zinc-800">
                 Join us for this dynamic session where we&apos;ll not only
                 highlight the latest challenges and opportunities but also pave
                 the way for collaboration across sectors to drive the future of

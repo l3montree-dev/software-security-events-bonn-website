@@ -18,7 +18,7 @@ export function Hero() {
                 width={400}
                 height={160}
                 className="h-40 w-auto"
-                alt=""
+                alt="Software Security Events Bonn - Startseite"
               />
             </Link>
           </div>
@@ -38,24 +38,24 @@ export function Hero() {
               um sich in lockerer Atmosphäre über die Themen Open Source und
               digitale Souveränität zu Unterhalten. Neben Snack & Drinks gibt es
               spannende Impulsvorträge zu den Themen:
-              <ul className="text-white-800 mt-6 list-disc space-y-4 pl-6 text-base leading-8">
-                <li>
-                  <strong>Erfolgsmodell Open Source</strong>
-                </li>
-                <li>
-                  <strong>
-                    Jenseits von Meta und Musk: Marketing mit
-                    OpenSource-Software im Fediverse
-                  </strong>
-                </li>
-                <li>
-                  <strong>
-                    Wie setze ich Open Source Software sicher und effizient in
-                    meinem Unternehmen ein?
-                  </strong>
-                </li>
-              </ul>
             </p>
+            <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
+              <li>
+                <strong>Erfolgsmodell Open Source</strong>
+              </li>
+              <li>
+                <strong>
+                  Jenseits von Meta und Musk: Marketing mit OpenSource-Software
+                  im Fediverse
+                </strong>
+              </li>
+              <li>
+                <strong>
+                  Wie setze ich Open Source Software sicher und effizient in
+                  meinem Unternehmen ein?
+                </strong>
+              </li>
+            </ul>
 
             <p className="text-l mx-auto mt-16 text-white">
               💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
@@ -93,7 +93,7 @@ export function Hero() {
             <h2 className="mt-4 justify-center text-lg font-semibold tracking-tight text-white">
               Presented by:
             </h2>
-            <div style={{ marginBottom: '0.6cm' }}></div>
+            <div className="mb-3"></div>
             <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
               <a
                 href="https://www.digitalhub.de/"
