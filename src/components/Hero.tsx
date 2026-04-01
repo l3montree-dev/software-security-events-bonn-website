@@ -26,7 +26,7 @@ export function Hero() {
         <div className="mx-auto max-w-7xl py-12 sm:py-20 lg:px-8 lg:py-12">
           <div className="text-start">
             <h1 className="mt-0 text-3xl font-semibold tracking-tight text-white sm:text-6xl">
-              Open Source Software Bonn Meetup
+              Open Source Software Bonn - Meetup
             </h1>
             <h2 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
               Ein Open Source Bonn Community Event
