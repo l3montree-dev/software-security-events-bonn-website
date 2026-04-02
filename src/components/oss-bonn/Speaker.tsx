@@ -19,7 +19,8 @@ const people = [
     name: 'Neal H. Walfield',
     role: 'Co-Founder Sequoia PGP',
     imageUrl: '/Profil_Neal_H._Walfield.png',
-    topic: 'Interacting with FOSS Projects: Setting and Respecting Expectations',
+    topic:
+      'Interacting with FOSS Projects: Setting and Respecting Expectations',
     pdfFile: '',
   },
   {
@@ -44,7 +45,10 @@ export default function Speaker() {
           className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8"
         >
           {people.map((person) => (
-            <li key={person.name} className="rounded-2xl bg-zinc-800 px-8 py-10 text-center">
+            <li
+              key={person.name}
+              className="rounded-2xl bg-zinc-800 px-8 py-10 text-center"
+            >
               <Image
                 alt={`${person.name} - ${person.role}`}
                 src={person.imageUrl}

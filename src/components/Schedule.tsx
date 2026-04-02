@@ -85,7 +85,7 @@ const schedule: Array<Day> = [
         start: '19:00',
         end: '22:00',
         openForOthers: false,
-        id: 6,
+        id: 7,
       },
     ],
   },
