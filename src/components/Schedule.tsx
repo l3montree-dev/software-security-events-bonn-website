@@ -83,7 +83,7 @@ const schedule: Array<Day> = [
         description: '🥬 🥔 🥙 🧆 🌮 🍔',
         description2: null,
         start: '19:00',
-        end: '21:30',
+        end: '22:00',
         openForOthers: false,
         id: 6,
       },
