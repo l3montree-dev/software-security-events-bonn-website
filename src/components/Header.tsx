@@ -1,8 +1,4 @@
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { DiamondIcon } from '@/components/DiamondIcon'
-import Image from 'next/image'
-import Link from 'next/link'
 
 export function Header() {
   return (

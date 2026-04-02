@@ -39,8 +39,6 @@ export default function Topic() {
                   Anforderungen wie zum Beispiel dem CRA machen können. Wir
                   zeigen euch welche Tools ihr nutzen könnt.
                 </li>
-              </ul>
-              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>
                   <strong>Erfolgsmodell Open Source</strong>
                   <br />
@@ -49,8 +47,6 @@ export default function Topic() {
                   Ein kurzer Abriss der letzten 20 Jahre und ein noch kürzerer
                   Ausblick auf die nächsten.
                 </li>
-              </ul>
-              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
                 <li>
                   <strong>
                     Jenseits von Meta und Musk: Marketing mit

@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
@@ -74,10 +70,19 @@ const schedule: Array<Day> = [
         id: 5,
       },
       {
+        name: 'Impulse 4',
+        description: null,
+        description2: null,
+        start: '18:40',
+        end: '19:00',
+        openForOthers: false,
+        id: 6,
+      },
+      {
         name: 'Networking with Food & Drinks',
         description: '🥬 🥔 🥙 🧆 🌮 🍔',
         description2: null,
-        start: '18:40',
+        start: '19:00',
         end: '21:30',
         openForOthers: false,
         id: 6,

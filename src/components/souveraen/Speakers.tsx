@@ -58,8 +58,9 @@ export default function Speakers() {
             >
               <Image
                 alt={`${person.name} - ${person.role}`}
-                height={500}
-                width={500}
+                height={224}
+                width={224}
+                sizes="(min-width: 1024px) 14rem, (min-width: 640px) 12rem, 6rem"
                 src={person.imageUrl}
                 className="mx-auto size-48 rounded-full object-cover md:size-56"
               />

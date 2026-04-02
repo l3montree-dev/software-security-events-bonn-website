@@ -1,4 +1,5 @@
 import Faqs from '@/components/afterwork/Faqs'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/afterwork/Header'
 import { Hero } from '@/components/afterwork/Hero'
 import { Schedule } from '@/components/afterwork/Schedule'
@@ -22,6 +23,7 @@ export default function Home() {
       <Schedule />
       <Sponsors />
       <Faqs />
+      <Footer />
     </>
   )
 }

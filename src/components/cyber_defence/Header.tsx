@@ -15,7 +15,7 @@ export function Header() {
               width={300}
               height={120}
               className="h-16 w-auto"
-              alt=""
+              alt="L3montree – zur Startseite"
             />
           </Link>
         </div>

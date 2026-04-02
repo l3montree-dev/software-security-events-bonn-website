@@ -12,6 +12,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          preload="none"
         />
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -96,7 +97,7 @@ export function Hero() {
             >
               <Image
                 src="/pnc_banner.jpg"
-                alt="Beschreibung"
+                alt="Banner der Phish & Chips Cybersecurity Konferenz"
                 height={1000}
                 width={800}
                 className="mx-auto mt-[1cm] h-auto w-full max-w-[600px] cursor-pointer rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"

@@ -1,4 +1,5 @@
 import Faqs from '@/components/cyber_defence/Faqs'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/cyber_defence/Header'
 import { Hero } from '@/components/cyber_defence/Hero'
 import { Schedule } from '@/components/cyber_defence/Schedule'
@@ -22,6 +23,7 @@ export default function Home() {
       <Schedule />
       <Sponsors />
       <Faqs />
+      <Footer />
     </>
   )
 }

@@ -96,17 +96,17 @@ export default function Topic() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-[1cm]">
+          <div className="flex flex-col gap-6">
             <Image
               src="/crowd.JPG"
-              alt="Beschreibung"
+              alt="Publikum beim Event Digitale Souveränität"
               height={1000}
               width={800}
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
             />
             <Image
               src="/network.JPG"
-              alt="Beschreibung"
+              alt="Networking beim Event Digitale Souveränität"
               height={1000}
               width={800}
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
@@ -118,7 +118,7 @@ export default function Topic() {
             >
               <Image
                 src="/pnc_banner.jpg"
-                alt="Beschreibung"
+                alt="Banner der Phish & Chips Cybersecurity Konferenz"
                 height={1000}
                 width={800}
                 className="h-auto w-full cursor-pointer rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"

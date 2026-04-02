@@ -1,132 +1,78 @@
 import Image from 'next/image'
-import React from 'react'
 
-interface VerticalSpaceProps {
-  height?: string
-}
-
-const VerticalSpace: React.FC<VerticalSpaceProps> = ({ height = '1.5cm' }) => {
-  return <div style={{ height }} />
-}
+const people = [
+  {
+    name: 'Peter Stamm',
+    role: 'CEO WhereGroup GmbH',
+    imageUrl: '/Profil_Peter_Stamm.jpg',
+    topic: 'Open source software as a business model (held in german)',
+    pdfFile: '',
+  },
+  {
+    name: 'Sebastian Kawelke',
+    role: 'CEO L3montree Cybersecurity',
+    imageUrl: '/Profil_Sebastian_Kawelke.jpeg',
+    topic: 'Securing Public Services: The Power of Open Source',
+    pdfFile: '/pdfs/Securing public Services - The Power of Open Source.pdf',
+  },
+  {
+    name: 'Neal H. Walfield',
+    role: 'Co-Founder Sequoia PGP',
+    imageUrl: '/Profil_Neal_H._Walfield.png',
+    topic: 'Interacting with FOSS Projects: Setting and Respecting Expectations',
+    pdfFile: '',
+  },
+  {
+    name: 'David Luhmer',
+    role: 'Maintainer: Nextcloud News App for Android & Team Lead DevOps',
+    imageUrl: '/David_Luhmer_Profil.jpeg',
+    topic: 'Maintaining an open source application - a look behind the scenes',
+    pdfFile:
+      '/pdfs/Maintaining an open source application - a look behind the scenes.pdf',
+  },
+]
 
 export default function Speaker() {
   return (
-    <div className="overflow-hidden bg-black py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-black py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <h2 className="text-center text-3xl font-bold leading-8 text-zinc-100">
           The Speakers
         </h2>
-        <VerticalSpace />
-
-        {/* Grid for 4 items */}
-        <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-auto lg:max-w-none lg:grid-cols-4">
-          {/* First Block */}
-          <div className="text-center">
-            <div className="relative h-0 w-full pb-[100%]">
+        <ul
+          role="list"
+          className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4 lg:gap-8"
+        >
+          {people.map((person) => (
+            <li key={person.name} className="rounded-2xl bg-zinc-800 px-8 py-10 text-center">
               <Image
-                alt="Peter Stamm"
-                src="/Profil_Peter_Stamm.jpg"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full"
+                alt={`${person.name} - ${person.role}`}
+                src={person.imageUrl}
+                width={224}
+                height={224}
+                sizes="(min-width: 1024px) 14rem, (min-width: 640px) 12rem, 6rem"
+                className="mx-auto size-48 rounded-full object-cover md:size-56"
               />
-            </div>
-            <VerticalSpace />
-            <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">Peter Stamm</span>
-              <br />
-              CEO WhereGroup GmbH
-            </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Open source software as a business model (held in german)
-            </p>
-          </div>
-
-          {/* Second Block */}
-          <div className="text-center">
-            <div className="relative h-0 w-full pb-[100%]">
-              <Image
-                alt="Sebastian Kawelke"
-                src="/Profil_Sebastian_Kawelke.jpeg"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full"
-              />
-            </div>
-            <VerticalSpace />
-            <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">Sebastian Kawelke</span>
-              <br />
-              CEO L3montree Cybersecurity
-            </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Securing Public Services: The Power of Open Source
-            </p>
-            <a
-              href="/Securing public Services - The Power of Open Source.pdf"
-              download
-              className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
-            >
-              Download Presentation
-            </a>
-          </div>
-
-          {/* Third Block */}
-          <div className="text-center">
-            <div className="relative h-0 w-full pb-[100%]">
-              <Image
-                alt="Neal H. Walfield"
-                src="/Profil_Neal_H._Walfield.png"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full"
-              />
-            </div>
-            <VerticalSpace />
-            <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">Neal H. Walfield</span>
-              <br />
-              Co-Founder Sequoia PGP
-            </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Interacting with FOSS Projects: Setting and Respecting
-              Expectations
-            </p>
-          </div>
-
-          {/* Fourth Block */}
-          <div className="text-center">
-            <div className="relative h-0 w-full pb-[100%]">
-              <Image
-                alt="David Luhmer"
-                src="/David_Luhmer_Profil.jpeg"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full"
-              />
-            </div>
-            <VerticalSpace />
-            <h3 className="text-lg font-semibold text-zinc-100">
-              <span className="font-bold">David Luhmer</span>
-              <br />
-              Maintainer: Nextcloud News App for Android & <br />
-              Team Lead DevOps
-              <br />
-            </h3>
-            <p className="mt-2 text-base leading-8 text-zinc-300">
-              Maintaining an open source application - a look behind the scenes
-            </p>
-            <a
-              href="/Maintaining an open source application - a look behind the scenes.pdf"
-              download
-              className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
-            >
-              Download Presentation
-            </a>
-          </div>
-        </div>
+              <h3 className="mt-6 text-base font-semibold text-zinc-100">
+                {person.name}
+              </h3>
+              <p className="text-sm text-zinc-400">{person.role}</p>
+              <p className="mt-2 border-t border-zinc-600 p-2 text-sm font-semibold text-zinc-200">
+                &quot;{person.topic}&quot;
+              </p>
+              {person.pdfFile && (
+                <a
+                  href={person.pdfFile}
+                  download
+                  className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
+                >
+                  Download Presentation
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
-      <VerticalSpace />
     </div>
   )
 }

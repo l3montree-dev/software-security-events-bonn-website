@@ -1,4 +1,5 @@
 import Faqs from '@/components/bonn-security-night/Faqs'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/bonn-security-night/Header'
 import { Hero } from '@/components/bonn-security-night/Hero'
 import { Schedule } from '@/components/bonn-security-night/Schedule'
@@ -22,6 +23,7 @@ export default function Home() {
       <Schedule />
       <Sponsors />
       <Faqs />
+      <Footer />
     </>
   )
 }

@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
@@ -24,7 +20,7 @@ interface Day {
 const schedule: Array<Day> = [
   {
     date: 'Thursday 30. January',
-    dateTime: '2024-11-08',
+    dateTime: '2025-01-30',
     summary: '',
     timeSlots: [
       {

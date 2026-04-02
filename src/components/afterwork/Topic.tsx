@@ -111,17 +111,17 @@ export default function Topic() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col gap-[1cm]">
+          <div className="flex flex-col gap-6">
             <Image
-              src="/AW_intro.jpg"
-              alt="Beschreibung"
+              src="/AW_intro.JPG"
+              alt="Einführungsvortrag beim Cybersecurity AfterWorkshop"
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
               width={800}
               height={600}
             />
             <Image
-              src="/crowd.jpg"
-              alt="Beschreibung"
+              src="/crowd.jpeg"
+              alt="Publikum beim Cybersecurity AfterWorkshop"
               className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
               width={800}
               height={600}

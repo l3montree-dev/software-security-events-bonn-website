@@ -10,7 +10,7 @@ export function Footer() {
           width={300}
           height={120}
           className="h-16 w-auto"
-          alt=""
+          alt="L3montree Cybersecurity"
         />
         <div className="mt-12 text-sm text-zinc-400 lg:mt-0">
           <div className="flex flex-1 justify-start lg:justify-end">

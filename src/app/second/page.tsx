@@ -1,4 +1,5 @@
 import Faqs from '@/components/oss-bonn/Faqs'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/oss-bonn/Header'
 import { Hero } from '@/components/oss-bonn/Hero'
 import { Schedule } from '@/components/oss-bonn/Schedule'
@@ -8,7 +9,7 @@ import Topic from '@/components/oss-bonn/Topic'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'EU Open Source Week - Offside Event Bonn',
+  title: 'EU Open Source Week - Offsite Event Bonn',
   description:
     'Open Source Security, - Policy & Open Source as a business model',
 }
@@ -23,6 +24,7 @@ export default function Home() {
       <Schedule />
       <Sponsors />
       <Faqs />
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import { DM_Sans, Inter } from 'next/font/google'
+import Image from 'next/image'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -19,7 +20,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: 'Cyber- & Softwaresecurity Event - Bonn',
+    template: '%s | Software Security Events Bonn',
     default: 'Cyber- & Softwaresecurity Event - Bonn',
   },
   description:
@@ -84,7 +85,7 @@ export default function RootLayout({
         <meta property="og:title" content="OSS - Event - Bonn" />
         <meta property="og:type" content="Event" />
         <meta property="og:url" content="http://www.oss-bonn.de/" />
-        <meta property="og:image" content="Startupweek_weiß_short.svg" />
+        <meta property="og:image" content="/Startupweek_weiß_short.svg" />
         <meta
           property="og:description"
           content="Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern."
@@ -97,10 +98,13 @@ export default function RootLayout({
       <body className="flex min-h-full">
         <div className="flex w-full flex-col">
           <header className="w-full">
-            <img
+            <Image
               src="/OSS-Event-Banner.png"
               alt="OSS Event Banner"
+              width={1920}
+              height={200}
               className="h-auto w-full object-cover"
+              priority
             />
           </header>
           {children}

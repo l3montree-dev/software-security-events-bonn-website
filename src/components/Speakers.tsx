@@ -23,6 +23,13 @@ const people = [
     topic: 'TBA',
     pdfFile: '',
   },
+  {
+    name: 'TBA',
+    role: 'Special Guest',
+    imageUrl: '/dummy_person_white.png',
+    topic: 'TBA',
+    pdfFile: '',
+  },
 ]
 
 export default function Speakers() {

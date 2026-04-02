@@ -1,4 +1,6 @@
 import Faqs from '@/components/souveraen/Faqs'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/souveraen/Header'
 import { Hero } from '@/components/souveraen/Hero'
 import { Schedule } from '@/components/souveraen/Schedule'
 import Speakers from '@/components/souveraen/Speakers'
@@ -14,12 +16,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Header />
       <Hero />
       <Topic />
       <Speakers />
       <Sponsors />
       <Schedule />
       <Faqs />
+      <Footer />
     </>
   )
 }
