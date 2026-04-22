@@ -1,4 +1,5 @@
 # .github/workflows/devsecops.yml 
+# .github/workflows/devsecops.yml 
 name: DevGuard DevSecOps
 
 on:
@@ -12,8 +13,8 @@ jobs:
     call-devsecops:
         uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
         with:
-            asset-name: "test-57/projects/testgruppe/assets/oss-bonn-website"
-            api-url: "https://api.main.devguard.org"
-            web-ui: "https://main.devguard.org"
+            asset-name: "test-5/projects/oss-events/assets/oss-website"
+            api-url: "https://api.devguard.org"
+            web-ui: "https://app.devguard.org"
         secrets:
             devguard-token: "${{ secrets.DEVGUARD_TOKEN }}" # you need to create this secret in your GitHub repository settings 
