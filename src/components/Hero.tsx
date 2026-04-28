@@ -117,7 +117,7 @@ export function Hero() {
               >
                 <Image
                   alt="Where Group GmbH Logo"
-                  src="/where_group_logo.svg"
+                  src="/WhereGroup-Logo-quer-cmyk_weiß.png"
                   width={158}
                   height={48}
                   className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
