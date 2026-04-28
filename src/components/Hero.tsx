@@ -12,7 +12,7 @@ export function Hero() {
         ></div>
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-x-6 gap-y-4 px-6 sm:flex-row sm:items-start sm:justify-between sm:gap-y-0 lg:px-8">
           <div className="flex-shrink-0">
-            <Link href="/">
+            <Link href="https://startupweek-bonnrheinsieg.de/">
               <Image
                 src="/Startupweek_weiß_short.svg"
                 width={400}
