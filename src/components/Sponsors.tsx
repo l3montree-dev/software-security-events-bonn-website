@@ -56,7 +56,7 @@ export function Sponsors() {
             >
               <Image
                 className="max-h-14 w-full object-contain object-center"
-                src="/where_group_logo.png"
+                src="/WhereGroup-Logo-quer-cmyk.jpg"
                 alt="WhereGroup GmbH Logo"
                 width={158}
                 height={48}

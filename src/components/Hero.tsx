@@ -36,7 +36,7 @@ export function Hero() {
               Expert*innen, Maintainer*innen und Entwickler*innen aus der OSS
               Community aus Bonn und Umgebung treffen sich an diesem Nachmittag,
               um sich in lockerer Atmosphäre über die Themen Open Source und
-              digitale Souveränität zu Unterhalten. Neben Snack & Drinks gibt es
+              digitale Souveränität zu unterhalten. Neben Snack & Drinks gibt es
               spannende Impulsvorträge zu den Themen:
             </p>
             <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
