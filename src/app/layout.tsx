@@ -97,16 +97,7 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-full">
         <div className="flex w-full flex-col">
-          <header className="w-full">
-            <Image
-              src="/OSS-Event-Banner.png"
-              alt="OSS Event Banner"
-              width={1920}
-              height={200}
-              className="h-auto w-full object-cover"
-              priority
-            />
-          </header>
+          <header className="w-full"></header>
           {children}
         </div>
       </body>

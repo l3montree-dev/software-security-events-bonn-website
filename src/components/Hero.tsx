@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Button } from './Button'
-import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -10,23 +9,10 @@ export function Hero() {
           className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         ></div>
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-x-6 gap-y-4 px-6 sm:flex-row sm:items-start sm:justify-between sm:gap-y-0 lg:px-8">
-          <div className="flex-shrink-0">
-            <Link href="https://startupweek-bonnrheinsieg.de/">
-              <Image
-                src="/Startupweek_weiß_short.svg"
-                width={400}
-                height={160}
-                className="h-40 w-auto"
-                alt="Software Security Events Bonn - Startseite"
-              />
-            </Link>
-          </div>
-        </div>
         <div className="mx-auto max-w-7xl py-12 sm:py-20 lg:px-8 lg:py-12">
           <div className="text-start">
             <h1 className="mt-0 text-3xl font-semibold tracking-tight text-white sm:text-6xl">
-              Open Source Software Bonn - Meetup
+              OSS Meetup - Bonn
             </h1>
             <h2 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
               Ein Open Source Bonn Community Event
@@ -40,6 +26,9 @@ export function Hero() {
               spannende Impulsvorträge zu den Themen:
             </p>
             <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
+              <li>
+                <strong>Ein digitaler Fallschirm für die Demokratie</strong>
+              </li>
               <li>
                 <strong>Erfolgsmodell Open Source</strong>
               </li>
