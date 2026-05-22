@@ -15,7 +15,7 @@ export function Hero() {
               OSS Meetup - Bonn
             </h1>
             <h2 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
-              Ein Open Source Bonn Community Event
+              14.07.2026 - 17:00 Uhr
             </h2>
 
             <p className="text-l mx-auto mt-8 text-white">
