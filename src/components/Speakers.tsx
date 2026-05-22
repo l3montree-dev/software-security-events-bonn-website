@@ -2,6 +2,13 @@ import Image from 'next/image'
 
 const people = [
   {
+    name: 'Jutta Horstmann',
+    role: 'Geschäftsführerin / Co-CEO - Heinlein Support GmbH',
+    imageUrl: '/profilbild-jutta-horstmann.png',
+    topic: 'Ein digitaler Fallschirm für die Demokratie',
+    pdfFile: '',
+  },
+  {
     name: 'Peter Stamm',
     role: 'CEO WhereGroup GmbH',
     imageUrl: '/Profil_Peter_Stamm.jpg',
@@ -18,14 +25,7 @@ const people = [
   },
   {
     name: 'TBA',
-    role: 'Software Security Expert @ L3montree',
-    imageUrl: '/dummy_person_white.png',
-    topic: 'TBA',
-    pdfFile: '',
-  },
-  {
-    name: 'TBA',
-    role: 'Special Guest',
+    role: 'Softwaresecurity-Expert @ L3montree GmbH',
     imageUrl: '/dummy_person_white.png',
     topic: 'TBA',
     pdfFile: '',
