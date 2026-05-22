@@ -8,7 +8,7 @@ export function Footer() {
       <Container className="flex flex-col items-start justify-between md:flex-row lg:items-center">
         <Link href="/" className="flex-shrink-0" aria-label="Zur Startseite">
           <Image
-            src="/Startupweek_weiß_short.png"
+            src="/Startupweek_weiss_short.png"
             width={260}
             height={104}
             className="h-16 w-auto"
