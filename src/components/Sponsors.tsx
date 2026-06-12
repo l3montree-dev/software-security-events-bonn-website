@@ -1,320 +1,77 @@
 import Image from 'next/image'
-import { Container } from '@/components/Container'
+import { CURRENT_PARTNERS, PAST_PARTNERS } from '@/config/event'
 
 export function Sponsors() {
   return (
     <section
       id="sponsors"
       aria-label="Sponsors"
-      className="bg-white py-12 sm:py-32"
+      className="bg-white py-24 sm:py-32"
     >
-      <Container>
-        <h2 className="text-center font-display text-4xl font-medium tracking-tighter text-black">
-          Partners for this Event
-        </h2>
-
-        <div className="mt-20 items-center gap-y-10">
-          <div className="mx-auto w-full max-w-xl text-center">
-            <p className="mt-6 text-center text-base leading-8 text-zinc-800">
-              Die Partner sind die tragenden Säulen der Veranstaltungen. Mit
-              ihrer Unterstützung machen sie es möglich, eine außergewöhnliche
-              Veranstaltung wie diese zu schaffen.
-            </p>
-          </div>
-          <div className="mt-8" />
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 px-6 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:pl-8">
-            <a
-              href="https://www.digitalhub.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/digitalhub.svg"
-                alt="DigitalHub Bonn Logo"
-                width={104}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.l3montree.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-14 w-full object-contain object-center"
-                src="/l3montree.svg"
-                alt="L3montree Cybersecurtiy Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://wheregroup.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-14 w-full object-contain object-center"
-                src="/WhereGroup-Logo-quer-cmyk.jpg"
-                alt="WhereGroup GmbH Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://bonn.digital/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-14 w-full object-contain object-center"
-                src="/Logo_schwarz_bonn.png"
-                alt="Bonndigital Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-          </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Current partners */}
+        <div className="mb-16">
+          <span className="text-sm font-semibold uppercase tracking-widest text-l3-600">
+            Ermöglicht durch
+          </span>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
+            Partner dieses Events
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-600">
+            Die Partner sind die tragenden Säulen der Veranstaltungen. Mit ihrer
+            Unterstützung machen sie es möglich, eine außergewöhnliche
+            Veranstaltung wie diese zu schaffen.
+          </p>
         </div>
 
-        <h2 className="mt-40 text-center font-display text-4xl font-medium tracking-tighter text-black">
-          Past Partners
-        </h2>
+        <div className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20">
+          {CURRENT_PARTNERS.map((p) => (
+            <a
+              key={p.href + p.darkSrc}
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={p.darkSrc}
+                alt={p.alt}
+                width={p.width}
+                height={p.height}
+                className="h-12 w-auto object-contain"
+              />
+            </a>
+          ))}
+        </div>
 
-        <div className="mt-20 items-center gap-y-10">
-          <div className="mx-auto w-full max-w-xl text-center">
-            <p className="mt-6 text-center text-base leading-8 text-zinc-800">
-              Partner, die die beisherigen OSS-Events durch Ihre Fachvorträge
-              bereichert haben.
-            </p>
-          </div>
-          <div className="mt-8" />
-          <div className="mx-auto grid w-full max-w-2xl grid-cols-2 items-center gap-x-12 gap-y-16 px-6 text-center sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5 lg:pl-8">
-            <a
-              href="https://cyber-security-cluster.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/ccb-logo.png"
-                alt="Cybersecurity Cluster Bonn e.V. Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.bundeswehr.de/de/organisation/cyber-und-informationsraum"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo-CIR.png"
-                alt="CIR Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.bwi.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo-BWI-2.png"
-                alt="BWI Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://nixcademy.com/de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/nixcademy-logo.png"
-                alt="NixCademy Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.link11.com/de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo-link11.png"
-                alt="Link11 Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.conet.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/conet_logo.png"
-                alt="CONET Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.bsi.bund.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/bsi-logo.png"
-                alt="BSI Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://laokoon-security.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/laokoon-security-logo.png"
-                alt="Laokoon SecurITy GmbH Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.hisolutions.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo_his2.png"
-                alt="HiSolutions Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://netlockrmm.com/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo_0x101.png"
-                alt="0x101 Cybersecurity Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://valutistech.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/valutis_logo_black.svg"
-                alt="valutis Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.business-code.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/bcdPlusTextLogo.svg"
-                alt="BusinessCode Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://wheregroup.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/where_group_logo.png"
-                alt="WhereGroup GmbH Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://sequoia-pgp.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/sequoia_logo.png"
-                alt="SequoiaPGP Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.anykey.de/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/logo-anykey.png"
-                alt="anykey Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://www.brl.de/de"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/BRL-logo.png"
-                alt="BRL BOEGE ROHDE LUEBBEHUESEN Logo"
-                width={158}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://opensourceweek.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="max-h-24 w-full object-contain object-center"
-                src="/EU_oss_week.png"
-                alt="EU Open Source Week Logo"
-                width={158}
-                height={48}
-              />
-            </a>
+        {/* Past partners */}
+        <div className="mt-20 border-t border-zinc-200 pt-12">
+          <p className="mb-8 text-sm font-semibold uppercase tracking-widest text-zinc-400">
+            Vergangene Partner
+          </p>
+          <p className="mb-10 max-w-2xl text-lg leading-7 text-zinc-600">
+            Partner, die die bisherigen OSS-Events durch ihre Fachvorträge
+            bereichert haben.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-10 lg:justify-start lg:gap-14">
+            {PAST_PARTNERS.map((p) => (
+              <a
+                key={p.href + p.src}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={p.src}
+                  alt={p.alt}
+                  width={p.width}
+                  height={p.height}
+                  className="h-10 w-auto object-contain"
+                />
+              </a>
+            ))}
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 }

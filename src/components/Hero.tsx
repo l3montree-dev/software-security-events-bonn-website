@@ -1,161 +1,165 @@
 import Image from 'next/image'
+import { CURRENT_PARTNERS, EVENT, TALKS } from '@/config/event'
 import { Button } from './Button'
 
 export function Hero() {
   return (
-    <div className="bg-black">
-      <div className="relative isolate overflow-hidden px-6 pt-6">
-        <div
-          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        ></div>
-        <div className="mx-auto max-w-7xl py-12 sm:py-20 lg:px-8 lg:py-12">
-          <div className="text-start">
-            <h1 className="mt-0 text-3xl font-semibold tracking-tight text-white sm:text-6xl">
-              OSS Meetup - Bonn
+    <section className="relative min-h-screen overflow-hidden bg-black">
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8 lg:pt-16">
+        {/* Top badge */}
+        <div className="mb-8 flex">
+          <span className="inline-flex items-center gap-2 border-b-2 border-l3-400 pb-1 text-base font-semibold uppercase tracking-widest text-l3-400">
+            {EVENT.name}
+          </span>
+        </div>
+
+        {/* Main content grid */}
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left column */}
+          <div className="flex flex-col justify-center">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Open Source &{' '}
+              <span className="text-l3-400">digitale Souveränität</span>
             </h1>
-            <h2 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
-              14.07.2026 - 17:00 Uhr
-            </h2>
 
-            <p className="text-l mx-auto mt-8 text-white">
-              Expert*innen, Maintainer*innen und Entwickler*innen aus der OSS
-              Community aus Bonn und Umgebung treffen sich an diesem Nachmittag,
-              um sich in lockerer Atmosphäre über die Themen Open Source und
-              digitale Souveränität zu unterhalten. Neben Snack & Drinks gibt es
-              spannende Impulsvorträge zu den Themen:
-            </p>
-            <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
-              <li>
-                <strong>Ein digitaler Fallschirm für die Demokratie</strong>
-              </li>
-              <li>
-                <strong>Erfolgsmodell Open Source</strong>
-              </li>
-              <li>
-                <strong>
-                  Jenseits von Meta und Musk: Marketing mit OpenSource-Software
-                  im Fediverse
-                </strong>
-              </li>
-              <li>
-                <strong>
-                  Wie setze ich Open Source Software sicher und effizient in
-                  meinem Unternehmen ein?
-                </strong>
-              </li>
-            </ul>
-
-            <p className="text-l mx-auto mt-16 text-white">
-              💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
-              und Networking!
-            </p>
-            <p className="text-l mt-4 text-white">
-              Location:{' '}
-              <a
-                href="https://maps.app.goo.gl/BS8JJH8eGxBSEmz49"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
-              >
-                L3montree HQ, Markt 3, 53111 Bonn
-              </a>
-            </p>
-
-            <div className="justify-center gap-10">
-              <div className="mt-10 flex justify-center sm:justify-end">
-                <Button
-                  className="px-6 py-4 text-lg font-semibold"
-                  href="https://ticket.bonn.digital/bonndigital/ossbn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            <div className="mt-6 flex flex-wrap items-center gap-4 text-base text-zinc-400">
+              <span className="flex items-center gap-1.5">
+                <svg
+                  className="h-4 w-4 text-l3-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
                 >
-                  Sicher Dir Dein Ticket!
-                </Button>
-              </div>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                  />
+                </svg>
+                {EVENT.date}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg
+                  className="h-4 w-4 text-l3-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                {EVENT.time}
+              </span>
+              <a
+                href={EVENT.location.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 transition-colors hover:text-l3-300"
+              >
+                <svg
+                  className="h-4 w-4 text-l3-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                  />
+                </svg>
+                {EVENT.location.name}
+              </a>
             </div>
+
+            <p className="mt-6 text-lg leading-7 text-zinc-400">
+              {EVENT.subtitle}
+            </p>
+
+            <div className="mt-8">
+              <Button
+                href={EVENT.ticketUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 text-lg font-semibold"
+              >
+                Sicher Dir Dein Ticket →
+              </Button>
+            </div>
+          </div>
+
+          {/* Right column — talks */}
+          <div className="flex flex-col justify-center">
+            <p className="mb-4 text-base font-semibold uppercase tracking-widest text-zinc-500">
+              Impulsvorträge
+            </p>
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {TALKS.map((talk, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-3 rounded-xl border border-white/5 bg-white/[0.03] px-5 py-4 backdrop-blur-sm"
+                >
+                  <svg
+                    className="mt-1 h-4 w-4 shrink-0 text-l3-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 12h14M12 5l7 7-7 7"
+                    />
+                  </svg>
+                  <span className="text-base leading-6 text-zinc-200">
+                    {talk.title}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-base text-zinc-400">
+              Im Anschluss: Fragen, Diskussionen &amp; Networking
+            </p>
           </div>
         </div>
 
-        <div className="-mt-10 pb-16 lg:-mt-12">
-          <div className="mx-auto max-w-7xl lg:px-8">
-            <h2 className="mt-4 justify-center text-lg font-semibold tracking-tight text-white">
-              Presented by:
-            </h2>
-            <div className="mb-3"></div>
-            <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        {/* Sponsor bar */}
+        <div className="mt-20 border-t border-white/10 pt-10">
+          <p className="mb-6 text-base font-semibold uppercase tracking-widest text-zinc-500">
+            Presented by
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20">
+            {CURRENT_PARTNERS.map((s) => (
               <a
-                href="https://www.digitalhub.de/"
+                key={s.href + s.lightSrc}
+                href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="order-3 sm:order-1"
               >
                 <Image
-                  alt="DigitalHub AG Bonn Logo"
-                  src="/digitalhub-w.svg"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
+                  alt={s.alt}
+                  src={s.lightSrc}
+                  width={s.width}
+                  height={s.height}
+                  className="h-12 w-auto object-contain"
                 />
               </a>
-              <a
-                href="https://wheregroup.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-4 sm:order-3"
-              >
-                <Image
-                  alt="Where Group GmbH Logo"
-                  src="/WhereGroup-Logo-quer-cmyk_weiß.png"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://bonn.digital/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-5 sm:order-2"
-              >
-                <Image
-                  alt="Bonn Digital eGbR Logo"
-                  src="/Logo_weiß_bonn.png"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://www.l3montree.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-3 sm:order-1"
-              >
-                <Image
-                  alt="L3montree Logo"
-                  src="/l3montree-logo.svg"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                />
-              </a>
-            </div>
+            ))}
           </div>
-        </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#020617] to-[#ca8a04] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
