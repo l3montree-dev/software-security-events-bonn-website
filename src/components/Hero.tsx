@@ -4,7 +4,7 @@ import { Button } from './Button'
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black">
+    <section className="relative overflow-hidden bg-black">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8 lg:pt-16">
         {/* Top badge */}
         <div className="mb-8 flex">
