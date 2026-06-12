@@ -1,143 +1,64 @@
 import Image from 'next/image'
+import { EVENT, PAST_EVENTS, TALKS } from '@/config/event'
 import { Button } from './Button'
 
 export default function Topic() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <section className="bg-black py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
-            <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-l3-600">
-                Open Source gehört die Zukunft!
-              </h2>
-              <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-                OSS-Meetup in Bonn
-              </h3>
-              <p className="mb-4 mt-6 text-base leading-8 text-zinc-800">
-                Am 14. Juli 2026 findet Open-Source-Meetup Bonn statt – ein
-                Nachmittag voller spannender Impulse, Diskussionen und
-                Networking rund um die Themen Open Source und digitale
-                Souveränität.
-              </p>
-              <p className="mb-4 text-base leading-8 text-zinc-800">
-                Kompakt. Praxisnah. Offen.
-              </p>
-              <p className="mb-4 text-base leading-8 text-zinc-800">
-                <strong>Die Themen der Impulse sind unter anderem:</strong>
-              </p>
-              <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-zinc-800">
-                <li>
-                  <strong>
-                    Wie setze ich Open Source Software sicher und effizient in
-                    meinem Unternehmen ein?
-                  </strong>
-                  <br />
-                  Open Source Security ist das Haupt-Thema bei L3montree. Es
-                  gibt eine ganze Menge Open Source Tools, die die Entwicklung
-                  nicht nur sicherer, sondern auch noch compliant zu neuen
-                  Anforderungen wie zum Beispiel dem CRA machen können. Wir
-                  zeigen euch welche Tools ihr nutzen könnt.
-                </li>
-                <li>
-                  <strong>Erfolgsmodell Open Source</strong>
-                  <br />
-                  Wenn Sie digital wirklich unabhängig und souverän agieren
-                  wollen, führt am Geschäftsmodell Open Source kein Weg vorbei.
-                  Ein kurzer Abriss der letzten 20 Jahre und ein noch kürzerer
-                  Ausblick auf die nächsten.
-                </li>
-                <li>
-                  <strong>
-                    Jenseits von Meta und Musk: Marketing mit
-                    OpenSource-Software im Fediverse
-                  </strong>
-                  <br />
-                  Die Agentur von Bonn.digital hat schon immer auf
-                  Marketing-Tools im OpenSource-Bereich gesetzt. Angefangen von
-                  WordPress auf der eigenen Domain, über Newsletter-Tools bis
-                  hin zu Social-Media-Portalen im Fediverse. Aber aufgrund der
-                  weltpolitischen Lage fragen auch immer mehr Kunden nach einer
-                  +1-Strategie an, um digital souveräner zu werden. Sascha
-                  Foerster gibt einen SpeedRun durch die Marketing-Toolbox von
-                  Bonn.digital, auf Basis von OpenSource-Software mit Fokus aufs
-                  Fediverse.
-                </li>
-              </ul>
+        {/* Header */}
+        <div className="mb-16">
+          <span className="text-sm font-semibold uppercase tracking-widest text-l3-400">
+            Open Source gehört die Zukunft!
+          </span>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {EVENT.name}
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-400">
+            Am {EVENT.date} findet das Open-Source-Meetup Bonn statt – ein
+            Nachmittag voller spannender Impulse, Diskussionen und Networking
+            rund um Open Source und digitale Souveränität. Kompakt. Praxisnah.
+            Offen.
+          </p>
+        </div>
 
-              <p className="mb-6 mt-6 text-base leading-8 text-zinc-800">
-                Im Anschluss an die Talks wird es bei Food & Drinks die
-                Möglichkeit für vertiefende Fragen und Networking geben.
-              </p>
-            </div>
-
-            <div className="mb-6" />
-
-            <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
-              Vergangene Events
-            </h3>
-
-            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <Button
-                href="../cyber_defence"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Bonn Cybersecurity in Defence öffnen"
+        {/* Main grid */}
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left: talks */}
+          <div className="flex flex-col gap-4">
+            <p className="text-sm font-semibold uppercase tracking-widest text-zinc-500">
+              Impulsvorträge
+            </p>
+            {TALKS.map((talk, i) => (
+              <div
+                key={i}
+                className="rounded-xl border border-white/5 bg-white/[0.03] px-6 py-5"
               >
-                Cybersecurity in Defence
-              </Button>
-
-              <Button
-                href="../bonn-security-night"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Bonn Cybersecurity Night öffnen"
-              >
-                Bonn Cybersecurity Night
-              </Button>
-
-              <Button
-                href="../souveraen"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Digitale Souveränität
-              </Button>
-
-              <Button
-                href="../afterwork"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cybersecurity AfterWorkshop
-              </Button>
-
-              <Button
-                href="../second"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                EU Open Source Week - Offsite Event Bonn
-              </Button>
-
-              <Button
-                href="https://gitlab.opencode.de/cybersecurity-hackathon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open Source Security Hackathon 2024
-              </Button>
-            </div>
+                <p className="text-base font-semibold text-white">
+                  {talk.title}
+                </p>
+                {talk.body && (
+                  <p className="mt-2 text-base leading-6 text-zinc-400">
+                    {talk.body}
+                  </p>
+                )}
+              </div>
+            ))}
+            <p className="mt-2 text-base text-zinc-400">
+              Im Anschluss an die Talks: Food &amp; Drinks, vertiefende Fragen
+              und Networking.
+            </p>
           </div>
 
-          <div className="flex flex-col gap-6 lg:mt-10 lg:self-start">
+          {/* Right: images */}
+          <div className="grid grid-rows-2 gap-4">
             <Image
               src="/talk.jpeg"
               alt="Speaker auf der Bühne während eines Vortrags"
               height={600}
               width={900}
               sizes="(min-width:1024px) 45rem, (min-width:640px) 36rem, 100vw"
-              className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              className="h-full w-full rounded-xl object-cover"
             />
             <Image
               src="/crowd.jpeg"
@@ -145,11 +66,31 @@ export default function Topic() {
               height={600}
               width={900}
               sizes="(min-width:1024px) 45rem, (min-width:640px) 36rem, 100vw"
-              className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              className="h-full w-full rounded-xl object-cover"
             />
           </div>
         </div>
+
+        {/* Past events */}
+        <div className="mt-20 border-t border-white/10 pt-12">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+            Vergangene Events
+          </p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {PAST_EVENTS.map((e) => (
+              <Button
+                key={e.href}
+                href={e.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full justify-center text-center"
+              >
+                {e.label}
+              </Button>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
