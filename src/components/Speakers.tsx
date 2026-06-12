@@ -3,21 +3,21 @@ import Image from 'next/image'
 const people = [
   {
     name: 'Jutta Horstmann',
-    role: 'Geschäftsführerin / Co-CEO - Heinlein Support GmbH',
+    role: 'Geschäftsführerin / Co-CEO — Heinlein Support GmbH',
     imageUrl: '/profilbild-jutta-horstmann.png',
     topic: 'Ein digitaler Fallschirm für die Demokratie',
     pdfFile: '',
   },
   {
     name: 'Peter Stamm',
-    role: 'CEO WhereGroup GmbH',
+    role: 'CEO — WhereGroup GmbH',
     imageUrl: '/Profil_Peter_Stamm.jpg',
-    topic: 'Erfolgsmodell Open Source  - Wirklich selbständig sein.',
+    topic: 'Erfolgsmodell Open Source — Wirklich selbständig sein.',
     pdfFile: '',
   },
   {
     name: 'Sascha Foerster',
-    role: 'Geschäftsführender Gesellschafter @ Bonn.digital',
+    role: 'Geschäftsführender Gesellschafter — Bonn.digital',
     imageUrl: '/profilbild-sascha-foerster.png',
     topic:
       'Jenseits von Meta und Musk: Marketing mit OpenSource-Software im Fediverse',
@@ -25,7 +25,7 @@ const people = [
   },
   {
     name: 'TBA',
-    role: 'Softwaresecurity-Expert @ L3montree GmbH',
+    role: 'Software-Security Expert — L3montree GmbH',
     imageUrl: '/dummy_person_white.png',
     topic: 'TBA',
     pdfFile: '',
@@ -34,55 +34,62 @@ const people = [
 
 export default function Speakers() {
   return (
-    <div className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="text-center font-display text-4xl font-medium tracking-tight text-white">
+    <section className="bg-black py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Kicker + heading */}
+        <div className="mx-auto max-w-2xl text-center lg:max-w-none">
+          <p className="font-mono text-xs uppercase tracking-[0.12em] text-[#525252]">
+            Lineup
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.02em] text-[#fafafa] sm:text-4xl">
             Die SpeakerInnen
           </h2>
-          <p className="mt-6 text-lg/8 text-zinc-400">
-            Hier findest du alle SpeakerInnen, die auf dem Event sprechen
-            werden. Wir freuen uns auf spannende Vorträge und interessante
-            Diskussionen!
+          <p className="mt-4 text-base leading-[1.6] text-[#a3a3a3]">
+            Spannende Vorträge von Expert*innen aus Open Source, Sicherheit und
+            digitaler Souveränität.
           </p>
         </div>
+
+        {/* Cards */}
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8"
+          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
         >
           {people.map((person) => (
             <li
               key={person.name}
-              className="rounded-2xl bg-zinc-800 px-8 py-10"
+              className="rounded-xl border border-white/[0.08] bg-[#111] px-8 py-10"
             >
               <Image
-                alt={`${person.name} - ${person.role}`}
+                alt={`${person.name} – ${person.role}`}
                 src={person.imageUrl}
                 width={224}
                 height={224}
                 sizes="(min-width: 1024px) 14rem, (min-width: 640px) 12rem, 6rem"
-                className="mx-auto h-48 w-48 rounded-full object-cover md:h-56 md:w-56"
+                className="mx-auto h-48 w-48 rounded-full object-cover ring-1 ring-white/[0.08] md:h-56 md:w-56"
               />
-              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">
+              <h3 className="mt-6 text-sm font-semibold tracking-tight text-[#fafafa]">
                 {person.name}
               </h3>
-              <p className="text-sm/6 text-zinc-400">{person.role}</p>
-              <p className="mt-2 border-t border-zinc-600 p-2 text-sm/6 font-semibold text-zinc-200">
-                &quot;{person.topic}&quot;
+              <p className="mt-1 font-mono text-xs text-[#525252]">
+                {person.role}
+              </p>
+              <p className="mt-4 border-t border-white/[0.06] pt-4 text-sm leading-[1.6] text-[#a3a3a3]">
+                &ldquo;{person.topic}&rdquo;
               </p>
               {person.pdfFile && (
                 <a
                   href={person.pdfFile}
                   download
-                  className="mt-4 inline-block rounded-lg bg-l3-500 px-4 py-2 text-black transition hover:bg-l3-300"
+                  className="mt-6 inline-flex items-center gap-2 rounded-[6px] border border-white/[0.12] px-4 py-2 text-sm text-[#fafafa] transition-colors hover:border-white/25"
                 >
-                  Download Presentation
+                  Präsentation herunterladen
                 </a>
               )}
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   )
 }

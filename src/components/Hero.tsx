@@ -3,157 +3,150 @@ import { Button } from './Button'
 
 export function Hero() {
   return (
-    <div className="bg-black">
-      <div className="relative isolate overflow-hidden px-6 pt-6">
-        <div
-          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        ></div>
-        <div className="mx-auto max-w-7xl py-12 sm:py-20 lg:px-8 lg:py-12">
-          <div className="text-start">
-            <h1 className="mt-0 text-3xl font-semibold tracking-tight text-white sm:text-6xl">
-              OSS Meetup - Bonn
-            </h1>
-            <h2 className="mt-6 text-xl font-semibold tracking-tight text-white sm:text-3xl">
-              14.07.2026 - 17:00 Uhr
-            </h2>
+    <div className="relative bg-black">
+      {/* Subtle radial glow */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        aria-hidden="true"
+        style={{
+          background:
+            'radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.86 0.1677 101.44 / 0.08) 0%, transparent 70%)',
+        }}
+      />
 
-            <p className="text-l mx-auto mt-8 text-white">
-              Expert*innen, Maintainer*innen und Entwickler*innen aus der OSS
-              Community aus Bonn und Umgebung treffen sich an diesem Nachmittag,
-              um sich in lockerer Atmosphäre über die Themen Open Source und
-              digitale Souveränität zu unterhalten. Neben Snack & Drinks gibt es
-              spannende Impulsvorträge zu den Themen:
-            </p>
-            <ul className="mt-6 list-disc space-y-4 pl-6 text-base leading-8 text-white">
-              <li>
-                <strong>Ein digitaler Fallschirm für die Demokratie</strong>
-              </li>
-              <li>
-                <strong>Erfolgsmodell Open Source</strong>
-              </li>
-              <li>
-                <strong>
-                  Jenseits von Meta und Musk: Marketing mit OpenSource-Software
-                  im Fediverse
-                </strong>
-              </li>
-              <li>
-                <strong>
-                  Wie setze ich Open Source Software sicher und effizient in
-                  meinem Unternehmen ein?
-                </strong>
-              </li>
-            </ul>
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-20 lg:px-8 lg:pb-32 lg:pt-28">
+        {/* Kicker */}
+        <p className="font-mono text-xs uppercase tracking-[0.12em] text-[#525252]">
+          Community Event · Bonn · 14. Juli 2026
+        </p>
 
-            <p className="text-l mx-auto mt-16 text-white">
-              💬 Im Anschluss gibt es ausreichend Zeit für Fragen, Diskussionen
-              und Networking!
-            </p>
-            <p className="text-l mt-4 text-white">
-              Location:{' '}
-              <a
-                href="https://maps.app.goo.gl/BS8JJH8eGxBSEmz49"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-l3-400 underline decoration-dashed decoration-1 underline-offset-2 hover:text-l3-200"
-              >
-                L3montree HQ, Markt 3, 53111 Bonn
-              </a>
-            </p>
+        {/* Heading */}
+        <h1 className="mt-4 text-5xl font-semibold leading-[1.05] tracking-[-0.03em] text-[#fafafa] sm:text-7xl">
+          OSS Meetup{' '}
+          <span style={{ color: 'oklch(0.86 0.1677 101.44)' }}>Bonn</span>
+        </h1>
 
-            <div className="justify-center gap-10">
-              <div className="mt-10 flex justify-center sm:justify-end">
-                <Button
-                  className="px-6 py-4 text-lg font-semibold"
-                  href="https://ticket.bonn.digital/bonndigital/ossbn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sicher Dir Dein Ticket!
-                </Button>
-              </div>
-            </div>
-          </div>
+        <p className="mt-5 font-mono text-sm text-[#525252]">
+          14.07.2026 — 17:00 Uhr · L3montree HQ, Markt 3, 53111 Bonn
+        </p>
+
+        {/* Copy */}
+        <p className="mt-8 max-w-2xl text-base leading-[1.6] text-[#a3a3a3]">
+          Expert*innen, Maintainer*innen und Entwickler*innen aus der OSS
+          Community aus Bonn und Umgebung treffen sich an diesem Nachmittag, um
+          sich in lockerer Atmosphäre über Open Source und digitale Souveränität
+          zu unterhalten. Neben Snack &amp; Drinks gibt es spannende
+          Impulsvorträge.
+        </p>
+
+        {/* Talk list */}
+        <ul className="mt-8 max-w-2xl space-y-3">
+          {[
+            'Ein digitaler Fallschirm für die Demokratie',
+            'Erfolgsmodell Open Source',
+            'Jenseits von Meta und Musk: Marketing mit OpenSource-Software im Fediverse',
+            'Wie setze ich Open Source Software sicher und effizient in meinem Unternehmen ein?',
+          ].map((talk) => (
+            <li key={talk} className="flex items-start gap-3">
+              <span
+                className="mt-[5px] h-1.5 w-1.5 flex-shrink-0 rounded-full"
+                style={{ background: 'oklch(0.86 0.1677 101.44)' }}
+              />
+              <span className="text-sm leading-[1.6] text-[#a3a3a3]">
+                {talk}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        <p className="mt-10 text-sm text-[#525252]">
+          💬 Im Anschluss: Fragen, Diskussionen und Networking —{' '}
+          <a
+            href="https://maps.app.goo.gl/BS8JJH8eGxBSEmz49"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors duration-150 hover:text-[#a3a3a3]"
+            style={{ color: 'oklch(0.86 0.1677 101.44)' }}
+          >
+            L3montree HQ, Markt 3, 53111 Bonn
+          </a>
+        </p>
+
+        {/* CTA */}
+        <div className="mt-10">
+          <Button
+            className="px-6 py-3.5 text-sm font-semibold"
+            href="https://ticket.bonn.digital/bonndigital/ossbn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sicher Dir Dein Ticket
+          </Button>
         </div>
 
-        <div className="-mt-10 pb-16 lg:-mt-12">
-          <div className="mx-auto max-w-7xl lg:px-8">
-            <h2 className="mt-4 justify-center text-lg font-semibold tracking-tight text-white">
-              Presented by:
-            </h2>
-            <div className="mb-3"></div>
-            <div className="mx-auto grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-              <a
-                href="https://www.digitalhub.de/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-3 sm:order-1"
-              >
-                <Image
-                  alt="DigitalHub AG Bonn Logo"
-                  src="/digitalhub-w.svg"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://wheregroup.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-4 sm:order-3"
-              >
-                <Image
-                  alt="Where Group GmbH Logo"
-                  src="/WhereGroup-Logo-quer-cmyk_weiß.png"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://bonn.digital/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-5 sm:order-2"
-              >
-                <Image
-                  alt="Bonn Digital eGbR Logo"
-                  src="/Logo_weiß_bonn.png"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                />
-              </a>
-              <a
-                href="https://www.l3montree.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="order-3 sm:order-1"
-              >
-                <Image
-                  alt="L3montree Logo"
-                  src="/l3montree-logo.svg"
-                  width={158}
-                  height={48}
-                  className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                />
-              </a>
-            </div>
+        {/* Presented by strip */}
+        <div className="mt-20 border-t border-white/[0.06] pt-10">
+          <p className="font-mono text-xs uppercase tracking-[0.12em] text-[#525252]">
+            Presented by
+          </p>
+          <div className="mt-8 grid grid-cols-2 items-center gap-x-10 gap-y-8 sm:grid-cols-4">
+            <a
+              href="https://www.digitalhub.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-60 transition-opacity hover:opacity-100"
+            >
+              <Image
+                alt="DigitalHub AG Bonn"
+                src="/digitalhub-w.svg"
+                width={140}
+                height={40}
+                className="h-8 w-auto object-contain"
+              />
+            </a>
+            <a
+              href="https://wheregroup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-60 transition-opacity hover:opacity-100"
+            >
+              <Image
+                alt="WhereGroup GmbH"
+                src="/WhereGroup-Logo-quer-cmyk_weiß.png"
+                width={140}
+                height={40}
+                className="h-8 w-auto object-contain"
+              />
+            </a>
+            <a
+              href="https://bonn.digital/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-60 transition-opacity hover:opacity-100"
+            >
+              <Image
+                alt="Bonn Digital"
+                src="/Logo_weiß_bonn.png"
+                width={140}
+                height={40}
+                className="h-8 w-auto object-contain"
+              />
+            </a>
+            <a
+              href="https://www.l3montree.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-60 transition-opacity hover:opacity-100"
+            >
+              <Image
+                alt="L3montree"
+                src="/l3montree-logo.svg"
+                width={140}
+                height={40}
+                className="h-7 w-auto object-contain"
+              />
+            </a>
           </div>
-        </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#020617] to-[#ca8a04] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
         </div>
       </div>
     </div>
