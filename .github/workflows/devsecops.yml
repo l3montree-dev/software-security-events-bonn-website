@@ -2,7 +2,7 @@
 name: DevGuard DevSecOps
 
 on:
-    push:
+    push: commit
 
 permissions:
     contents: read
