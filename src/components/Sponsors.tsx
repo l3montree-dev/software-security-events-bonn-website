@@ -15,7 +15,7 @@ export function Sponsors() {
             Ermöglicht durch
           </span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-            Partner dieses Events
+            Die Partner dieses Events
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-600">
             Die Partner sind die tragenden Säulen der Veranstaltungen. Mit ihrer
