@@ -34,8 +34,8 @@ export const TALKS: Array<{ title: string; body: string }> = [
   },
   {
     title:
-      'Wie setze ich Open Source Software sicher und effizient in meinem Unternehmen ein?',
-    body: 'Open Source Security ist das Haupt-Thema bei L3montree. Es gibt eine ganze Menge Open Source Tools, die die Entwicklung nicht nur sicherer, sondern auch noch compliant zu neuen Anforderungen wie zum Beispiel dem CRA machen können. Wir zeigen euch welche Tools ihr nutzen könnt.',
+      'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
+    body: 'Mit container.gov.de haben wir als technischer Umsetzungspartner des ZenDiS eine Lösung für die öffentliche Verwaltung geschaffen, um sichere Software-Images nutzen und teilen zu können.',
   },
 ]
 
@@ -71,10 +71,11 @@ export const SPEAKERS: Array<{
     pdfFile: '',
   },
   {
-    name: 'TBA',
+    name: 'Sebastian Kawelke',
     role: 'Softwaresecurity-Expert - L3montree GmbH',
-    imageUrl: '/dummy_person_white.png',
-    topic: 'TBA',
+    imageUrl: '/profilbild_sebastian_kawelke.jpeg',
+    topic:
+      'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
     pdfFile: '',
   },
 ]
@@ -136,7 +137,7 @@ export const SCHEDULE: Array<{
     id: 6,
     name: 'Impulsvortrag 4',
     description:
-      'Wie setze ich Open Source Software sicher und effizient in meinem Unternehmen ein?',
+      'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
     start: '18:40',
     end: '19:00',
     openForOthers: false,
