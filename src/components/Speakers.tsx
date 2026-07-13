@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { SPEAKERS } from '@/config/event'
 
 export default function Speakers() {
@@ -28,12 +27,11 @@ export default function Speakers() {
               key={person.name}
               className="flex flex-col rounded-xl border border-zinc-200 bg-zinc-50 p-6"
             >
-              <Image
+              <img
                 alt={`${person.name} – ${person.role}`}
                 src={person.imageUrl}
                 width={224}
                 height={224}
-                sizes="(min-width:1024px) 14rem, (min-width:640px) 12rem, 10rem"
                 className="mx-auto h-40 w-40 rounded-full object-cover"
               />
               <div className="mt-5 flex flex-1 flex-col">

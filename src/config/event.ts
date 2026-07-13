@@ -35,7 +35,7 @@ export const TALKS: Array<{ title: string; body: string }> = [
   {
     title:
       'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
-    body: 'Mit container.gov.de haben wir als technischer Umsetzungspartner des ZenDiS eine Lösung für die öffentliche Verwaltung geschaffen, um sichere Software-Images nutzen und teilen zu können.',
+    body: 'Mit container.gov.de haben wir als technischer Umsetzungspartner des ZenDiS eine Lösung für die öffentliche Verwaltung Deutschlands geschaffen, um sichere Software-Images nutzen und teilen zu können.',
   },
 ]
 

@@ -1,4 +1,3 @@
-import { Button } from '@/components/Button'
 import { EVENT, SCHEDULE } from '@/config/event'
 
 export function Schedule() {
@@ -65,14 +64,14 @@ export function Schedule() {
         </ol>
 
         <div className="mt-16 flex justify-start">
-          <Button
+          <a
             href={EVENT.ticketUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 text-lg font-semibold"
           >
             Sicher Dir Dein Ticket →
-          </Button>
+          </a>
         </div>
       </div>
     </section>
