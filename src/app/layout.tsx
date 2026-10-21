@@ -1,20 +1,27 @@
 import { type Metadata } from 'next'
-import { DM_Sans, Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import Image from 'next/image'
 import clsx from 'clsx'
 
 import { EVENT } from '@/config/event'
 import '@/styles/tailwind.css'
 
-const inter = Inter({
-  subsets: ['latin'],
+// Inter and DM Sans (latin subset, the files Google Fonts serves) are
+// self-hosted so the build does not depend on the Google Fonts API.
+// License: SIL Open Font License, see src/fonts/OFL-*.txt.
+const inter = localFont({
+  src: '../fonts/inter-latin.woff2',
+  weight: '100 900',
   display: 'swap',
   variable: '--font-inter',
 })
 
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
+const dmSans = localFont({
+  src: [
+    { path: '../fonts/dm-sans-latin.woff2', weight: '400' },
+    { path: '../fonts/dm-sans-latin.woff2', weight: '500' },
+    { path: '../fonts/dm-sans-latin.woff2', weight: '700' },
+  ],
   display: 'swap',
   variable: '--font-dm-sans',
 })
