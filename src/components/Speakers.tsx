@@ -23,7 +23,7 @@ function SpeakerLink({
         href={href}
         target="_blank"
         rel="noopener"
-        className="inline-flex items-start gap-1.5 rounded-md border border-l3-700 bg-white px-2.5 py-1.5 text-left text-sm font-medium text-zinc-800 transition-colors hover:bg-l3-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+        className="inline-flex items-start gap-1.5 rounded-md border border-l3-700 bg-white px-2.5 py-1.5 text-left text-sm font-medium text-zinc-800 transition-colors hover:bg-l3-50 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
       >
         <Icon
           aria-hidden="true"
@@ -50,12 +50,12 @@ export default function Speakers({ event }: { event: EventConfig }) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <p className="text-base font-semibold uppercase tracking-widest text-l3-700">
+          <p className="text-base font-semibold tracking-widest text-l3-700 uppercase">
             {speakers.eyebrow}
           </p>
           <h2
             id="speakers-heading"
-            className="mt-3 text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-balance text-zinc-900 sm:text-4xl"
           >
             {t.speakersHeading}
           </h2>
@@ -94,7 +94,7 @@ export default function Speakers({ event }: { event: EventConfig }) {
                 <h3 className="text-lg font-semibold text-zinc-900">
                   {person.name}
                 </h3>
-                <div className="mt-0.5 min-h-[3rem] text-base text-zinc-500">
+                <div className="mt-0.5 min-h-12 text-base text-zinc-500">
                   {person.role && <p>{person.role}</p>}
                   {person.company && !person.company.href && (
                     <p>{person.company.name}</p>
@@ -123,10 +123,10 @@ export default function Speakers({ event }: { event: EventConfig }) {
                   )}
                 </div>
                 <div className="mt-4 flex-1 border-t border-zinc-200 pt-4">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-l3-700">
+                  <p className="text-xs font-semibold tracking-widest text-l3-700 uppercase">
                     Talk
                   </p>
-                  <p className="mt-1.5 text-base font-semibold leading-snug text-zinc-900">
+                  <p className="mt-1.5 text-base leading-snug font-semibold text-zinc-900">
                     {person.topic}
                   </p>
                   {person.topicSubtitle && (
@@ -140,7 +140,7 @@ export default function Speakers({ event }: { event: EventConfig }) {
                     href={person.pdfFile}
                     download
                     aria-label={`${t.downloadSlides}: ${person.topic}`}
-                    className="mt-4 inline-flex justify-center rounded-lg bg-l3-500 px-4 py-2 text-base font-semibold text-black transition hover:bg-l3-400 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-l3-700"
+                    className="mt-4 inline-flex justify-center rounded-lg bg-l3-500 px-4 py-2 text-base font-semibold text-black transition hover:bg-l3-400 focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-l3-700"
                   >
                     {t.downloadSlides}
                   </a>

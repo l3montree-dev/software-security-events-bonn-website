@@ -37,7 +37,7 @@ export default function Speaker() {
   return (
     <div className="bg-black py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <h2 className="text-center text-3xl font-bold leading-8 text-zinc-100">
+        <h2 className="text-center text-3xl leading-8 font-bold text-zinc-100">
           The Speakers
         </h2>
         <ul

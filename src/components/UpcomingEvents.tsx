@@ -20,9 +20,9 @@ export function UpcomingEventButtons({
       <Link
         key={target}
         href={target}
-        className="group inline-flex w-full flex-col rounded-md border border-white/15 bg-white/5 px-5 py-2.5 text-left transition-colors hover:border-l3-400/60 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500 sm:w-auto"
+        className="group inline-flex w-full flex-col rounded-md border border-white/15 bg-white/5 px-5 py-2.5 text-left transition-colors hover:border-l3-400/60 hover:bg-white/10 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500 sm:w-auto"
       >
-        <span className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+        <span className="text-xs font-semibold tracking-widest text-zinc-400 uppercase">
           {t.upcomingEvent}
         </span>{' '}
         <span
@@ -62,12 +62,12 @@ export function UpcomingEvents({
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-l3-400">
+          <p className="text-sm font-semibold tracking-widest text-l3-400 uppercase">
             {t.upcomingEyebrow}
           </p>
           <h2
             id="future-events-heading"
-            className="mt-3 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl"
           >
             {t.upcomingHeading}
           </h2>
@@ -83,7 +83,7 @@ export function UpcomingEvents({
             return (
               <li
                 key={target}
-                className="flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6 sm:p-8"
+                className="flex flex-col rounded-xl border border-white/10 bg-white/3 p-6 sm:p-8"
               >
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-base text-zinc-400">
                   <span className="flex items-center gap-1.5">
@@ -100,7 +100,7 @@ export function UpcomingEvents({
                     {upcoming.time}
                   </span>
                   {isThisPage && (
-                    <span className="rounded-full bg-l3-400/15 px-3 py-0.5 text-xs font-semibold uppercase tracking-widest text-l3-400">
+                    <span className="rounded-full bg-l3-400/15 px-3 py-0.5 text-xs font-semibold tracking-widest text-l3-400 uppercase">
                       {t.youAreHere}
                     </span>
                   )}

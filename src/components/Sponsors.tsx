@@ -45,12 +45,12 @@ export function Sponsors({ event }: { event: EventConfig }) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Current partners */}
         <div className="mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-l3-700">
+          <p className="text-sm font-semibold tracking-widest text-l3-700 uppercase">
             {t.sponsorsEyebrow}
           </p>
           <h2
             id="sponsors-heading"
-            className="mt-3 text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-balance text-zinc-900 sm:text-4xl"
           >
             {t.sponsorsHeading}
           </h2>
@@ -69,7 +69,7 @@ export function Sponsors({ event }: { event: EventConfig }) {
         {/* Past partners */}
         {event.pastPartners.length > 0 && (
           <div className="mt-20 border-t border-zinc-200 pt-12">
-            <h3 className="mb-8 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+            <h3 className="mb-8 text-sm font-semibold tracking-widest text-zinc-500 uppercase">
               {t.pastPartners}
             </h3>
             <p className="mb-10 max-w-2xl text-lg leading-7 text-zinc-600">

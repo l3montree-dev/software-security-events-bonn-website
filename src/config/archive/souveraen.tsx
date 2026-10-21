@@ -35,16 +35,18 @@ export const SOUVERAEN: EventConfig = {
           Rolle von Open-Source-Software und die Frage: Wer kontrolliert
           eigentlich den Code?
         </p>
-        <p>Informationen zur Konferenz:</p>
-        <a href={PHISH_CHIPS_URL} target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/pnc_banner.jpg"
-            alt="Banner der Phish & Chips Cybersecurity Konferenz"
-            width={1210}
-            height={450}
-            className="h-auto w-full rounded-xl"
-          />
-        </a>
+        <div>
+          <p>Informationen zur Konferenz:</p>
+          <a href={PHISH_CHIPS_URL} target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/pnc_banner.jpg"
+              alt="Banner der Phish & Chips Cybersecurity Konferenz"
+              width={1210}
+              height={450}
+              className="h-auto w-full rounded-xl"
+            />
+          </a>
+        </div>
         <p>
           Sichere Dir 25% Rabatt auf Dein Ticket – Code:{' '}
           <strong>L3montree25P&amp;C</strong> 🤫

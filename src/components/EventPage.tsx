@@ -20,7 +20,7 @@ export function EventPage({
   const archived = !UPCOMING_EVENTS.some((e) => e.href === href)
 
   return (
-    <div lang={event.lang} className="break-words">
+    <div lang={event.lang} className="wrap-break-word">
       <Hero event={event} href={href} archived={archived} />
       <Speakers event={event} />
       <Topic event={event} href={href} />

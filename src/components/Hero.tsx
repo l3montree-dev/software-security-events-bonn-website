@@ -22,10 +22,10 @@ export function Hero({
 
   return (
     <section className="relative overflow-hidden bg-black">
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8 lg:pt-16">
+      <div className="mx-auto max-w-7xl px-6 pt-12 pb-24 lg:px-8 lg:pt-16">
         {/* Top badge */}
         <div className="mb-8 flex">
-          <p className="inline-flex items-center gap-2 border-b-2 border-l3-400 pb-1 text-base font-semibold uppercase tracking-widest text-l3-400">
+          <p className="inline-flex items-center gap-2 border-b-2 border-l3-400 pb-1 text-base font-semibold tracking-widest text-l3-400 uppercase">
             {hero.badge}
           </p>
         </div>
@@ -34,7 +34,7 @@ export function Hero({
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left column */}
           <div className="flex flex-col justify-center">
-            <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-balance text-white sm:text-5xl lg:text-6xl">
               {hero.title}
               {hero.titleHighlight && (
                 <>
@@ -62,7 +62,7 @@ export function Hero({
                 href={event.location.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 rounded transition-colors hover:text-l3-300"
+                className="flex items-center gap-1.5 rounded-sm transition-colors hover:text-l3-300"
               >
                 <Icon d={ICONS.pin} />
                 {event.location.name}
@@ -86,14 +86,14 @@ export function Hero({
 
           {/* Right column — talks */}
           <div className="flex flex-col justify-center">
-            <h2 className="mb-4 text-base font-semibold uppercase tracking-widest text-zinc-400">
+            <h2 className="mb-4 text-base font-semibold tracking-widest text-zinc-400 uppercase">
               {event.talksLabel}
             </h2>
             <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {event.talks.map((talk, index) => {
                 const text = (
                   <span className="min-w-0">
-                    <span className="block text-base font-semibold leading-6 text-white transition-colors group-hover:text-l3-400">
+                    <span className="block text-base leading-6 font-semibold text-white transition-colors group-hover:text-l3-400">
                       {talk.title}
                     </span>
                     {talk.subtitle && (
@@ -109,7 +109,7 @@ export function Hero({
                     {talk.body ? (
                       <a
                         href={`#${talkAnchor(index)}`}
-                        className="group flex h-full items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-colors hover:border-l3-400/50 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+                        className="group flex h-full items-start gap-3 rounded-xl border border-white/10 bg-white/3 px-5 py-4 transition-colors hover:border-l3-400/50 hover:bg-white/6 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
                       >
                         <ArrowDownIcon
                           aria-hidden="true"
@@ -119,7 +119,7 @@ export function Hero({
                         <span className="sr-only"> – {t.toAbstract}</span>
                       </a>
                     ) : (
-                      <div className="flex h-full items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+                      <div className="flex h-full items-start gap-3 rounded-xl border border-white/10 bg-white/3 px-5 py-4">
                         <span
                           aria-hidden="true"
                           className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-500"
@@ -137,7 +137,7 @@ export function Hero({
 
         {/* Sponsor bar */}
         <div className="mt-20 border-t border-white/10 pt-10">
-          <h2 className="mb-6 text-base font-semibold uppercase tracking-widest text-zinc-400">
+          <h2 className="mb-6 text-base font-semibold tracking-widest text-zinc-400 uppercase">
             {t.presentedBy}
           </h2>
           <ul className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20">

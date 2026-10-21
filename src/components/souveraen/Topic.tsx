@@ -6,10 +6,10 @@ export default function Topic() {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
+          <div className="lg:pt-4 lg:pr-8">
             {/* Linke Spalte */}
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-l3-600"></h2>
+              <h2 className="text-base leading-7 font-semibold text-l3-600"></h2>
               Quo Vadis, IT-Sec?
               <h3 className="mt-2 font-display text-3xl font-medium tracking-tighter text-black">
                 Digitale Souveränität in der Cybersecurity
@@ -102,14 +102,14 @@ export default function Topic() {
               alt="Publikum beim Event Digitale Souveränität"
               height={1000}
               width={800}
-              className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              className="h-auto w-full rounded-lg shadow-xl ring-1 shadow-black/10 ring-white/10"
             />
             <Image
               src="/network.JPG"
               alt="Networking beim Event Digitale Souveränität"
               height={1000}
               width={800}
-              className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              className="h-auto w-full rounded-lg shadow-xl ring-1 shadow-black/10 ring-white/10"
             />
             <a
               href="https://www.digitalhub.de/phish-chips"
@@ -121,7 +121,7 @@ export default function Topic() {
                 alt="Banner der Phish & Chips Cybersecurity Konferenz"
                 height={1000}
                 width={800}
-                className="h-auto w-full cursor-pointer rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+                className="h-auto w-full cursor-pointer rounded-lg shadow-xl ring-1 shadow-black/10 ring-white/10"
               />
             </a>
           </div>

@@ -1,4 +1,4 @@
-FROM node:24.15.0@sha256:e9891237dfbb1de60ce19e9ff9fac5d73ad9c37da303ad72ff2a425ad1057e71 as builder
+FROM node:24.22.1@sha256:5630d96570d4ca4a8523fda3d169d0114554d0f48293e1ae3db6be7c79b42a17 as builder
 
 WORKDIR /usr/app/
 ENV PORT 3000
@@ -14,7 +14,7 @@ ENV NODE_ENV=production
 RUN npm run build
 
 # checkov:skip=CKV_DOCKER_3
-FROM gcr.io/distroless/nodejs24-debian12:nonroot@sha256:1ab51c2cd3568f94aa31d4e5eb7e7918a16a30179d004a0c7011376783eb5dbf
+FROM gcr.io/distroless/nodejs24-debian12:nonroot@sha256:14d42e2511532589a7c7e01a753667a74fcc96266e137e8125006b87b0c32d0a
 
 USER 53111
 

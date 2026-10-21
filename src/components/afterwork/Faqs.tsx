@@ -50,10 +50,10 @@ export default function Faqs() {
           .
         </p>
         <div className="mt-20">
-          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
+          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:space-y-0 sm:gap-x-6 sm:gap-y-16 lg:grid-cols-3 lg:gap-x-10">
             {faqs.map((faq) => (
               <div key={faq.id}>
-                <dt className="text-base font-semibold leading-7 text-white">
+                <dt className="text-base leading-7 font-semibold text-white">
                   {faq.question}
                 </dt>
                 <dd className="mt-2 text-base leading-7 text-gray-300">

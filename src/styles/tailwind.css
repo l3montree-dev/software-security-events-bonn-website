@@ -1,3 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@headlessui/tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@theme {
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 2rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2.5rem;
+  --text-3xl: 2rem;
+  --text-3xl--line-height: 2.5rem;
+  --text-4xl: 2.5rem;
+  --text-4xl--line-height: 3rem;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 3.5rem;
+  --text-6xl: 4rem;
+  --text-6xl--line-height: 1;
+  --text-7xl: 5rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 6rem;
+  --text-8xl--line-height: 1;
+  --text-9xl: 8rem;
+  --text-9xl--line-height: 1;
+
+  --radius-4xl: 2rem;
+  --radius-5xl: 2.5rem;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-dm-sans);
+
+  --container-2xl: 40rem;
+
+  --color-l3-50: #fbfcea;
+  --color-l3-100: #f9f9c8;
+  --color-l3-200: #f5f193;
+  --color-l3-300: #efe355;
+  --color-l3-400: #e9d432;
+  --color-l3-500: #d8ba1a;
+  --color-l3-600: #ba9214;
+  --color-l3-700: #956b13;
+  --color-l3-800: #7c5517;
+  --color-l3-900: #69461a;
+  --color-l3-950: #3d250b;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}

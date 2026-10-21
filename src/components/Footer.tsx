@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const linkClass =
-  'inline-block rounded py-1 text-zinc-300 transition-colors hover:text-l3-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500'
+  'inline-block rounded-sm py-1 text-zinc-300 transition-colors hover:text-l3-400 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500'
 
 function EventLink({
   href,
@@ -35,7 +35,7 @@ export function Footer() {
         <div className="flex flex-col items-start gap-8 text-sm text-zinc-400">
           <Link
             href="/"
-            className="flex-shrink-0 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+            className="shrink-0 rounded-md focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
             aria-label="L3montree – zur Startseite"
           >
             <Image
@@ -77,7 +77,7 @@ export function Footer() {
           className="grid gap-10 sm:grid-cols-[auto_1fr] md:justify-self-end"
         >
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+            <h2 className="text-sm font-semibold tracking-widest text-zinc-400 uppercase">
               Kommende Events
             </h2>
             <ul className="mt-4 grid gap-y-3 text-sm">
@@ -87,7 +87,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+            <h2 className="text-sm font-semibold tracking-widest text-zinc-400 uppercase">
               Vergangene Events
             </h2>
             <ul className="mt-4 grid gap-x-10 gap-y-3 text-sm lg:grid-cols-2">

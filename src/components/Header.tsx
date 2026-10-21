@@ -17,7 +17,7 @@ import {
 } from '@/config/navigation'
 
 const itemClass =
-  'flex flex-col rounded-md border-l-2 border-transparent px-4 py-3 text-white transition-colors hover:bg-white/10 hover:text-l3-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500 aria-[current=page]:border-l3-400 aria-[current=page]:bg-white/10 aria-[current=page]:text-l3-400'
+  'flex flex-col rounded-md border-l-2 border-transparent px-4 py-3 text-white transition-colors hover:bg-white/10 hover:text-l3-400 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500 aria-[current=page]:border-l3-400 aria-[current=page]:bg-white/10 aria-[current=page]:text-l3-400'
 
 function EventItem({
   href,
@@ -54,14 +54,14 @@ export function Header() {
     <>
       <Popover
         as="header"
-        className="sticky top-0 z-50 border-b border-white/10 bg-black/95 backdrop-blur-sm"
+        className="sticky top-0 z-50 border-b border-white/10 bg-black/95 backdrop-blur-xs"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between gap-4 md:h-24">
             {/* Logo – Home Button */}
             <Link
               href="/"
-              className="flex-shrink-0 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+              className="shrink-0 rounded-md focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
               aria-label="L3montree – zur Startseite"
             >
               <Image
@@ -78,9 +78,9 @@ export function Header() {
               <Link
                 href="/"
                 aria-current={isHome ? 'page' : undefined}
-                className="group flex flex-col items-center rounded-md px-3 py-1 text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+                className="group flex flex-col items-center rounded-md px-3 py-1 text-center focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
               >
-                <span className="text-xs font-semibold uppercase tracking-widest text-l3-400">
+                <span className="text-xs font-semibold tracking-widest text-l3-400 uppercase">
                   Nächstes Event
                 </span>{' '}
                 <span className="font-display text-2xl font-medium tracking-tight text-white transition-colors group-hover:text-l3-400">
@@ -93,17 +93,17 @@ export function Header() {
             </div>
 
             {/* Menu button */}
-            <PopoverButton className="group flex flex-shrink-0 items-center gap-3 rounded-md px-3 py-2 text-white transition-colors hover:text-l3-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500 data-[open]:text-l3-400">
-              <span className="text-sm font-semibold uppercase tracking-widest">
+            <PopoverButton className="group flex shrink-0 items-center gap-3 rounded-md px-3 py-2 text-white transition-colors hover:text-l3-400 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500 data-open:text-l3-400">
+              <span className="text-sm font-semibold tracking-widest uppercase">
                 Events
               </span>
               <span
                 aria-hidden="true"
                 className="flex flex-col items-center justify-center gap-2"
               >
-                <span className="block h-0.5 w-8 origin-center bg-current transition-all duration-300 group-data-[open]:translate-y-2.5 group-data-[open]:rotate-45 motion-reduce:transition-none" />
-                <span className="block h-0.5 w-8 bg-current transition-all duration-300 group-data-[open]:opacity-0 motion-reduce:transition-none" />
-                <span className="block h-0.5 w-8 origin-center bg-current transition-all duration-300 group-data-[open]:-translate-y-2.5 group-data-[open]:-rotate-45 motion-reduce:transition-none" />
+                <span className="block h-0.5 w-8 origin-center bg-current transition-all duration-300 group-data-open:translate-y-2.5 group-data-open:rotate-45 motion-reduce:transition-none" />
+                <span className="block h-0.5 w-8 bg-current transition-all duration-300 group-data-open:opacity-0 motion-reduce:transition-none" />
+                <span className="block h-0.5 w-8 origin-center bg-current transition-all duration-300 group-data-open:-translate-y-2.5 group-data-open:-rotate-45 motion-reduce:transition-none" />
               </span>
             </PopoverButton>
           </div>
@@ -112,7 +112,7 @@ export function Header() {
         {/* Dropdown Navigation */}
         <PopoverPanel
           focus
-          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-white/10 bg-black/95 backdrop-blur-sm md:max-h-[calc(100dvh-6rem)]"
+          className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-white/10 bg-black/95 backdrop-blur-xs md:max-h-[calc(100dvh-6rem)]"
         >
           <nav
             aria-label="Events"
@@ -121,7 +121,7 @@ export function Header() {
             <div>
               <p
                 id="nav-upcoming-events"
-                className="px-4 text-sm font-semibold uppercase tracking-widest text-zinc-400"
+                className="px-4 text-sm font-semibold tracking-widest text-zinc-400 uppercase"
               >
                 Kommende Events
               </p>
@@ -141,7 +141,7 @@ export function Header() {
             <div>
               <p
                 id="nav-past-events"
-                className="px-4 text-sm font-semibold uppercase tracking-widest text-zinc-400"
+                className="px-4 text-sm font-semibold tracking-widest text-zinc-400 uppercase"
               >
                 Vergangene Events
               </p>
@@ -183,9 +183,9 @@ export function Header() {
       <Link
         href="/"
         aria-current={isHome ? 'page' : undefined}
-        className="group flex flex-wrap items-baseline justify-center gap-x-2 border-b border-white/10 bg-black px-4 py-2 text-center text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-l3-500 md:hidden"
+        className="group flex flex-wrap items-baseline justify-center gap-x-2 border-b border-white/10 bg-black px-4 py-2 text-center text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500 focus-visible:ring-inset md:hidden"
       >
-        <span className="text-xs font-semibold uppercase tracking-widest text-l3-400">
+        <span className="text-xs font-semibold tracking-widest text-l3-400 uppercase">
           Nächstes Event
         </span>{' '}
         <span className="font-semibold text-white group-hover:text-l3-400">

@@ -20,12 +20,12 @@ export function Schedule({
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-l3-400">
+          <p className="text-sm font-semibold tracking-widest text-l3-400 uppercase">
             {t.scheduleEyebrow}
           </p>
           <h2
             id="schedule-heading"
-            className="mt-3 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl"
           >
             {t.scheduleHeading(event.date)}
           </h2>
@@ -35,7 +35,7 @@ export function Schedule({
           {/* vertical line (from sm up; on phones the time sits in the card) */}
           <div
             aria-hidden="true"
-            className="absolute bottom-0 top-0 hidden w-px bg-white/10 sm:left-36 sm:block"
+            className="absolute top-0 bottom-0 hidden w-px bg-white/10 sm:left-36 sm:block"
           />
 
           <ol role="list" className="relative">
@@ -45,7 +45,7 @@ export function Schedule({
                 className="relative flex gap-6 pb-4 last:pb-0 sm:pb-10"
               >
                 {/* Time badge */}
-                <div className="hidden w-32 shrink-0 pt-[1.125rem] text-right sm:block">
+                <div className="hidden w-32 shrink-0 pt-4.5 text-right sm:block">
                   <time
                     dateTime={`${event.dateISO}T${slot.start}`}
                     className="font-mono text-sm font-semibold text-l3-400"
@@ -55,7 +55,7 @@ export function Schedule({
                 </div>
 
                 {/* Content */}
-                <div className="flex min-w-0 flex-1 flex-col rounded-xl border border-white/5 bg-white/[0.03] px-5 py-4">
+                <div className="flex min-w-0 flex-1 flex-col rounded-xl border border-white/5 bg-white/3 px-5 py-4">
                   <h3 className="text-base font-semibold text-white">
                     {slot.name}
                   </h3>
@@ -69,7 +69,7 @@ export function Schedule({
                       {slot.details}
                     </p>
                   )}
-                  <p className="order-first mb-1 font-mono text-sm font-semibold text-l3-400 sm:order-none sm:mb-0 sm:mt-2 sm:font-normal sm:text-zinc-400">
+                  <p className="order-first mb-1 font-mono text-sm font-semibold text-l3-400 sm:order-0 sm:mt-2 sm:mb-0 sm:font-normal sm:text-zinc-400">
                     <time dateTime={`${event.dateISO}T${slot.start}`}>
                       {slot.start}
                     </time>{' '}

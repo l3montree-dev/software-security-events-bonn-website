@@ -53,12 +53,12 @@ export default function Topic({
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-l3-400">
+          <p className="text-sm font-semibold tracking-widest text-l3-400 uppercase">
             {topic.eyebrow}
           </p>
           <h2
             id="topic-heading"
-            className="mt-3 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl"
           >
             {topic.heading}
           </h2>
@@ -71,7 +71,7 @@ export default function Topic({
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left: talks */}
           <div className="flex flex-col gap-4">
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+            <h3 className="text-sm font-semibold tracking-widest text-zinc-400 uppercase">
               {event.talksLabel}
             </h3>
             {event.talks.map((talk, index) => {
@@ -81,7 +81,7 @@ export default function Topic({
                 <div
                   key={talk.title}
                   id={talkAnchor(index)}
-                  className="rounded-xl border border-white/5 bg-white/[0.03] px-6 py-5"
+                  className="rounded-xl border border-white/5 bg-white/3 px-6 py-5"
                 >
                   <h4 className="text-base font-semibold text-white">
                     {talk.title}
@@ -125,7 +125,7 @@ export default function Topic({
                 width={image.width}
                 height={image.height}
                 sizes="(min-width:1024px) 36rem, 100vw"
-                className="aspect-[3/2] w-full rounded-xl object-cover"
+                className="aspect-3/2 w-full rounded-xl object-cover"
               />
             ))}
           </div>
@@ -133,7 +133,7 @@ export default function Topic({
 
         {/* Past events */}
         <div className="mt-20 border-t border-white/10 pt-12">
-          <h3 className="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-400">
+          <h3 className="mb-6 text-sm font-semibold tracking-widest text-zinc-400 uppercase">
             {t.pastEvents}
           </h3>
           <ul

@@ -12,12 +12,12 @@ export default function Faqs({ event }: { event: EventConfig }) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-l3-700">
+          <p className="text-sm font-semibold tracking-widest text-l3-700 uppercase">
             {t.faqEyebrow}
           </p>
           <h2
             id="faq-heading"
-            className="mt-3 text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
+            className="mt-3 text-3xl font-bold tracking-tight text-balance text-zinc-900 sm:text-4xl"
           >
             FAQs
           </h2>

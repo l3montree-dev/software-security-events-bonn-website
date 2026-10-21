@@ -6,9 +6,9 @@ export default function Topic() {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-8 lg:pt-4">
+          <div className="lg:pt-4 lg:pr-8">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-l3-600">
+              <h2 className="text-base leading-7 font-semibold text-l3-600">
                 Wissen allein reicht nicht!
               </h2>
 
@@ -16,7 +16,7 @@ export default function Topic() {
                 Cybersecurity in dynamischen Zeiten
               </h3>
 
-              <p className="mb-4 mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 mb-4 text-base leading-8 text-zinc-800">
                 Die Bedrohungslage im Cyberraum ist komplex und dynamisch –
                 besonders im Defence-Bereich. Globale Konflikte, hybride
                 Angriffsszenarien und die Abhängigkeit von kritischen
@@ -76,7 +76,7 @@ export default function Topic() {
                 </li>
               </ul>
 
-              <p className="mb-6 mt-6 text-base leading-8 text-zinc-800">
+              <p className="mt-6 mb-6 text-base leading-8 text-zinc-800">
                 Im Anschluss an die Talks wird es bei Food & Drinks die
                 Möglichkeit für vertiefende Fragen und Networking geben.
               </p>
@@ -139,7 +139,7 @@ export default function Topic() {
               height={600}
               width={900}
               sizes="(min-width:1024px) 45rem, (min-width:640px) 36rem, 100vw"
-              className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              className="h-auto w-full rounded-lg shadow-xl ring-1 shadow-black/10 ring-white/10"
             />
             <Image
               src="/crowd.jpeg"
@@ -147,7 +147,7 @@ export default function Topic() {
               height={600}
               width={900}
               sizes="(min-width:1024px) 45rem, (min-width:640px) 36rem, 100vw"
-              className="h-auto w-full rounded-lg shadow-xl shadow-black/10 ring-1 ring-white/10"
+              className="h-auto w-full rounded-lg shadow-xl ring-1 shadow-black/10 ring-white/10"
             />
           </div>
         </div>

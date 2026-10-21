@@ -28,7 +28,7 @@ export function Sponsors() {
               rel="noopener noreferrer"
             >
               <Image
-                className="lg:max-h-26 max-h-24 w-full object-contain object-center lg:max-h-24 lg:object-right"
+                className="max-h-24 w-full object-contain object-center lg:max-h-24 lg:max-h-26 lg:object-right"
                 src="/digitalhub.svg"
                 alt="DigitalHub Bonn Logo"
                 width={104}
@@ -41,7 +41,7 @@ export function Sponsors() {
               rel="noopener noreferrer"
             >
               <Image
-                className="lg:max-h-26 max-h-24 w-full object-contain object-center lg:max-h-24 lg:object-right"
+                className="max-h-24 w-full object-contain object-center lg:max-h-24 lg:max-h-26 lg:object-right"
                 src="/ccb-logo.png"
                 alt="Cybersecurity Cluster Bonn e.V. Logo"
                 width={158}

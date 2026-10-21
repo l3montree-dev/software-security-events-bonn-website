@@ -50,7 +50,7 @@ export function TalkAbstract({
         aria-expanded={open}
         aria-controls={id}
         onClick={() => setOpen(!open)}
-        className="mt-3 inline-flex items-center gap-1.5 rounded py-1 text-sm font-semibold text-l3-400 transition-colors hover:text-l3-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+        className="mt-3 inline-flex items-center gap-1.5 rounded-sm py-1 text-sm font-semibold text-l3-400 transition-colors hover:text-l3-300 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
       >
         {open ? labels.readLess : labels.readMore}
         <span className="sr-only">: {title}</span>

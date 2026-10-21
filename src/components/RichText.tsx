@@ -12,7 +12,7 @@ export function RichText({
   return (
     <div
       className={clsx(
-        'space-y-4 [&_a:hover]:text-l3-300 [&_a]:font-medium [&_a]:text-l3-400 [&_a]:underline [&_a]:decoration-dashed [&_a]:underline-offset-2 [&_strong]:font-semibold [&_strong]:text-zinc-200 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-6',
+        'space-y-4 [&_a]:font-medium [&_a]:text-l3-400 [&_a]:underline [&_a]:decoration-dashed [&_a]:underline-offset-2 [&_a:hover]:text-l3-300 [&_strong]:font-semibold [&_strong]:text-zinc-200 [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-6',
         className,
       )}
     >
