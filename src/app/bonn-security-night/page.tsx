@@ -1,29 +1,17 @@
-import Faqs from '@/components/bonn-security-night/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/bonn-security-night/Header'
-import { Hero } from '@/components/bonn-security-night/Hero'
-import { Schedule } from '@/components/bonn-security-night/Schedule'
-import Speaker from '@/components/bonn-security-night/Speakers'
-import { Sponsors } from '@/components/bonn-security-night/Sponsors'
-import Topic from '@/components/bonn-security-night/Topic'
+import { EventPage } from '@/components/EventPage'
+import { Layout } from '@/components/Layout'
+import { BONN_SECURITY_NIGHT } from '@/config/archive/bonn-security-night'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Bonn Security Night',
-  description: 'Software & Cyber-Security Event Bonn',
+  title: BONN_SECURITY_NIGHT.name,
+  description: BONN_SECURITY_NIGHT.summary,
 }
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Topic />
-      <Speaker />
-      <Schedule />
-      <Sponsors />
-      <Faqs />
-      <Footer />
-    </>
+    <Layout>
+      <EventPage event={BONN_SECURITY_NIGHT} href="/bonn-security-night" />
+    </Layout>
   )
 }

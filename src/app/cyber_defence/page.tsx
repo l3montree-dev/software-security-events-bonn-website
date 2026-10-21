@@ -1,29 +1,17 @@
-import Faqs from '@/components/cyber_defence/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/cyber_defence/Header'
-import { Hero } from '@/components/cyber_defence/Hero'
-import { Schedule } from '@/components/cyber_defence/Schedule'
-import Speaker from '@/components/cyber_defence/Speakers'
-import { Sponsors } from '@/components/cyber_defence/Sponsors'
-import Topic from '@/components/cyber_defence/Topic'
+import { EventPage } from '@/components/EventPage'
+import { Layout } from '@/components/Layout'
+import { CYBER_DEFENCE } from '@/config/archive/cyber-defence'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cybersecurity in Defence',
-  description: 'Software & Cyber-Security Event Bonn',
+  title: CYBER_DEFENCE.name,
+  description: CYBER_DEFENCE.summary,
 }
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Topic />
-      <Speaker />
-      <Schedule />
-      <Sponsors />
-      <Faqs />
-      <Footer />
-    </>
+    <Layout>
+      <EventPage event={CYBER_DEFENCE} href="/cyber_defence" />
+    </Layout>
   )
 }

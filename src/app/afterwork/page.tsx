@@ -1,29 +1,17 @@
-import Faqs from '@/components/afterwork/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/afterwork/Header'
-import { Hero } from '@/components/afterwork/Hero'
-import { Schedule } from '@/components/afterwork/Schedule'
-import Speaker from '@/components/afterwork/Speakers'
-import { Sponsors } from '@/components/afterwork/Sponsors'
-import Topic from '@/components/afterwork/Topic'
+import { EventPage } from '@/components/EventPage'
+import { Layout } from '@/components/Layout'
+import { AFTERWORK } from '@/config/archive/afterwork'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cybersecurity AfterWorkshop',
-  description: 'Software & Cyber-Security Event Bonn',
+  title: AFTERWORK.name,
+  description: AFTERWORK.summary,
 }
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Topic />
-      <Speaker />
-      <Schedule />
-      <Sponsors />
-      <Faqs />
-      <Footer />
-    </>
+    <Layout>
+      <EventPage event={AFTERWORK} href="/afterwork" />
+    </Layout>
   )
 }

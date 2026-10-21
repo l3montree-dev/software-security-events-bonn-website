@@ -1,213 +1,56 @@
-// ─── Event config ────────────────────────────────────────────────────────────
-// All event-specific data lives here. Update this file for the next event.
+// ─── Current event ───────────────────────────────────────────────────────────
+// All data of the current event (shown on /) lives here. For the next event:
+// 1. move this config to src/config/archive/<slug>.ts and add a page for it
+//    (see src/app/oss-meetup/page.tsx),
+// 2. add the archived event to src/config/navigation.ts,
+// 3. update this file.
 
-export const EVENT = {
-  name: 'OSS Meetup Bonn',
-  title: 'Open Source & digitale Souveränität',
-  subtitle:
-    'Expert*innen, Maintainer*innen und Entwickler*innen aus der OSS Community aus Bonn und Umgebung treffen sich in lockerer Atmosphäre. Neben Snack & Drinks gibt es spannende Impulsvorträge.',
-  date: '14. Juli 2026',
-  dateISO: '2026-07-14',
-  time: '17:00 Uhr',
-  location: {
-    name: 'L3montree HQ, Markt 3, 53111 Bonn',
-    mapsUrl: 'https://maps.app.goo.gl/BS8JJH8eGxBSEmz49',
-  },
-  ticketUrl: 'https://ticket.bonn.digital/bonndigital/ossbn/',
-}
-
-// ─── Talks ───────────────────────────────────────────────────────────────────
-
-export const TALKS: Array<{ title: string; body: string }> = [
-  {
-    title: 'Ein digitaler Fallschirm für die Demokratie',
-    body: '',
-  },
-  {
-    title: 'Erfolgsmodell Open Source',
-    body: 'Wenn Sie digital wirklich unabhängig und souverän agieren wollen, führt am Geschäftsmodell Open Source kein Weg vorbei. Ein kurzer Abriss der letzten 20 Jahre und ein noch kürzerer Ausblick auf die nächsten.',
-  },
-  {
-    title:
-      'Jenseits von Meta und Musk: Marketing mit OpenSource-Software im Fediverse',
-    body: 'Die Agentur von Bonn.digital hat schon immer auf Marketing-Tools im OpenSource-Bereich gesetzt. Sascha Foerster gibt einen SpeedRun durch die Marketing-Toolbox von Bonn.digital, auf Basis von OpenSource-Software mit Fokus aufs Fediverse.',
-  },
-  {
-    title:
-      'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
-    body: 'Mit container.gov.de haben wir als technischer Umsetzungspartner des ZenDiS eine Lösung für die öffentliche Verwaltung Deutschlands geschaffen, um sichere Software-Images nutzen und teilen zu können.',
-  },
-]
-
-// ─── Speakers ────────────────────────────────────────────────────────────────
-
-export const SPEAKERS: Array<{
-  name: string
-  role: string
-  imageUrl: string
-  topic: string
-  pdfFile: string
-}> = [
-  {
-    name: 'Jutta Horstmann',
-    role: 'Co-CEO - Heinlein Group',
-    imageUrl: '/profilbild-jutta-horstmann.png',
-    topic: 'Ein digitaler Fallschirm für die Demokratie',
-    pdfFile: '',
-  },
-  {
-    name: 'Peter Stamm',
-    role: 'CEO - WhereGroup GmbH',
-    imageUrl: '/Profil_Peter_Stamm.jpg',
-    topic: 'Erfolgsmodell Open Source – Wirklich selbständig sein.',
-    pdfFile: '',
-  },
-  {
-    name: 'Sascha Foerster',
-    role: 'Geschäftsführender Gesellschafter - Bonn.digital',
-    imageUrl: '/profilbild-sascha-foerster.png',
-    topic:
-      'Jenseits von Meta und Musk: Marketing mit OpenSource-Software im Fediverse',
-    pdfFile: '',
-  },
-  {
-    name: 'Sebastian Kawelke',
-    role: 'Softwaresecurity-Expert - L3montree GmbH',
-    imageUrl: '/profilbild_sebastian_kawelke.jpeg',
-    topic:
-      'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
-    pdfFile: '',
-  },
-]
-
-// ─── Schedule ─────────────────────────────────────────────────────────────────
-
-export const SCHEDULE: Array<{
-  id: number
-  name: string
-  description: string | null
-  start: string
-  end: string
-  openForOthers: boolean
-}> = [
-  {
-    id: 1,
-    name: 'Ankommen & erstes Networking',
-    description:
-      'Türen auf! Kommt rein, holt euch was zu trinken und lernt erste Gesichter kennen.',
-    start: '17:00',
-    end: '17:20',
-    openForOthers: false,
-  },
-  {
-    id: 2,
-    name: 'Welcome & Opening',
-    description:
-      'Kurze Begrüßung und Intro in den Abend — wer wir sind, was euch erwartet.',
-    start: '17:30',
-    end: '17:40',
-    openForOthers: false,
-  },
-  {
-    id: 3,
-    name: 'Impulsvortrag 1',
-    description: 'Ein digitaler Fallschirm für die Demokratie',
-    start: '17:40',
-    end: '18:00',
-    openForOthers: false,
-  },
-  {
-    id: 4,
-    name: 'Impulsvortrag 2',
-    description: 'Erfolgsmodell Open Source – Wirklich selbständig sein.',
-    start: '18:00',
-    end: '18:20',
-    openForOthers: false,
-  },
-  {
-    id: 5,
-    name: 'Impulsvortrag 3',
-    description:
-      'Jenseits von Meta und Musk: Marketing mit OpenSource-Software im Fediverse',
-    start: '18:20',
-    end: '18:40',
-    openForOthers: false,
-  },
-  {
-    id: 6,
-    name: 'Impulsvortrag 4',
-    description:
-      'Die neue souveräne & sichere Lieferkette der öffentlichen Verwaltung',
-    start: '18:40',
-    end: '19:00',
-    openForOthers: false,
-  },
-  {
-    id: 7,
-    name: 'Networking, Food & Drinks',
-    description:
-      'Der Abend gehört euch — Zeit für Gespräche, Fragen an die Speaker und neue Kontakte. 🥬 🥔 🥙 🧆 🌮 🍔',
-    start: '19:00',
-    end: '22:00',
-    openForOthers: false,
-  },
-]
+import { LOGOS } from './shared'
+import type { EventConfig, Logo } from './types'
 
 // ─── Partners (current event) ─────────────────────────────────────────────────
-// lightSrc: white/light logo for dark backgrounds (Hero)
-// darkSrc:  dark logo for white backgrounds (Sponsors section)
 
-export const CURRENT_PARTNERS: Array<{
-  href: string
-  lightSrc: string
-  darkSrc: string
-  alt: string
-  width: number
-  height: number
-}> = [
+// "Presented by" in the hero – white logos for the dark background.
+const PRESENTED_BY: Array<Logo> = [
+  {
+    href: 'https://www.l3montree.com/',
+    src: '/l3montree-logo.svg',
+    alt: 'L3montree',
+    width: 158,
+    height: 48,
+  },
+  LOGOS.devguardLight,
+]
+
+// "Die Partner dieses Events" – logos for the white background.
+const PARTNERS: Array<Logo> = [
+  {
+    href: 'https://github.com/sebastianbergmann/phpunit',
+    src: '/phpunit-logo.svg',
+    alt: 'PHPUnit',
+    width: 120,
+    height: 48,
+  },
+  LOGOS.devguard,
+]
+
+// ─── Past partners ────────────────────────────────────────────────────────────
+
+export const PAST_PARTNERS: Array<Logo> = [
   {
     href: 'https://www.digitalhub.de/',
-    lightSrc: '/digitalhub-w.svg',
-    darkSrc: '/digitalhub.svg',
+    src: '/digitalhub.svg',
     alt: 'DigitalHub AG Bonn',
     width: 158,
     height: 48,
   },
   {
-    href: 'https://wheregroup.com/',
-    lightSrc: '/WhereGroup-Logo-quer-cmyk_weiß.png',
-    darkSrc: '/WhereGroup-Logo-quer-cmyk.jpg',
-    alt: 'WhereGroup GmbH',
-    width: 158,
-    height: 48,
-  },
-  {
     href: 'https://bonn.digital/',
-    lightSrc: '/Logo_weiß_bonn.png',
-    darkSrc: '/Logo_schwarz_bonn.png',
+    src: '/Logo_schwarz_bonn.png',
     alt: 'Bonn Digital eGbR',
     width: 158,
     height: 48,
   },
-  {
-    href: 'https://www.l3montree.com/',
-    lightSrc: '/l3montree-logo.svg',
-    darkSrc: '/l3montree.svg',
-    alt: 'L3montree',
-    width: 158,
-    height: 48,
-  },
-]
-
-// ─── Past partners ────────────────────────────────────────────────────────────
-
-export const PAST_PARTNERS: Array<{
-  href: string
-  src: string
-  alt: string
-  width: number
-  height: number
-}> = [
   {
     href: 'https://cyber-security-cluster.eu/',
     src: '/ccb-logo.png',
@@ -329,32 +172,187 @@ export const PAST_PARTNERS: Array<{
   },
 ]
 
-// ─── Past events ──────────────────────────────────────────────────────────────
+// ─── Talks ───────────────────────────────────────────────────────────────────
+// Title and subtitle are shared by the talk list, the speaker card and the
+// schedule.
 
-export const PAST_EVENTS: Array<{ href: string; label: string }> = [
-  { href: '../cyber_defence', label: 'Cybersecurity in Defence' },
-  { href: '../bonn-security-night', label: 'Bonn Cybersecurity Night' },
-  { href: '../souveraen', label: 'Digitale Souveränität' },
-  { href: '../afterwork', label: 'Cybersecurity AfterWorkshop' },
-  { href: '../second', label: 'EU Open Source Week – Offsite Event Bonn' },
-  {
-    href: 'https://gitlab.opencode.de/cybersecurity-hackathon',
-    label: 'Open Source Security Hackathon 2024',
-  },
-]
+const TALK_LLM_SECURITY = {
+  title: 'Finden ist billig, Beheben nicht',
+  subtitle: 'Open-Source-Security, wenn LLMs nach Schwachstellen suchen',
+}
 
-// ─── FAQs ─────────────────────────────────────────────────────────────────────
+// ─── Event ───────────────────────────────────────────────────────────────────
 
-export const FAQS: Array<{ id: number; question: string; answer: string }> = [
-  {
-    id: 1,
-    question: 'Wer kann bei dem Event teilnehmen?',
-    answer:
-      'Jeder, der interessiert ist! Die Teilnahme ist dieses Mal nicht kostenlos, da wir Euch mit gutem Essen und Drinks versorgen wollen. Bitte registriere Dich über den Ticketshop.',
+export const EVENT: EventConfig = {
+  lang: 'de',
+  name: 'OSS-Tech-Night',
+  summary:
+    'Die OSS-Tech-Night in Bonn: ein Abend für Techies rund um die technische Seite von Open Source und Softwareentwicklung.',
+  hero: {
+    badge: 'OSS-Tech-Night',
+    title: 'Open Source',
+    titleHighlight: 'Technical Deep Dives',
+    description:
+      'Ein Abend speziell für Techies: Maintainer*innen und Entwickler*innen aus der Open-Source-Community nehmen Euch mit auf die technische Seite von Open Source und Softwareentwicklung. Danach ist Zeit zum Fachsimpeln und Networking bei Snacks & Drinks.',
   },
-  {
-    id: 2,
-    question: 'Wie sieht es mit Essen und Trinken aus?',
-    answer: 'Wir versorgen Euch vor Ort mit Essen und Getränken.',
+  date: 'Freitag, 11. Dezember 2026',
+  dateISO: '2026-12-11',
+  // TODO: Startzeit bestätigen (Annahme: Abendevent ab 18:00 Uhr)
+  time: '18:00 Uhr',
+  location: {
+    name: 'L3montree HQ, Markt 3, 53111 Bonn',
+    mapsUrl: 'https://maps.app.goo.gl/BS8JJH8eGxBSEmz49',
   },
-]
+  // TODO: Ticket-Link eintragen. Solange leer, zeigt die Seite
+  // "Tickets in Kürze verfügbar" statt des Ticket-Buttons.
+  ticketUrl: '',
+  talksLabel: 'Tech-Talks',
+  // TODO: Talks 2–4 eintragen, sobald sie feststehen.
+  talks: [
+    {
+      ...TALK_LLM_SECURITY,
+      body: [
+        'Am 20. Oktober 2026 wurden zwei kritische Schwachstellen im PHP-Interpreter, CVE-2026-109618 und CVE-2026-109619, zwei Tage vor dem vereinbarten Disclosure-Termin öffentlich. Das PHP Security Team zog das Release vor, Infrastrukturanbieter verteilten Filterregeln, und Berichte über Angriffe folgten nach wenigen Stunden. Für ältere PHP-Versionen, die auf vielen Servern weiterlaufen, gibt es keinen Fix.',
+        'Der Fall steht für eine Entwicklung, die Open Source-Projekte seit Anfang 2026 verändert: Mit LLM-gestützten Werkzeugen ist das Finden von Schwachstellen billig geworden, das Bewerten, Beheben und Koordinieren nicht. Der Vortrag zeigt aus Sicht des Ecosystem Security Teams der PHP Foundation und eines langjährigen Maintainers, wo die Engpässe heute liegen: in der Triage von Meldungen, in der Qualität von Advisory-Daten und in Abläufen, die für deutlich weniger Meldungen ausgelegt waren.',
+        'Zum Schluss geht es darum, was das für alle bedeutet, die Open Source betreiben, von der Frage, wo überhaupt welche Version läuft, bis zu den Meldepflichten des Cyber Resilience Act.',
+      ],
+    },
+    { title: 'Tech-Talk #2', subtitle: 'Thema folgt in Kürze' },
+    { title: 'Tech-Talk #3', subtitle: 'Thema folgt in Kürze' },
+    { title: 'Tech-Talk #4', subtitle: 'Thema folgt in Kürze' },
+  ],
+  speakers: {
+    eyebrow: 'Speaker & Maintainer',
+    intro:
+      'Wir freuen uns auf technische Deep Dives und spannende Diskussionen mit diesen Maintainer*innen und Entwickler*innen.',
+    // TODO: Speaker*innen 2–4 eintragen (Profilbild nach /public legen).
+    list: [
+      {
+        name: 'Sebastian Bergmann',
+        role: 'PHP-Experte',
+        company: {
+          name: 'The PHP Consulting Company',
+          href: 'https://thephp.cc/',
+        },
+        imageUrl: '/profilbild_sebastian_bergmann.jpg',
+        topic: TALK_LLM_SECURITY.title,
+        topicSubtitle: TALK_LLM_SECURITY.subtitle,
+        link: {
+          href: 'https://github.com/sebastianbergmann/phpunit',
+          label: 'Maintainer von PHPUnit',
+        },
+      },
+      {
+        name: 'Speaker*in #2',
+        role: 'Wird in Kürze bekannt gegeben',
+        imageUrl: '/dummy_person_dark.png',
+        topic: 'Tech-Talk #2',
+        topicSubtitle: 'Thema folgt in Kürze',
+      },
+      {
+        name: 'Speaker*in #3',
+        role: 'Wird in Kürze bekannt gegeben',
+        imageUrl: '/dummy_person_dark.png',
+        topic: 'Tech-Talk #3',
+        topicSubtitle: 'Thema folgt in Kürze',
+      },
+      {
+        name: 'Speaker*in #4',
+        role: 'Wird in Kürze bekannt gegeben',
+        imageUrl: '/dummy_person_dark.png',
+        topic: 'Tech-Talk #4',
+        topicSubtitle: 'Thema folgt in Kürze',
+      },
+    ],
+  },
+  topic: {
+    eyebrow: 'Von Techies für Techies',
+    heading: 'OSS-Tech-Night',
+    intro:
+      'Am 11. Dezember 2026 findet die OSS-Tech-Night statt – ein Abend speziell für Entwickler*innen, Maintainer*innen und alle, die wissen wollen, wie Open Source und Softwareentwicklung technisch funktionieren. Technisch. Tiefgehend. Offen.',
+    note: 'Im Anschluss an die Talks: Food & Drinks, vertiefende Fragen und Networking.',
+    images: [
+      {
+        src: '/talk.jpeg',
+        alt: 'Speaker auf der Bühne während eines Vortrags',
+        width: 1280,
+        height: 804,
+      },
+      {
+        src: '/crowd.jpeg',
+        alt: 'Publikum bei einer Veranstaltung',
+        width: 1280,
+        height: 853,
+      },
+    ],
+  },
+  // TODO: Zeiten bestätigen (Annahme: Ablauf wie beim OSS Meetup, ab 18:00 Uhr)
+  // und Talk-Titel eintragen.
+  schedule: [
+    {
+      name: 'Ankommen & erstes Networking',
+      description:
+        'Türen auf! Kommt rein, holt euch was zu trinken und lernt erste Gesichter kennen.',
+      start: '18:00',
+      end: '18:30',
+    },
+    {
+      name: 'Welcome & Opening',
+      description:
+        'Kurze Begrüßung und Intro in den Abend — wer wir sind, was euch erwartet.',
+      start: '18:30',
+      end: '18:40',
+    },
+    {
+      name: TALK_LLM_SECURITY.title,
+      description: TALK_LLM_SECURITY.subtitle,
+      details: 'Sebastian Bergmann',
+      start: '18:40',
+      end: '19:00',
+    },
+    {
+      name: 'Tech-Talk 2',
+      description: 'Thema folgt in Kürze',
+      start: '19:00',
+      end: '19:20',
+    },
+    {
+      name: 'Tech-Talk 3',
+      description: 'Thema folgt in Kürze',
+      start: '19:20',
+      end: '19:40',
+    },
+    {
+      name: 'Tech-Talk 4',
+      description: 'Thema folgt in Kürze',
+      start: '19:40',
+      end: '20:00',
+    },
+    {
+      name: 'Networking, Food & Drinks',
+      description:
+        'Der Abend gehört euch — Zeit für Gespräche, Fragen an die Speaker und neue Kontakte. 🥬 🥔 🥙 🧆 🌮 🍔',
+      start: '20:00',
+      end: '22:00',
+    },
+  ],
+  presentedBy: PRESENTED_BY,
+  partners: PARTNERS,
+  pastPartners: PAST_PARTNERS,
+  faqs: [
+    {
+      question: 'Wer kann bei dem Event teilnehmen?',
+      answer:
+        'Alle, die sich für die technische Seite von Open Source interessieren – ob Maintainer*in, Entwickler*in, Student*in oder einfach neugierig. Bitte registriere Dich vorab über den Ticketshop.',
+    },
+    {
+      question: 'Wie technisch wird es?',
+      answer:
+        'Die Talks richten sich an ein technisches Publikum: Es geht um Code, Architektur, Tooling und die Praxis hinter Open-Source-Projekten.',
+    },
+    {
+      question: 'Wie sieht es mit Essen und Trinken aus?',
+      answer: 'Wir versorgen Euch vor Ort mit Essen und Getränken.',
+    },
+  ],
+}

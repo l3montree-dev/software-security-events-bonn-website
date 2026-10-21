@@ -1,78 +1,94 @@
-import { EVENT, SCHEDULE } from '@/config/event'
+import { LABELS } from '@/config/labels'
+import type { EventConfig } from '@/config/types'
+import { TicketButton } from './TicketButton'
 
-export function Schedule() {
+export function Schedule({
+  event,
+  archived,
+}: {
+  event: EventConfig
+  archived: boolean
+}) {
+  const t = LABELS[event.lang]
+
   return (
     <section
       id="schedule"
-      aria-label="Schedule"
+      aria-labelledby="schedule-heading"
       className="bg-black py-24 sm:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
-          <span className="text-sm font-semibold uppercase tracking-widest text-l3-400">
-            Ablauf
-          </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Programm — {EVENT.date}
+          <p className="text-sm font-semibold uppercase tracking-widest text-l3-400">
+            {t.scheduleEyebrow}
+          </p>
+          <h2
+            id="schedule-heading"
+            className="mt-3 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl"
+          >
+            {t.scheduleHeading(event.date)}
           </h2>
         </div>
 
-        <ol role="list" className="relative">
-          {/* vertical line */}
-          <div className="absolute bottom-0 left-[7.5rem] top-0 w-px bg-white/10 sm:left-36" />
+        <div className="relative">
+          {/* vertical line (from sm up; on phones the time sits in the card) */}
+          <div
+            aria-hidden="true"
+            className="absolute bottom-0 top-0 hidden w-px bg-white/10 sm:left-36 sm:block"
+          />
 
-          {SCHEDULE.map((slot) => (
-            <li key={slot.id} className="relative flex gap-6 pb-10 last:pb-0">
-              {/* Time badge */}
-              <div className="w-24 shrink-0 pt-[1.125rem] text-right sm:w-32">
-                <span className="font-mono text-sm font-semibold text-l3-400">
-                  {slot.start}
-                </span>
-              </div>
+          <ol role="list" className="relative">
+            {event.schedule.map((slot) => (
+              <li
+                key={slot.start + slot.name}
+                className="relative flex gap-6 pb-4 last:pb-0 sm:pb-10"
+              >
+                {/* Time badge */}
+                <div className="hidden w-32 shrink-0 pt-[1.125rem] text-right sm:block">
+                  <time
+                    dateTime={`${event.dateISO}T${slot.start}`}
+                    className="font-mono text-sm font-semibold text-l3-400"
+                  >
+                    {slot.start}
+                  </time>
+                </div>
 
-              {/* Line crossing point — spacer */}
-              <div className="w-0 shrink-0" />
-
-              {/* Content */}
-              <div className="flex-1 rounded-xl border border-white/5 bg-white/[0.03] px-5 py-4">
-                <p className="text-base font-semibold text-white">
-                  {slot.name}
-                </p>
-                {slot.description && (
-                  <p className="mt-1 text-base leading-6 text-zinc-400">
-                    {slot.description}
+                {/* Content */}
+                <div className="flex min-w-0 flex-1 flex-col rounded-xl border border-white/5 bg-white/[0.03] px-5 py-4">
+                  <h3 className="text-base font-semibold text-white">
+                    {slot.name}
+                  </h3>
+                  {slot.description && (
+                    <p className="mt-1 text-base leading-6 text-zinc-400">
+                      {slot.description}
+                    </p>
+                  )}
+                  {slot.details && (
+                    <p className="mt-1 text-base leading-6 text-zinc-300">
+                      {slot.details}
+                    </p>
+                  )}
+                  <p className="order-first mb-1 font-mono text-sm font-semibold text-l3-400 sm:order-none sm:mb-0 sm:mt-2 sm:font-normal sm:text-zinc-400">
+                    <time dateTime={`${event.dateISO}T${slot.start}`}>
+                      {slot.start}
+                    </time>{' '}
+                    –{' '}
+                    <time dateTime={`${event.dateISO}T${slot.end}`}>
+                      {slot.end}
+                    </time>
                   </p>
-                )}
-                <p className="mt-2 font-mono text-sm text-zinc-600">
-                  {slot.start} – {slot.end}
-                </p>
-                {slot.openForOthers && (
-                  <p className="mt-1 text-sm text-l3-400">
-                    Offen mit{' '}
-                    <a
-                      href="https://pretix.eu/l3montree/cybers-hack-2024/"
-                      className="underline decoration-dashed underline-offset-2 hover:text-l3-200"
-                    >
-                      Besucherticket
-                    </a>
-                  </p>
-                )}
-              </div>
-            </li>
-          ))}
-        </ol>
-
-        <div className="mt-16 flex justify-start">
-          <a
-            href={EVENT.ticketUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-3 text-lg font-semibold"
-          >
-            Sicher Dir Dein Ticket →
-          </a>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
+
+        {!archived && (
+          <div className="mt-16 flex justify-start">
+            <TicketButton event={event} />
+          </div>
+        )}
       </div>
     </section>
   )

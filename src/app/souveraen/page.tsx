@@ -1,29 +1,17 @@
-import Faqs from '@/components/souveraen/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/souveraen/Header'
-import { Hero } from '@/components/souveraen/Hero'
-import { Schedule } from '@/components/souveraen/Schedule'
-import Speakers from '@/components/souveraen/Speakers'
-import { Sponsors } from '@/components/souveraen/Sponsors'
-import Topic from '@/components/souveraen/Topic'
+import { EventPage } from '@/components/EventPage'
+import { Layout } from '@/components/Layout'
+import { SOUVERAEN } from '@/config/archive/souveraen'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Software Security Events Bonn - Digitale Souveränität',
-  description: 'Open Source & Software Security Events in Bonn und Umgebung',
+  title: SOUVERAEN.name,
+  description: SOUVERAEN.summary,
 }
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Topic />
-      <Speakers />
-      <Sponsors />
-      <Schedule />
-      <Faqs />
-      <Footer />
-    </>
+    <Layout>
+      <EventPage event={SOUVERAEN} href="/souveraen" />
+    </Layout>
   )
 }

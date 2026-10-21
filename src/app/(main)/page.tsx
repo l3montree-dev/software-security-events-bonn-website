@@ -1,25 +1,12 @@
-import Faqs from '@/components/Faqs'
-import { Hero } from '@/components/Hero'
-import { Schedule } from '@/components/Schedule'
-import Speakers from '@/components/Speakers'
-import { Sponsors } from '@/components/Sponsors'
-import Topic from '@/components/Topic'
+import { EventPage } from '@/components/EventPage'
+import { EVENT } from '@/config/event'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Software Security Events Bonn',
-  description: 'Open Source & Software Security Events in Bonn und Umgebung',
+  title: EVENT.name,
+  description: EVENT.summary,
 }
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Speakers />
-      <Topic />
-      <Sponsors />
-      <Schedule />
-      <Faqs />
-    </>
-  )
+  return <EventPage event={EVENT} href="/" />
 }

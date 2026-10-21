@@ -1,163 +1,161 @@
+import { ArrowDownIcon } from '@heroicons/react/16/solid'
 import Image from 'next/image'
-import { CURRENT_PARTNERS, EVENT, TALKS } from '@/config/event'
-import { Button } from './Button'
+import { LABELS } from '@/config/labels'
+import type { EventConfig } from '@/config/types'
+import { Icon, ICONS } from './Icon'
+import { RichText } from './RichText'
+import { talkAnchor } from './Topic'
+import { PastEventNotice, TicketButton } from './TicketButton'
+import { UpcomingEventButtons } from './UpcomingEvents'
 
-export function Hero() {
+export function Hero({
+  event,
+  href,
+  archived,
+}: {
+  event: EventConfig
+  href: string
+  archived: boolean
+}) {
+  const t = LABELS[event.lang]
+  const { hero } = event
+
   return (
     <section className="relative overflow-hidden bg-black">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8 lg:pt-16">
         {/* Top badge */}
         <div className="mb-8 flex">
-          <span className="inline-flex items-center gap-2 border-b-2 border-l3-400 pb-1 text-base font-semibold uppercase tracking-widest text-l3-400">
-            {EVENT.name}
-          </span>
+          <p className="inline-flex items-center gap-2 border-b-2 border-l3-400 pb-1 text-base font-semibold uppercase tracking-widest text-l3-400">
+            {hero.badge}
+          </p>
         </div>
 
         {/* Main content grid */}
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left column */}
           <div className="flex flex-col justify-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Open Source &{' '}
-              <span className="text-l3-400">digitale Souveränität</span>
+            <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              {hero.title}
+              {hero.titleHighlight && (
+                <>
+                  {' '}
+                  <span className="text-l3-400">{hero.titleHighlight}</span>
+                </>
+              )}
             </h1>
+            {hero.tagline && (
+              <p className="mt-4 text-xl font-semibold tracking-tight text-zinc-200 sm:text-2xl">
+                {hero.tagline}
+              </p>
+            )}
 
             <div className="mt-6 flex flex-wrap items-center gap-4 text-base text-zinc-400">
               <span className="flex items-center gap-1.5">
-                <svg
-                  className="h-4 w-4 text-l3-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
-                  />
-                </svg>
-                {EVENT.date}
+                <Icon d={ICONS.calendar} />
+                <time dateTime={event.dateISO}>{event.date}</time>
               </span>
               <span className="flex items-center gap-1.5">
-                <svg
-                  className="h-4 w-4 text-l3-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                {EVENT.time}
+                <Icon d={ICONS.clock} />
+                {event.time}
               </span>
               <a
-                href={EVENT.location.mapsUrl}
+                href={event.location.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 transition-colors hover:text-l3-300"
+                className="flex items-center gap-1.5 rounded transition-colors hover:text-l3-300"
               >
-                <svg
-                  className="h-4 w-4 text-l3-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                  />
-                </svg>
-                {EVENT.location.name}
+                <Icon d={ICONS.pin} />
+                {event.location.name}
+                <span className="sr-only"> {t.newTab}</span>
               </a>
             </div>
 
-            <p className="mt-6 text-lg leading-7 text-zinc-400">
-              {EVENT.subtitle}
-            </p>
+            <RichText className="mt-6 text-lg leading-7 text-zinc-400">
+              {hero.description}
+            </RichText>
 
-            <div className="mt-8">
-              <Button
-                href={EVENT.ticketUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3 text-lg font-semibold"
-              >
-                Sicher Dir Dein Ticket →
-              </Button>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              {archived ? (
+                <PastEventNotice event={event} />
+              ) : (
+                <TicketButton event={event} />
+              )}
+              <UpcomingEventButtons href={href} lang={event.lang} />
             </div>
           </div>
 
           {/* Right column — talks */}
           <div className="flex flex-col justify-center">
-            <p className="mb-4 text-base font-semibold uppercase tracking-widest text-zinc-500">
-              Impulsvorträge
-            </p>
+            <h2 className="mb-4 text-base font-semibold uppercase tracking-widest text-zinc-400">
+              {event.talksLabel}
+            </h2>
             <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {TALKS.map((talk, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-3 rounded-xl border border-white/5 bg-white/[0.03] px-5 py-4 backdrop-blur-sm"
-                >
-                  <svg
-                    className="mt-1 h-4 w-4 shrink-0 text-l3-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 12h14M12 5l7 7-7 7"
-                    />
-                  </svg>
-                  <span className="text-base leading-6 text-zinc-200">
-                    {talk.title}
+              {event.talks.map((talk, index) => {
+                const text = (
+                  <span className="min-w-0">
+                    <span className="block text-base font-semibold leading-6 text-white transition-colors group-hover:text-l3-400">
+                      {talk.title}
+                    </span>
+                    {talk.subtitle && (
+                      <span className="mt-1 block text-sm leading-5 text-zinc-400">
+                        {talk.subtitle}
+                      </span>
+                    )}
                   </span>
-                </li>
-              ))}
+                )
+
+                return (
+                  <li key={talk.title}>
+                    {talk.body ? (
+                      <a
+                        href={`#${talkAnchor(index)}`}
+                        className="group flex h-full items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-colors hover:border-l3-400/50 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-l3-500"
+                      >
+                        <ArrowDownIcon
+                          aria-hidden="true"
+                          className="mt-1 h-4 w-4 shrink-0 text-l3-400 transition-transform group-hover:translate-y-0.5 motion-reduce:transition-none"
+                        />
+                        {text}
+                        <span className="sr-only"> – {t.toAbstract}</span>
+                      </a>
+                    ) : (
+                      <div className="flex h-full items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+                        <span
+                          aria-hidden="true"
+                          className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-500"
+                        />
+                        {text}
+                      </div>
+                    )}
+                  </li>
+                )
+              })}
             </ul>
-            <p className="mt-5 text-base text-zinc-400">
-              Im Anschluss: Fragen, Diskussionen &amp; Networking
-            </p>
+            <p className="mt-5 text-base text-zinc-400">{t.talksFollowUp}</p>
           </div>
         </div>
 
         {/* Sponsor bar */}
         <div className="mt-20 border-t border-white/10 pt-10">
-          <p className="mb-6 text-base font-semibold uppercase tracking-widest text-zinc-500">
-            Presented by
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20">
-            {CURRENT_PARTNERS.map((s) => (
-              <a
-                key={s.href + s.lightSrc}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  alt={s.alt}
-                  src={s.lightSrc}
-                  width={s.width}
-                  height={s.height}
-                  className="h-12 w-auto object-contain"
-                />
-              </a>
+          <h2 className="mb-6 text-base font-semibold uppercase tracking-widest text-zinc-400">
+            {t.presentedBy}
+          </h2>
+          <ul className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20">
+            {event.presentedBy.map((logo) => (
+              <li key={logo.href + logo.src}>
+                <a href={logo.href} target="_blank" rel="noopener">
+                  <Image
+                    alt={logo.alt}
+                    src={logo.src}
+                    width={logo.width}
+                    height={logo.height}
+                    className="h-12 w-auto object-contain"
+                  />
+                  <span className="sr-only"> {t.newTab}</span>
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </section>

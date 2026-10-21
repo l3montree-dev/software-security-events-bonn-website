@@ -1,76 +1,88 @@
 import Image from 'next/image'
-import { CURRENT_PARTNERS, PAST_PARTNERS } from '@/config/event'
+import { LABELS } from '@/config/labels'
+import type { EventConfig, Logo } from '@/config/types'
 
-export function Sponsors() {
+function LogoList({
+  logos,
+  newTab,
+  className,
+  imageClassName,
+}: {
+  logos: Array<Logo>
+  newTab: string
+  className: string
+  imageClassName: string
+}) {
+  return (
+    <ul className={className}>
+      {logos.map((logo) => (
+        <li key={logo.href + logo.src}>
+          <a href={logo.href} target="_blank" rel="noopener">
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.width}
+              height={logo.height}
+              className={imageClassName}
+            />
+            <span className="sr-only"> {newTab}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export function Sponsors({ event }: { event: EventConfig }) {
+  const t = LABELS[event.lang]
+
   return (
     <section
       id="sponsors"
-      aria-label="Sponsors"
+      aria-labelledby="sponsors-heading"
       className="bg-white py-24 sm:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Current partners */}
         <div className="mb-16">
-          <span className="text-sm font-semibold uppercase tracking-widest text-l3-600">
-            Ermöglicht durch
-          </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-            Die Partner dieses Events
+          <p className="text-sm font-semibold uppercase tracking-widest text-l3-700">
+            {t.sponsorsEyebrow}
+          </p>
+          <h2
+            id="sponsors-heading"
+            className="mt-3 text-balance text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
+          >
+            {t.sponsorsHeading}
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-600">
-            Die Partner sind die tragenden Säulen der Veranstaltungen. Mit ihrer
-            Unterstützung machen sie es möglich, eine außergewöhnliche
-            Veranstaltung wie diese zu schaffen.
+            {t.sponsorsIntro}
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20">
-          {CURRENT_PARTNERS.map((p) => (
-            <a
-              key={p.href + p.darkSrc}
-              href={p.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={p.darkSrc}
-                alt={p.alt}
-                width={p.width}
-                height={p.height}
-                className="h-12 w-auto object-contain"
-              />
-            </a>
-          ))}
-        </div>
+        <LogoList
+          logos={event.partners}
+          newTab={t.newTab}
+          className="flex flex-wrap items-center justify-center gap-12 lg:justify-start lg:gap-20"
+          imageClassName="h-12 w-auto object-contain"
+        />
 
         {/* Past partners */}
-        <div className="mt-20 border-t border-zinc-200 pt-12">
-          <p className="mb-8 text-sm font-semibold uppercase tracking-widest text-zinc-400">
-            Vergangene Partner
-          </p>
-          <p className="mb-10 max-w-2xl text-lg leading-7 text-zinc-600">
-            Partner, die die bisherigen OSS-Events durch ihre Fachvorträge
-            bereichert haben.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-10 lg:justify-start lg:gap-14">
-            {PAST_PARTNERS.map((p) => (
-              <a
-                key={p.href + p.src}
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={p.src}
-                  alt={p.alt}
-                  width={p.width}
-                  height={p.height}
-                  className="h-10 w-auto object-contain"
-                />
-              </a>
-            ))}
+        {event.pastPartners.length > 0 && (
+          <div className="mt-20 border-t border-zinc-200 pt-12">
+            <h3 className="mb-8 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+              {t.pastPartners}
+            </h3>
+            <p className="mb-10 max-w-2xl text-lg leading-7 text-zinc-600">
+              {t.pastPartnersIntro}
+            </p>
+            <LogoList
+              logos={event.pastPartners}
+              newTab={t.newTab}
+              className="flex flex-wrap items-center justify-center gap-10 lg:justify-start lg:gap-14"
+              imageClassName="h-10 w-auto object-contain"
+            />
           </div>
-        </div>
+        )}
       </div>
     </section>
   )

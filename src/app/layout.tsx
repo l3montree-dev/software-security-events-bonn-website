@@ -3,6 +3,7 @@ import { DM_Sans, Inter } from 'next/font/google'
 import Image from 'next/image'
 import clsx from 'clsx'
 
+import { EVENT } from '@/config/event'
 import '@/styles/tailwind.css'
 
 const inter = Inter({
@@ -32,17 +33,17 @@ const env = process.env.NODE_ENV
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Event',
-  name: 'Cyber- & Softwaresecurity Event - Bonn',
-  startDate: '2025-09-24T18:00',
-  endDate: '2025-09-24T22:00',
+  name: EVENT.name,
+  startDate: `${EVENT.dateISO}T${EVENT.schedule[0].start}`,
+  endDate: `${EVENT.dateISO}T${EVENT.schedule[EVENT.schedule.length - 1].end}`,
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   eventStatus: 'https://schema.org/EventScheduled',
   location: {
     '@type': 'Place',
-    name: 'DIGITALHUB.DE',
+    name: 'L3montree HQ',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Am Hauptbahnhof 6',
+      streetAddress: 'Markt 3',
       addressLocality: 'Bonn',
       postalCode: '53111',
       addressRegion: 'NRW',
@@ -50,8 +51,7 @@ const structuredData = {
     },
   },
   image: ['/l3montree-logo.svg'],
-  description:
-    'Expert*innen geben in spannenden Impulsvorträgen wertvolle Einblicke in effiziente und sichere Softwareentwicklung und -tests – sowohl aus der Sicht von Managern als auch von Entwicklern.',
+  description: EVENT.summary,
   organizer: {
     '@type': 'Organization',
     name: 'L3montree Cybersecurity',
@@ -68,7 +68,7 @@ export default function RootLayout({
     <html
       lang="de"
       className={clsx(
-        'h-full bg-zinc-950 antialiased',
+        'h-full scroll-pt-20 bg-zinc-950 antialiased md:scroll-pt-28',
         inter.variable,
         dmSans.variable,
       )}
@@ -96,10 +96,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="flex min-h-full">
-        <div className="flex w-full flex-col">
-          <header className="w-full"></header>
-          {children}
-        </div>
+        <div className="flex w-full flex-col">{children}</div>
       </body>
     </html>
   )
