@@ -9,7 +9,7 @@ export default function Faqs({ event }: { event: EventConfig }) {
 
   return (
     <section aria-labelledby="faq-heading" className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-site px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
           <p className="text-sm font-semibold tracking-widest text-l3-700 uppercase">

@@ -38,6 +38,7 @@ export type EventConfig = {
   time: string
   location: { name: string; mapsUrl: string }
   ticketUrl: string
+  ticketCta?: string // overrides the default ticket button label
   talksLabel: string
   talks: Array<{ title: string; subtitle?: string; body?: ReactNode }>
   speakers: {

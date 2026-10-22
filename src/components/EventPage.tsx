@@ -21,7 +21,7 @@ export function EventPage({
 
   return (
     <div lang={event.lang} className="wrap-break-word">
-      <Hero event={event} href={href} archived={archived} />
+      <Hero event={event} archived={archived} />
       <Speakers event={event} />
       <Topic event={event} href={href} />
       <Sponsors event={event} />

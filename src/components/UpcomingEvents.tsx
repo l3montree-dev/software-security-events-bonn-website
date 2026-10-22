@@ -1,47 +1,8 @@
-import Link from 'next/link'
 import { LABELS } from '@/config/labels'
 import { UPCOMING_EVENTS } from '@/config/navigation'
-import type { EventConfig, Lang } from '@/config/types'
+import type { EventConfig } from '@/config/types'
 import { Button } from './Button'
 import { Icon, ICONS } from './Icon'
-
-// Compact links to the upcoming events, except the one on this page (hero).
-export function UpcomingEventButtons({
-  href,
-  lang,
-}: {
-  href: string
-  lang: Lang
-}) {
-  const t = LABELS[lang]
-
-  return UPCOMING_EVENTS.filter((e) => e.href !== href).map(
-    ({ href: target, event }) => (
-      <Link
-        key={target}
-        href={target}
-        className="group inline-flex w-full flex-col rounded-md border border-white/15 bg-white/5 px-5 py-2.5 text-left transition-colors hover:border-l3-400/60 hover:bg-white/10 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500 sm:w-auto"
-      >
-        <span className="text-xs font-semibold tracking-widest text-zinc-400 uppercase">
-          {t.upcomingEvent}
-        </span>{' '}
-        <span
-          lang={event.lang}
-          className="font-semibold text-white transition-colors group-hover:text-l3-400"
-        >
-          {event.name}&nbsp;<span aria-hidden="true">→</span>
-        </span>{' '}
-        <time
-          lang={event.lang}
-          dateTime={event.dateISO}
-          className="text-sm text-zinc-300"
-        >
-          {event.date}
-        </time>
-      </Link>
-    ),
-  )
-}
 
 // "Future Events" section: all upcoming events, shown on every event page.
 export function UpcomingEvents({
@@ -59,7 +20,7 @@ export function UpcomingEvents({
       aria-labelledby="future-events-heading"
       className="bg-black py-24 sm:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-site px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
           <p className="text-sm font-semibold tracking-widest text-l3-400 uppercase">
@@ -113,7 +74,7 @@ export function UpcomingEvents({
                 </h3>
                 <p
                   lang={upcoming.lang}
-                  className="mt-3 flex-1 text-base leading-7 text-zinc-400"
+                  className="mt-3 max-w-xl flex-1 text-base leading-7 text-zinc-400"
                 >
                   {upcoming.summary}
                 </p>

@@ -31,7 +31,7 @@ function EventLink({
 export function Footer() {
   return (
     <footer className="flex-none bg-zinc-900 py-16">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-[auto_1fr] md:gap-20 lg:px-8">
+      <div className="mx-auto grid max-w-site gap-12 px-6 md:grid-cols-[auto_1fr] md:gap-20 lg:px-8">
         <div className="flex flex-col items-start gap-8 text-sm text-zinc-400">
           <Link
             href="/"

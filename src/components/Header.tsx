@@ -56,7 +56,7 @@ export function Header() {
         as="header"
         className="sticky top-0 z-50 border-b border-white/10 bg-black/95 backdrop-blur-xs"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-site px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between gap-4 md:h-24">
             {/* Logo – Home Button */}
             <Link
@@ -116,7 +116,7 @@ export function Header() {
         >
           <nav
             aria-label="Events"
-            className="mx-auto grid max-w-7xl gap-8 px-4 py-6 sm:px-6 md:grid-cols-[1fr_2fr] lg:px-8"
+            className="mx-auto grid max-w-site gap-8 px-4 py-6 sm:px-6 md:grid-cols-[1fr_2fr] lg:px-8"
           >
             <div>
               <p

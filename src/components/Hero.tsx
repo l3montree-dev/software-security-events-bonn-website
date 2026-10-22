@@ -6,15 +6,12 @@ import { Icon, ICONS } from './Icon'
 import { RichText } from './RichText'
 import { talkAnchor } from './Topic'
 import { PastEventNotice, TicketButton } from './TicketButton'
-import { UpcomingEventButtons } from './UpcomingEvents'
 
 export function Hero({
   event,
-  href,
   archived,
 }: {
   event: EventConfig
-  href: string
   archived: boolean
 }) {
   const t = LABELS[event.lang]
@@ -22,12 +19,22 @@ export function Hero({
 
   return (
     <section className="relative overflow-hidden bg-black">
-      <div className="mx-auto max-w-7xl px-6 pt-12 pb-24 lg:px-8 lg:pt-16">
-        {/* Top badge */}
-        <div className="mb-8 flex">
+      <div className="mx-auto max-w-site px-6 pt-12 pb-24 lg:px-8 lg:pt-16">
+        {/* Top badge + link to the upcoming events section */}
+        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <p className="inline-flex items-center gap-2 border-b-2 border-l3-400 pb-1 text-base font-semibold tracking-widest text-l3-400 uppercase">
             {hero.badge}
           </p>
+          <a
+            href="#future-events"
+            className="group ml-auto inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-l3-400/60 hover:bg-white/10 hover:text-l3-400 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-l3-500"
+          >
+            {t.futureEvents}
+            <ArrowDownIcon
+              aria-hidden="true"
+              className="h-4 w-4 text-l3-400 transition-transform group-hover:translate-y-0.5 motion-reduce:transition-none"
+            />
+          </a>
         </div>
 
         {/* Main content grid */}
@@ -70,7 +77,7 @@ export function Hero({
               </a>
             </div>
 
-            <RichText className="mt-6 text-lg leading-7 text-zinc-400">
+            <RichText className="mt-6 max-w-2xl text-lg leading-7 text-zinc-400">
               {hero.description}
             </RichText>
 
@@ -80,7 +87,6 @@ export function Hero({
               ) : (
                 <TicketButton event={event} />
               )}
-              <UpcomingEventButtons href={href} lang={event.lang} />
             </div>
           </div>
 

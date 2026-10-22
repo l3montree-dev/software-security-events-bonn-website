@@ -50,7 +50,7 @@ export default function Topic({
       aria-labelledby="topic-heading"
       className="bg-black py-24 sm:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-site px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
           <p className="text-sm font-semibold tracking-widest text-l3-400 uppercase">
@@ -100,7 +100,7 @@ export default function Topic({
                     />
                   ) : (
                     talk.body && (
-                      <RichText className="mt-2 text-base leading-6 text-zinc-400">
+                      <RichText className="mt-2 max-w-xl text-base leading-6 text-zinc-400">
                         {talk.body}
                       </RichText>
                     )
@@ -109,7 +109,7 @@ export default function Topic({
               )
             })}
             {topic.note && (
-              <RichText className="mt-2 text-base text-zinc-400">
+              <RichText className="mt-2 max-w-xl text-base text-zinc-400">
                 {topic.note}
               </RichText>
             )}

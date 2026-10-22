@@ -39,6 +39,9 @@
   --font-display: var(--font-dm-sans);
 
   --container-2xl: 40rem;
+  /* Page width: as before up to ~1740px screens, then ~70% of the viewport,
+     capped for very wide screens. */
+  --container-site: clamp(80rem, calc(70vw + 4rem), 114rem);
 
   --color-l3-50: #fbfcea;
   --color-l3-100: #f9f9c8;

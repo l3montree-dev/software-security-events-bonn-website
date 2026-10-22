@@ -6,7 +6,7 @@ export function Container({
 }: React.ComponentPropsWithoutRef<'div'>) {
   return (
     <div
-      className={clsx('mx-auto max-w-7xl px-4 sm:px-6 lg:px-2', className)}
+      className={clsx('mx-auto max-w-site px-4 sm:px-6 lg:px-2', className)}
       {...props}
     />
   )

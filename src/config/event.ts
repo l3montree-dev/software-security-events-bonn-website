@@ -197,15 +197,13 @@ export const EVENT: EventConfig = {
   },
   date: 'Freitag, 11. Dezember 2026',
   dateISO: '2026-12-11',
-  // TODO: Startzeit bestätigen (Annahme: Abendevent ab 18:00 Uhr)
   time: '18:00 Uhr',
   location: {
     name: 'L3montree HQ, Markt 3, 53111 Bonn',
     mapsUrl: 'https://maps.app.goo.gl/BS8JJH8eGxBSEmz49',
   },
-  // TODO: Ticket-Link eintragen. Solange leer, zeigt die Seite
-  // "Tickets in Kürze verfügbar" statt des Ticket-Buttons.
-  ticketUrl: '',
+  ticketUrl: 'https://pretix.eu/l3montree/oss-deep-dives/',
+  ticketCta: 'Kostenloses Ticket sichern →',
   talksLabel: 'Tech-Talks',
   // TODO: Talks 2–4 eintragen, sobald sie feststehen.
   talks: [

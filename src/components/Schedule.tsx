@@ -17,7 +17,7 @@ export function Schedule({
       aria-labelledby="schedule-heading"
       className="bg-black py-24 sm:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-site px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
           <p className="text-sm font-semibold tracking-widest text-l3-400 uppercase">

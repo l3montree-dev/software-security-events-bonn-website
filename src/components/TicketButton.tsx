@@ -20,7 +20,7 @@ export function TicketButton({ event }: { event: EventConfig }) {
       rel="noopener noreferrer"
       className="w-full px-4 py-3 text-base font-semibold sm:w-auto sm:px-8 sm:text-lg"
     >
-      {t.ticketCta}
+      {event.ticketCta ?? t.ticketCta}
       <span className="sr-only"> {t.newTab}</span>
     </Button>
   )

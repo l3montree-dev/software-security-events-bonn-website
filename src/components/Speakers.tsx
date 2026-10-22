@@ -47,7 +47,7 @@ export default function Speakers({ event }: { event: EventConfig }) {
       aria-labelledby="speakers-heading"
       className="bg-white py-24 sm:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-site px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16">
           <p className="text-base font-semibold tracking-widest text-l3-700 uppercase">

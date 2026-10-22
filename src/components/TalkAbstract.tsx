@@ -32,7 +32,7 @@ export function TalkAbstract({
   }, [anchorId])
 
   return (
-    <div className="mt-2">
+    <div className="mt-2 max-w-xl">
       <div id={id}>
         <div hidden={open}>
           <RichText className="text-base leading-6 text-zinc-400">
