@@ -52,7 +52,7 @@ export type EventConfig = {
       topic: string
       topicSubtitle?: string
       pdfFile?: string
-      link?: { href: string; label: string }
+      links?: Array<{ href: string; label: string; kind: 'code' | 'role' }>
     }>
   }
   topic: {

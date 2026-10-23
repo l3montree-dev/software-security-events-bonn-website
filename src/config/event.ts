@@ -6,6 +6,7 @@
 // 3. update this file.
 
 import { LOGOS } from './shared'
+import { trackable } from './tracking'
 import type { EventConfig, Logo } from './types'
 
 // ─── Partners (current event) ─────────────────────────────────────────────────
@@ -32,6 +33,13 @@ const PARTNERS: Array<Logo> = [
     height: 48,
   },
   LOGOS.devguard,
+  {
+    href: trackable('https://open-elements.com/'),
+    src: '/open-elements-logo.svg',
+    alt: 'Open Elements',
+    width: 213,
+    height: 48,
+  },
 ]
 
 // ─── Past partners ────────────────────────────────────────────────────────────
@@ -223,7 +231,7 @@ export const EVENT: EventConfig = {
     eyebrow: 'Speaker & Maintainer',
     intro:
       'Wir freuen uns auf technische Deep Dives und spannende Diskussionen mit diesen Maintainer*innen und Entwickler*innen.',
-    // TODO: Speaker*innen 2–4 eintragen (Profilbild nach /public legen).
+    // TODO: Speaker*innen 3–4 eintragen (Profilbild nach /public legen).
     list: [
       {
         name: 'Sebastian Bergmann',
@@ -235,17 +243,37 @@ export const EVENT: EventConfig = {
         imageUrl: '/profilbild_sebastian_bergmann.jpg',
         topic: TALK_LLM_SECURITY.title,
         topicSubtitle: TALK_LLM_SECURITY.subtitle,
-        link: {
-          href: 'https://github.com/sebastianbergmann/phpunit',
-          label: 'Maintainer von PHPUnit',
-        },
+        links: [
+          {
+            href: 'https://github.com/sebastianbergmann/phpunit',
+            label: 'Maintainer von PHPUnit',
+            kind: 'code',
+          },
+        ],
       },
       {
-        name: 'Speaker*in #2',
-        role: 'Wird in Kürze bekannt gegeben',
-        imageUrl: '/dummy_person_dark.png',
+        name: 'Hendrik Ebbers',
+        role: 'Geschäftsführer',
+        company: {
+          name: 'Open Elements GmbH',
+          href: 'https://open-elements.com/',
+        },
+        imageUrl: '/profilbild_hendrik_ebbers.jpg',
+        // TODO: Talk-Titel und Abstract folgen.
         topic: 'Tech-Talk #2',
         topicSubtitle: 'Thema folgt in Kürze',
+        links: [
+          {
+            href: 'https://lf-decentralized-trust.github.io/governance/member-info/tac-members/',
+            label: 'TAC – Linux Foundation',
+            kind: 'role',
+          },
+          {
+            href: 'https://www.eclipse.org/org/foundation/directors/',
+            label: 'Board – Eclipse Foundation',
+            kind: 'role',
+          },
+        ],
       },
       {
         name: 'Speaker*in #3',
