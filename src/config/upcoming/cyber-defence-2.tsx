@@ -1,6 +1,5 @@
 // ─── Upcoming event: Cybersecurity in Defence 2.0 (20. Januar 2027) ─────────
 
-import { PAST_PARTNERS } from '../event'
 import { LOGOS, OSS_BONN_FAQS } from '../shared'
 import type { EventConfig } from '../types'
 
@@ -137,9 +136,6 @@ export const CYBER_DEFENCE_2: EventConfig = {
   // appear in the white partner section.
   presentedBy: [LOGOS.digitalhubLight, LOGOS.ccbLight, LOGOS.devguardLight],
   partners,
-  pastPartners: PAST_PARTNERS.filter(
-    (past) => !partners.some((p) => p.href === past.href),
-  ),
   // TODO: prüfen – Annahme: Teilnahme und Verpflegung wieder kostenlos wie 2026.
   faqs: OSS_BONN_FAQS,
 }

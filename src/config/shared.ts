@@ -37,6 +37,11 @@ export const LOGOS = {
     '/digitalhub.svg',
     'DigitalHub Bonn',
   ),
+  bonnDigital: logo(
+    'https://bonn.digital/',
+    '/Logo_schwarz_bonn.png',
+    'Bonn Digital eGbR',
+  ),
   dwnrwLight: logo(
     'https://dwnrw-hubs.de/startseite/',
     '/dwnrw.png',
@@ -124,6 +129,29 @@ export const LOGOS = {
     height: 48,
   },
 }
+
+// "Vergangene Partner" – one list, shown identically on every event page.
+export const PAST_PARTNERS: Array<Logo> = [
+  LOGOS.digitalhub,
+  LOGOS.bonnDigital,
+  LOGOS.ccb,
+  LOGOS.cir,
+  LOGOS.bwi,
+  LOGOS.nixcademy,
+  LOGOS.link11,
+  LOGOS.conet,
+  LOGOS.bsi,
+  LOGOS.laokoon,
+  LOGOS.hisolutions,
+  LOGOS.x101,
+  LOGOS.valutis,
+  LOGOS.businesscode,
+  LOGOS.wheregroup,
+  LOGOS.sequoia,
+  LOGOS.anykey,
+  LOGOS.brl,
+  LOGOS.euOssWeek,
+]
 
 export const DIGITALHUB_PRESENTERS = [
   LOGOS.l3montreeLight,

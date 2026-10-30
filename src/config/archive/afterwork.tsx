@@ -229,7 +229,6 @@ export const AFTERWORK: EventConfig = {
     LOGOS.businesscode,
     LOGOS.l3montree,
   ],
-  pastPartners: [],
   faqs: [
     {
       question: 'Was ist der AfterWorkshop?',

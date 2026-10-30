@@ -52,7 +52,11 @@ export type EventConfig = {
       topic: string
       topicSubtitle?: string
       pdfFile?: string
-      links?: Array<{ href: string; label: string; kind: 'code' | 'role' }>
+      links?: Array<{
+        href: string
+        label: string
+        kind: 'code' | 'role' | 'org' | 'research'
+      }>
     }>
   }
   topic: {
@@ -71,6 +75,5 @@ export type EventConfig = {
   }>
   presentedBy: Array<Logo> // light logos for the dark hero
   partners: Array<Logo> // dark logos for the white sponsors section
-  pastPartners: Array<Logo>
   faqs: Array<{ question: string; answer: string }>
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { LABELS } from '@/config/labels'
+import { PAST_PARTNERS } from '@/config/shared'
 import type { EventConfig, Logo } from '@/config/types'
 
 function LogoList({
@@ -66,23 +67,21 @@ export function Sponsors({ event }: { event: EventConfig }) {
           imageClassName="h-12 w-auto object-contain"
         />
 
-        {/* Past partners */}
-        {event.pastPartners.length > 0 && (
-          <div className="mt-20 border-t border-zinc-200 pt-12">
-            <h3 className="mb-8 text-sm font-semibold tracking-widest text-zinc-500 uppercase">
-              {t.pastPartners}
-            </h3>
-            <p className="mb-10 max-w-2xl text-lg leading-7 text-zinc-600">
-              {t.pastPartnersIntro}
-            </p>
-            <LogoList
-              logos={event.pastPartners}
-              newTab={t.newTab}
-              className="flex flex-wrap items-center justify-center gap-10 lg:justify-start lg:gap-14"
-              imageClassName="h-10 w-auto object-contain"
-            />
-          </div>
-        )}
+        {/* Past partners – the same list on every event page */}
+        <div className="mt-20 border-t border-zinc-200 pt-12">
+          <h3 className="mb-8 text-sm font-semibold tracking-widest text-zinc-500 uppercase">
+            {t.pastPartners}
+          </h3>
+          <p className="mb-10 max-w-2xl text-lg leading-7 text-zinc-600">
+            {t.pastPartnersIntro}
+          </p>
+          <LogoList
+            logos={PAST_PARTNERS}
+            newTab={t.newTab}
+            className="flex flex-wrap items-center justify-center gap-10 lg:justify-start lg:gap-14"
+            imageClassName="h-10 w-auto object-contain"
+          />
+        </div>
       </div>
     </section>
   )

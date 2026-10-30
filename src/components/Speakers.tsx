@@ -1,4 +1,5 @@
 import {
+  AcademicCapIcon,
   BuildingOffice2Icon,
   CodeBracketIcon,
   UserGroupIcon,
@@ -8,7 +9,12 @@ import { LABELS } from '@/config/labels'
 import { trackable } from '@/config/tracking'
 import type { EventConfig } from '@/config/types'
 
-const LINK_ICONS = { code: CodeBracketIcon, role: UserGroupIcon }
+const LINK_ICONS = {
+  code: CodeBracketIcon,
+  role: UserGroupIcon,
+  org: BuildingOffice2Icon,
+  research: AcademicCapIcon,
+}
 
 // External speaker link as a separate chip. No "noreferrer", so the target
 // sees the visit came from this page.

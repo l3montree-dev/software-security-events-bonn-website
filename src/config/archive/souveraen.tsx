@@ -195,6 +195,5 @@ export const SOUVERAEN: EventConfig = {
     LOGOS.businesscode,
     LOGOS.brl,
   ],
-  pastPartners: [],
   faqs: OSS_BONN_FAQS,
 }

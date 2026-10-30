@@ -40,142 +40,18 @@ const PARTNERS: Array<Logo> = [
     width: 213,
     height: 48,
   },
-]
-
-// ─── Past partners ────────────────────────────────────────────────────────────
-
-export const PAST_PARTNERS: Array<Logo> = [
   {
-    href: 'https://www.digitalhub.de/',
-    src: '/digitalhub.svg',
-    alt: 'DigitalHub AG Bonn',
-    width: 158,
+    href: trackable('https://www.uni-bonn.de/'),
+    src: '/uni-bonn-logo.svg',
+    alt: 'Universität Bonn',
+    width: 121,
     height: 48,
   },
   {
-    href: 'https://bonn.digital/',
-    src: '/Logo_schwarz_bonn.png',
-    alt: 'Bonn Digital eGbR',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://cyber-security-cluster.eu/',
-    src: '/ccb-logo.png',
-    alt: 'Cybersecurity Cluster Bonn e.V.',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.bundeswehr.de/de/organisation/cyber-und-informationsraum',
-    src: '/logo-CIR.png',
-    alt: 'CIR',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.bwi.de/',
-    src: '/logo-BWI-2.png',
-    alt: 'BWI',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://nixcademy.com/de/',
-    src: '/nixcademy-logo.png',
-    alt: 'NixCademy',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.link11.com/de/',
-    src: '/logo-link11.png',
-    alt: 'Link11',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.conet.de/',
-    src: '/conet_logo.png',
-    alt: 'CONET',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.bsi.bund.de/',
-    src: '/bsi-logo.png',
-    alt: 'BSI',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://laokoon-security.com/',
-    src: '/laokoon-security-logo.png',
-    alt: 'Laokoon SecurITy',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.hisolutions.com/',
-    src: '/logo_his2.png',
-    alt: 'HiSolutions',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://netlockrmm.com/index.html',
-    src: '/logo_0x101.png',
-    alt: '0x101 Cybersecurity',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://valutistech.com/',
-    src: '/valutis_logo_black.svg',
-    alt: 'valutis',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.business-code.de/',
-    src: '/bcdPlusTextLogo.svg',
-    alt: 'BusinessCode',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://wheregroup.com/',
-    src: '/where_group_logo.png',
-    alt: 'WhereGroup GmbH',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://sequoia-pgp.org/',
-    src: '/sequoia_logo.png',
-    alt: 'SequoiaPGP',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.anykey.de/',
-    src: '/logo-anykey.png',
-    alt: 'anykey',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://www.brl.de/de',
-    src: '/BRL-logo.png',
-    alt: 'BRL BOEGE ROHDE LUEBBEHUESEN',
-    width: 158,
-    height: 48,
-  },
-  {
-    href: 'https://opensourceweek.eu/',
-    src: '/EU_oss_week.png',
-    alt: 'EU Open Source Week',
-    width: 158,
+    href: trackable('https://www.fkie.fraunhofer.de/'),
+    src: '/fraunhofer-fkie-logo.svg',
+    alt: 'Fraunhofer FKIE',
+    width: 143,
     height: 48,
   },
 ]
@@ -231,7 +107,7 @@ export const EVENT: EventConfig = {
     eyebrow: 'Speaker & Maintainer',
     intro:
       'Wir freuen uns auf technische Deep Dives und spannende Diskussionen mit diesen Maintainer*innen und Entwickler*innen.',
-    // TODO: Speaker*innen 3–4 eintragen (Profilbild nach /public legen).
+    // TODO: Speaker*in 4 eintragen (Profilbild nach /public legen).
     list: [
       {
         name: 'Sebastian Bergmann',
@@ -276,11 +152,29 @@ export const EVENT: EventConfig = {
         ],
       },
       {
-        name: 'Speaker*in #3',
-        role: 'Wird in Kürze bekannt gegeben',
-        imageUrl: '/dummy_person_dark.png',
+        name: 'Dr. Marc Ohm',
+        role: 'Forschung zu Software Supply Chain Security',
+        company: {
+          name: 'Universität Bonn',
+          href: 'https://www.uni-bonn.de/de/forschung-lehre/forschungsprofil/transdisziplinaere-forschungsbereiche/modelling/mitgliederverzeichnis/marc-ohm',
+        },
+        // Foto: Universität Bonn, © Max Waidhas
+        imageUrl: '/profilbild_marc_ohm.jpg',
+        // TODO: Talk-Titel und Abstract folgen.
         topic: 'Tech-Talk #3',
         topicSubtitle: 'Thema folgt in Kürze',
+        links: [
+          {
+            href: 'https://www.fkie.fraunhofer.de/',
+            label: 'Fraunhofer FKIE',
+            kind: 'org',
+          },
+          {
+            href: 'https://dblp.org/pid/224/4378.html',
+            label: 'Publikationen',
+            kind: 'research',
+          },
+        ],
       },
       {
         name: 'Speaker*in #4',
@@ -364,7 +258,6 @@ export const EVENT: EventConfig = {
   ],
   presentedBy: PRESENTED_BY,
   partners: PARTNERS,
-  pastPartners: PAST_PARTNERS,
   faqs: [
     {
       question: 'Wer kann bei dem Event teilnehmen?',

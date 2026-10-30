@@ -173,17 +173,5 @@ export const BONN_SECURITY_NIGHT: EventConfig = {
     LOGOS.conet,
     LOGOS.bsi,
   ],
-  pastPartners: [
-    LOGOS.laokoon,
-    LOGOS.hisolutions,
-    LOGOS.x101,
-    LOGOS.valutis,
-    LOGOS.businesscode,
-    LOGOS.wheregroup,
-    LOGOS.sequoia,
-    LOGOS.anykey,
-    LOGOS.brl,
-    LOGOS.euOssWeek,
-  ],
   faqs: OSS_BONN_FAQS,
 }

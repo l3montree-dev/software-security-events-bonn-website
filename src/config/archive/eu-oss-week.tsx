@@ -181,7 +181,6 @@ export const EU_OSS_WEEK: EventConfig = {
     LOGOS.ccbLight,
   ],
   partners: [LOGOS.digitalhub, LOGOS.ccb],
-  pastPartners: [],
   faqs: [
     {
       question: 'Whats the EU Open Source week?',
