@@ -1,4 +1,5 @@
 import { ArrowDownIcon } from '@heroicons/react/16/solid'
+import clsx from 'clsx'
 import Image from 'next/image'
 import { LABELS } from '@/config/labels'
 import type { EventConfig } from '@/config/types'
@@ -155,7 +156,10 @@ export function Hero({
                     src={logo.src}
                     width={logo.width}
                     height={logo.height}
-                    className="h-12 w-auto object-contain"
+                    className={clsx(
+                      'w-auto object-contain',
+                      logo.heightClassName ?? 'h-12',
+                    )}
                   />
                   <span className="sr-only"> {t.newTab}</span>
                 </a>

@@ -8,6 +8,7 @@ export type Logo = {
   alt: string
   width: number
   height: number
+  heightClassName?: string // hero only: replaces the default "h-12"
 }
 
 export type TopicImage = {

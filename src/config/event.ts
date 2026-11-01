@@ -21,6 +21,8 @@ const PRESENTED_BY: Array<Logo> = [
     height: 48,
   },
   LOGOS.devguardLight,
+  // Small wordmark – shown larger; the negative margin keeps the bar height.
+  { ...LOGOS.ccbLight, heightClassName: 'h-16 -my-2' },
 ]
 
 // "Die Partner dieses Events" – logos for the white background.
@@ -33,6 +35,7 @@ const PARTNERS: Array<Logo> = [
     height: 48,
   },
   LOGOS.devguard,
+  LOGOS.ccb,
   {
     href: trackable('https://open-elements.com/'),
     src: '/open-elements-logo.svg',
