@@ -68,6 +68,10 @@ const TALK_LLM_SECURITY = {
   subtitle: 'Open-Source-Security, wenn LLMs nach Schwachstellen suchen',
 }
 
+const TALK_SUPPLY_CHAIN = {
+  title: 'Software Supply Chain Angriffe und wo sie zu finden sind',
+}
+
 // ─── Event ───────────────────────────────────────────────────────────────────
 
 export const EVENT: EventConfig = {
@@ -92,7 +96,7 @@ export const EVENT: EventConfig = {
   ticketUrl: 'https://pretix.eu/l3montree/oss-deep-dives/',
   ticketCta: 'Kostenloses Ticket sichern →',
   talksLabel: 'Tech-Talks',
-  // TODO: Talks 2–4 eintragen, sobald sie feststehen.
+  // TODO: Talks 2 und 4 eintragen, sobald sie feststehen.
   talks: [
     {
       ...TALK_LLM_SECURITY,
@@ -103,7 +107,10 @@ export const EVENT: EventConfig = {
       ],
     },
     { title: 'Tech-Talk #2', subtitle: 'Thema folgt in Kürze' },
-    { title: 'Tech-Talk #3', subtitle: 'Thema folgt in Kürze' },
+    {
+      ...TALK_SUPPLY_CHAIN,
+      body: 'In diesem Vortrag wird erläutert, wie Open-Source-Pakete zu gefährlichen Einfallstoren werden und wie die Mechanismen aktueller Supply-Chain-Angriffe, wie dem Shai-Hulud-Wurm, ablaufen. Anhand realer Vorfälle und Täterstrukturen, wie sie bei TeamPCP zu beobachten sind, wird aufgezeigt, wo die kritischen Schwachstellen in modernen Entwicklungs-Ökosystemen lauern.',
+    },
     { title: 'Tech-Talk #4', subtitle: 'Thema folgt in Kürze' },
   ],
   speakers: {
@@ -163,9 +170,7 @@ export const EVENT: EventConfig = {
         },
         // Foto: Universität Bonn, © Max Waidhas
         imageUrl: '/profilbild_marc_ohm.jpg',
-        // TODO: Talk-Titel und Abstract folgen.
-        topic: 'Tech-Talk #3',
-        topicSubtitle: 'Thema folgt in Kürze',
+        topic: TALK_SUPPLY_CHAIN.title,
         links: [
           {
             href: 'https://www.fkie.fraunhofer.de/',
@@ -240,8 +245,8 @@ export const EVENT: EventConfig = {
       end: '19:20',
     },
     {
-      name: 'Tech-Talk 3',
-      description: 'Thema folgt in Kürze',
+      name: TALK_SUPPLY_CHAIN.title,
+      details: 'Dr. Marc Ohm',
       start: '19:20',
       end: '19:40',
     },
