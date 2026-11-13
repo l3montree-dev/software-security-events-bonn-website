@@ -29,7 +29,7 @@ export const EU_OSS_WEEK: EventConfig = {
         <strong>Open Source as a Reliable Business Model</strong>. This
         exclusive event aims to bring together thought leaders, policymakers,
         business innovators, and technologists to explore how open source is
-        shaping the future of technology—and how we can ensure it remains
+        shaping the future of technology, and how we can ensure it remains
         secure, sustainable, and a trusted foundation for businesses of all
         sizes.
       </p>

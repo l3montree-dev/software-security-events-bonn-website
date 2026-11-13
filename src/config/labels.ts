@@ -32,7 +32,7 @@ export const LABELS = {
     pastPartnersIntro:
       'Partner, die die bisherigen OSS-Events durch ihre Fachvorträge bereichert haben.',
     scheduleEyebrow: 'Ablauf',
-    scheduleHeading: (date: string) => `Programm — ${date}`,
+    scheduleHeading: (date: string) => `Programm am ${date}`,
     faqEyebrow: 'Häufige Fragen',
     faqQuestion:
       'Du hast Fragen zum Event, auf die Du hier keine Antwort findest?',
@@ -68,7 +68,7 @@ export const LABELS = {
     pastPartnersIntro:
       'Partners who have enriched previous OSS events with their talks.',
     scheduleEyebrow: 'Schedule',
-    scheduleHeading: (date: string) => `Programme — ${date}`,
+    scheduleHeading: (date: string) => `Programme on ${date}`,
     faqEyebrow: 'Frequently asked questions',
     faqQuestion:
       "You have another question and can't find the answer you're looking for?",

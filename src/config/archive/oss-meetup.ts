@@ -111,7 +111,7 @@ export const OSS_MEETUP: EventConfig = {
     {
       name: 'Welcome & Opening',
       description:
-        'Kurze Begrüßung und Intro in den Abend — wer wir sind, was euch erwartet.',
+        'Kurze Begrüßung und Intro in den Abend. Wer wir sind, was euch erwartet.',
       start: '17:30',
       end: '17:40',
     },
@@ -144,7 +144,7 @@ export const OSS_MEETUP: EventConfig = {
     {
       name: 'Networking, Food & Drinks',
       description:
-        'Der Abend gehört euch — Zeit für Gespräche, Fragen an die Speaker und neue Kontakte. 🥬 🥔 🥙 🧆 🌮 🍔',
+        'Der Abend gehört euch. Zeit für Gespräche, Fragen an die Speaker und neue Kontakte. 🥬 🥔 🥙 🧆 🌮 🍔',
       start: '19:00',
       end: '22:00',
     },

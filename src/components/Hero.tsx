@@ -91,7 +91,7 @@ export function Hero({
             </div>
           </div>
 
-          {/* Right column — talks */}
+          {/* Right column: talks */}
           <div className="flex flex-col justify-center">
             <h2 className="mb-4 text-base font-semibold tracking-widest text-zinc-400 uppercase">
               {event.talksLabel}

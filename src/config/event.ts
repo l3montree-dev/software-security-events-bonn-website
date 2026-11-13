@@ -68,6 +68,11 @@ const TALK_LLM_SECURITY = {
   subtitle: 'Open-Source-Security, wenn LLMs nach Schwachstellen suchen',
 }
 
+const TALK_GOVERNANCE = {
+  title: 'Open Governance',
+  subtitle: 'Von Linux Foundation bis Gov Stack',
+}
+
 const TALK_SUPPLY_CHAIN = {
   title: 'Software Supply Chain Angriffe und wo sie zu finden sind',
 }
@@ -96,7 +101,7 @@ export const EVENT: EventConfig = {
   ticketUrl: 'https://pretix.eu/l3montree/oss-deep-dives/',
   ticketCta: 'Kostenloses Ticket sichern →',
   talksLabel: 'Tech-Talks',
-  // TODO: Talks 2 und 4 eintragen, sobald sie feststehen.
+  // TODO: Talk 4 eintragen, sobald er feststeht.
   talks: [
     {
       ...TALK_LLM_SECURITY,
@@ -106,7 +111,14 @@ export const EVENT: EventConfig = {
         'Zum Schluss geht es darum, was das für alle bedeutet, die Open Source betreiben, von der Frage, wo überhaupt welche Version läuft, bis zu den Meldepflichten des Cyber Resilience Act.',
       ],
     },
-    { title: 'Tech-Talk #2', subtitle: 'Thema folgt in Kürze' },
+    {
+      ...TALK_GOVERNANCE,
+      body: [
+        'Open Source ist mehr als eine Lizenz. Ob ein Projekt langfristig trägt, entscheidet seine Governance: Wer darf mergen, wer bestimmt die Roadmap, wie werden Konflikte gelöst, und was passiert, wenn der Hauptsponsor aussteigt? Mit KI wird das noch wichtiger: Wenn Code in Massen generiert wird und Agenten Pull Requests stellen, braucht es klare Regeln für Verantwortung, Review und Vertrauen.',
+        'Der Vortrag zeigt das an drei Beispielen aus der Praxis. Eclipse Adoptium ist den Weg von einer losen Community zum herstellerneutralen Foundation-Projekt gegangen. CLPR, ein Lab der LF Decentralized Trust, wurde von Anfang an offen entwickelt. Die Building Blocks von GovStack übertragen diese Prinzipien auf digitale Verwaltungsinfrastruktur.',
+        'Die Teilnehmenden lernen, an welchen Strukturen wie Charter, TSC, Committer-Modell und Spezifikationsprozess sich gute Governance erkennen lässt und worauf sie bei der Auswahl und Mitarbeit in Projekten achten sollten.',
+      ],
+    },
     {
       ...TALK_SUPPLY_CHAIN,
       body: 'In diesem Vortrag wird erläutert, wie Open-Source-Pakete zu gefährlichen Einfallstoren werden und wie die Mechanismen aktueller Supply-Chain-Angriffe, wie dem Shai-Hulud-Wurm, ablaufen. Anhand realer Vorfälle und Täterstrukturen, wie sie bei TeamPCP zu beobachten sind, wird aufgezeigt, wo die kritischen Schwachstellen in modernen Entwicklungs-Ökosystemen lauern.',
@@ -145,9 +157,8 @@ export const EVENT: EventConfig = {
           href: 'https://open-elements.com/',
         },
         imageUrl: '/profilbild_hendrik_ebbers.jpg',
-        // TODO: Talk-Titel und Abstract folgen.
-        topic: 'Tech-Talk #2',
-        topicSubtitle: 'Thema folgt in Kürze',
+        topic: TALK_GOVERNANCE.title,
+        topicSubtitle: TALK_GOVERNANCE.subtitle,
         links: [
           {
             href: 'https://lf-decentralized-trust.github.io/governance/member-info/tac-members/',
@@ -214,53 +225,59 @@ export const EVENT: EventConfig = {
       },
     ],
   },
-  // TODO: Zeiten bestätigen (Annahme: Ablauf wie beim OSS Meetup, ab 18:00 Uhr)
-  // und Talk-Titel eintragen.
+  // TODO: Titel von Talk 4 eintragen.
   schedule: [
     {
-      name: 'Ankommen & erstes Networking',
+      name: 'Ankommen, Pizza & erstes Networking',
       description:
-        'Türen auf! Kommt rein, holt euch was zu trinken und lernt erste Gesichter kennen.',
+        'Türen auf! Kommt rein, holt euch Pizza und was zu trinken und lernt erste Gesichter kennen – so hören alle die Talks satt. 🍕',
       start: '18:00',
-      end: '18:30',
+      end: '18:20',
     },
     {
       name: 'Welcome & Opening',
       description:
-        'Kurze Begrüßung und Intro in den Abend — wer wir sind, was euch erwartet.',
-      start: '18:30',
-      end: '18:40',
+        'Kurze Begrüßung und Intro in den Abend. Wer wir sind, was euch erwartet.',
+      start: '18:20',
+      end: '18:30',
     },
     {
       name: TALK_LLM_SECURITY.title,
       description: TALK_LLM_SECURITY.subtitle,
       details: 'Sebastian Bergmann',
-      start: '18:40',
+      start: '18:30',
       end: '19:00',
     },
     {
-      name: 'Tech-Talk 2',
-      description: 'Thema folgt in Kürze',
+      name: TALK_GOVERNANCE.title,
+      description: TALK_GOVERNANCE.subtitle,
+      details: 'Hendrik Ebbers',
       start: '19:00',
-      end: '19:20',
+      end: '19:30',
+    },
+    {
+      name: 'Pause',
+      description: 'Kurz durchatmen und Getränke auffüllen.',
+      start: '19:30',
+      end: '19:40',
     },
     {
       name: TALK_SUPPLY_CHAIN.title,
       details: 'Dr. Marc Ohm',
-      start: '19:20',
-      end: '19:40',
+      start: '19:40',
+      end: '20:10',
     },
     {
       name: 'Tech-Talk 4',
       description: 'Thema folgt in Kürze',
-      start: '19:40',
-      end: '20:00',
+      start: '20:10',
+      end: '20:40',
     },
     {
       name: 'Networking, Food & Drinks',
       description:
-        'Der Abend gehört euch — Zeit für Gespräche, Fragen an die Speaker und neue Kontakte. 🥬 🥔 🥙 🧆 🌮 🍔',
-      start: '20:00',
+        'Der Abend gehört euch. Zeit für Gespräche, Fragen an die Speaker und neue Kontakte. 🥬 🥔 🥙 🧆 🌮 🍔',
+      start: '20:40',
       end: '22:00',
     },
   ],
