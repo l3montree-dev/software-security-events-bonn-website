@@ -77,6 +77,11 @@ const TALK_SUPPLY_CHAIN = {
   title: 'Software Supply Chain Angriffe und wo sie zu finden sind',
 }
 
+const TALK_VULN_ASSESSMENT = {
+  title: 'Schwachstellenbewertung skalierbar machen',
+  subtitle: 'Eine Einführung in den VEX',
+}
+
 // ─── Event ───────────────────────────────────────────────────────────────────
 
 export const EVENT: EventConfig = {
@@ -101,7 +106,6 @@ export const EVENT: EventConfig = {
   ticketUrl: 'https://pretix.eu/l3montree/oss-deep-dives/',
   ticketCta: 'Kostenloses Ticket sichern →',
   talksLabel: 'Tech-Talks',
-  // TODO: Talk 4 eintragen, sobald er feststeht.
   talks: [
     {
       ...TALK_LLM_SECURITY,
@@ -123,13 +127,19 @@ export const EVENT: EventConfig = {
       ...TALK_SUPPLY_CHAIN,
       body: 'In diesem Vortrag wird erläutert, wie Open-Source-Pakete zu gefährlichen Einfallstoren werden und wie die Mechanismen aktueller Supply-Chain-Angriffe, wie dem Shai-Hulud-Wurm, ablaufen. Anhand realer Vorfälle und Täterstrukturen, wie sie bei TeamPCP zu beobachten sind, wird aufgezeigt, wo die kritischen Schwachstellen in modernen Entwicklungs-Ökosystemen lauern.',
     },
-    { title: 'Tech-Talk #4', subtitle: 'Thema folgt in Kürze' },
+    {
+      ...TALK_VULN_ASSESSMENT,
+      body: [
+        'Der CI-Scan meldet eine kritische CVE in einer Abhängigkeit. Ob der verwundbare Code überhaupt erreichbar ist, weiß der Scanner nicht, denn er gleicht nur Paketversionen mit Advisories ab. Also prüft jemand den Aufrufpfad von Hand, notiert das Ergebnis im Ticket, und beim nächsten Scan taucht dieselbe Meldung wieder auf.',
+        'Wie funktionieren Schwachstellenmanagement von der SBOM bis zur Bewertung und warum kostet gerade die Bewertung so viel Zeit? Das klären wir und zeigen in diesem Zuge auch den VEX, der Vulnerability Exploitability eXchange: ein maschinenlesbares Format, das festhält, ob ein Produkt von einer Schwachstelle betroffen ist. So wird aus einer einmaligen Analyse eine Aussage, die andere Teams, Kunden oder die Community wiederverwenden können.',
+        'Diese Bewertungen können auch noch mit Mitarbeitenden, Kunden oder der Community geteilt werden, sodass andere Teams nicht dieselbe Arbeit machen müssen. So kann die Schwachstellenbewertung skalierbar werden, und die Teams können sich auf die wirklich kritischen CVEs konzentrieren.',
+      ],
+    },
   ],
   speakers: {
     eyebrow: 'Speaker & Maintainer',
     intro:
       'Wir freuen uns auf technische Deep Dives und spannende Diskussionen mit diesen Maintainer*innen und Entwickler*innen.',
-    // TODO: Speaker*in 4 eintragen (Profilbild nach /public legen).
     list: [
       {
         name: 'Sebastian Bergmann',
@@ -196,11 +206,24 @@ export const EVENT: EventConfig = {
         ],
       },
       {
-        name: 'Speaker*in #4',
-        role: 'Wird in Kürze bekannt gegeben',
-        imageUrl: '/dummy_person_dark.png',
-        topic: 'Tech-Talk #4',
-        topicSubtitle: 'Thema folgt in Kürze',
+        name: 'Sebastian Kawelke',
+        role: 'Softwaresecurity-Expert',
+        company: { name: 'L3montree GmbH', href: 'https://www.l3montree.com/' },
+        imageUrl: '/profilbild_sebastian_kawelke.jpeg',
+        topic: TALK_VULN_ASSESSMENT.title,
+        topicSubtitle: TALK_VULN_ASSESSMENT.subtitle,
+        links: [
+          {
+            href: 'https://github.com/l3montree-dev/devguard',
+            label: 'Maintainer von DevGuard',
+            kind: 'code',
+          },
+          {
+            href: 'https://cyber-security-cluster.eu/vorstand-beirat-und-team/',
+            label: 'Vorstand – Cyber Security Cluster Bonn',
+            kind: 'role',
+          },
+        ],
       },
     ],
   },
@@ -225,7 +248,6 @@ export const EVENT: EventConfig = {
       },
     ],
   },
-  // TODO: Titel von Talk 4 eintragen.
   schedule: [
     {
       name: 'Ankommen, Pizza & erstes Networking',
@@ -268,8 +290,9 @@ export const EVENT: EventConfig = {
       end: '20:10',
     },
     {
-      name: 'Tech-Talk 4',
-      description: 'Thema folgt in Kürze',
+      name: TALK_VULN_ASSESSMENT.title,
+      description: TALK_VULN_ASSESSMENT.subtitle,
+      details: 'Sebastian Kawelke',
       start: '20:10',
       end: '20:40',
     },
