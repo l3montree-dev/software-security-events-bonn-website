@@ -78,8 +78,8 @@ const TALK_SUPPLY_CHAIN = {
 }
 
 const TALK_VULN_ASSESSMENT = {
-  title: 'Schwachstellenbewertung skalierbar machen',
-  subtitle: 'Eine Einführung in den VEX',
+  title: 'Betroffen oder nicht?',
+  subtitle: 'Schwachstellenbewertung skalierbar machen mit VEX',
 }
 
 // ─── Event ───────────────────────────────────────────────────────────────────

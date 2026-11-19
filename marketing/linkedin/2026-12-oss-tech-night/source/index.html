@@ -1,0 +1,571 @@
+<!doctype html>
+<!--
+  LinkedIn-Motive (1200 × 1200) für die OSS-Tech-Night am 11.12.2026.
+  Eine Vorlage für alle Motive, gewählt über ?slide=<id> (siehe SLIDES).
+  Schriften und Bilder kommen direkt aus src/fonts und public/, daher
+  muss Chrome mit --allow-file-access-from-files laufen (siehe render.sh).
+-->
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>OSS-Tech-Night – LinkedIn</title>
+    <style>
+      @font-face {
+        font-family: 'DM Sans';
+        src: url('../../../../src/fonts/dm-sans-latin.woff2') format('woff2');
+        font-weight: 100 1000;
+      }
+      @font-face {
+        font-family: 'Inter';
+        src: url('../../../../src/fonts/inter-latin.woff2') format('woff2');
+        font-weight: 100 900;
+      }
+
+      /* Website-Farben: bg-black, l3-400, zinc-200/300/400 */
+      :root {
+        --yellow: #e9d432;
+        --white: #ffffff;
+        --text: #e4e4e7;
+        --soft: #d4d4d8;
+        --muted: #a1a1aa;
+        --faint: #71717a;
+        --line: rgba(255, 255, 255, 0.14);
+        --margin: 72px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 1200px;
+        overflow: hidden;
+        background: #000;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--white);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .canvas {
+        position: relative;
+        width: 1200px;
+        height: 1200px;
+        padding: 56px var(--margin) 0;
+        display: flex;
+        flex-direction: column;
+        /* Ein leiser Lichtschein oben rechts, sonst reines Schwarz */
+        background:
+          radial-gradient(
+            900px 700px at 100% 0%,
+            rgba(233, 212, 50, 0.09),
+            transparent 70%
+          ),
+          #000;
+      }
+
+      /* ── Kopf ─────────────────────────────────────────── */
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 40px;
+      }
+      .eyebrow {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--yellow);
+        border-bottom: 2px solid var(--yellow);
+        padding-bottom: 6px;
+      }
+      .city {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        padding-bottom: 8px;
+      }
+
+      .band {
+        margin-top: 22px;
+        height: 124px;
+        background: var(--yellow);
+        color: #000;
+        border-radius: 6px;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'DM Sans', sans-serif;
+      }
+      .band-title {
+        font-size: 90px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        padding-bottom: 6px;
+      }
+      .band-date {
+        text-align: right;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+      }
+      .band-date small {
+        display: block;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      /* ── Inhalt ───────────────────────────────────────── */
+      .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 48px 0 40px;
+        min-height: 0;
+      }
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 420px;
+        gap: 56px;
+        flex: 1;
+        min-height: 0;
+      }
+      .col {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+      }
+
+      .label {
+        align-self: flex-start;
+        background: var(--white);
+        color: #000;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 10px 16px 11px;
+        border-radius: 5px;
+      }
+
+      .talk-title {
+        margin-top: 26px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: -0.025em;
+        text-wrap: balance;
+      }
+      .talk-title.long {
+        font-size: 50px;
+      }
+      .talk-sub {
+        margin-top: 20px;
+        font-size: 28px;
+        line-height: 1.4;
+        color: var(--muted);
+        text-wrap: pretty;
+      }
+
+      .bottom {
+        margin-top: auto;
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+      .facts {
+        margin-top: 18px;
+        font-size: 27px;
+        line-height: 1.5;
+        color: var(--text);
+      }
+      .facts b {
+        font-weight: 600;
+        color: var(--white);
+      }
+
+      .photo {
+        width: 420px;
+        height: 440px;
+        border-radius: 24px;
+        object-fit: cover;
+        display: block;
+      }
+      .credit {
+        margin-top: 10px;
+        font-size: 15px;
+        color: var(--faint);
+      }
+      .name {
+        margin-top: 26px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        color: var(--yellow);
+      }
+      .roles {
+        margin-top: 14px;
+        list-style: none;
+        font-size: 21px;
+        line-height: 1.45;
+        color: var(--soft);
+      }
+
+      /* ── Fuß: QR, Ticket, Partner ─────────────────────── */
+      .cta {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+      .qr {
+        width: 128px;
+        height: 128px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        flex: none;
+      }
+      .qr img {
+        width: 108px;
+        height: 108px;
+        image-rendering: pixelated;
+        display: block;
+      }
+      .cta-text {
+        font-family: 'DM Sans', sans-serif;
+        line-height: 1.2;
+      }
+      .cta-text span {
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--muted);
+      }
+      .cta-text strong {
+        display: block;
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: -0.015em;
+        color: var(--yellow);
+      }
+
+      .foot {
+        height: 132px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        gap: 56px;
+      }
+      .foot-label {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-right: 4px;
+      }
+      .foot img {
+        display: block;
+        width: auto;
+      }
+      .logo-l3 {
+        height: 50px;
+      }
+      .logo-devguard {
+        height: 46px;
+      }
+      .logo-ccb {
+        height: 74px;
+        margin: -12px 0;
+      }
+
+      /* ── Motiv: Event ─────────────────────────────────── */
+      .hero-title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.035em;
+      }
+      .hero-title em {
+        display: block;
+        font-style: normal;
+        color: var(--yellow);
+      }
+      .hero-text {
+        margin-top: 24px;
+        max-width: 1000px;
+        font-size: 28px;
+        line-height: 1.45;
+        color: var(--soft);
+        text-wrap: pretty;
+      }
+      .strip {
+        margin-top: 36px;
+        width: 100%;
+        height: 210px;
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: 50% 57%;
+        display: block;
+      }
+
+      /* ── Motiv: alle Speaker ──────────────────────────── */
+      .lineup {
+        list-style: none;
+        margin-top: 14px;
+      }
+      .lineup li {
+        display: grid;
+        grid-template-columns: 104px 1fr auto;
+        gap: 28px;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .lineup li:last-child {
+        border-bottom: 0;
+      }
+      .lineup img {
+        width: 104px;
+        height: 104px;
+        border-radius: 16px;
+        object-fit: cover;
+        display: block;
+      }
+      .lineup .who {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--yellow);
+      }
+      .lineup .what {
+        margin-top: 4px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+        text-wrap: balance;
+      }
+      .lineup .time {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+      .bottom-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: auto;
+        padding-top: 24px;
+      }
+      .bottom-row .facts {
+        margin-top: 0;
+        font-size: 26px;
+      }
+      .lineup-credit {
+        position: absolute;
+        right: var(--margin);
+        bottom: 12px;
+        font-size: 14px;
+        color: var(--faint);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas" id="canvas"></div>
+
+    <script>
+      const ASSETS = '../../../../public/'
+
+      const EVENT = {
+        date: 'Freitag, 11. Dezember 2026',
+        time: 'ab 18:00 Uhr',
+        place: 'L3montree HQ, Markt 3, 53111 Bonn',
+      }
+
+      // Reihenfolge und Uhrzeiten wie im Programm auf oss-bonn.de
+      const SPEAKERS = [
+        {
+          id: 'sebastian-bergmann',
+          name: 'Sebastian Bergmann',
+          photo: 'profilbild_sebastian_bergmann.jpg',
+          time: '18:30',
+          title: 'Finden ist billig, Beheben nicht',
+          subtitle: 'Open-Source-Security, wenn LLMs nach Schwachstellen suchen',
+          roles: [
+            'PHP-Experte, The PHP Consulting Company',
+            'Maintainer von PHPUnit',
+          ],
+        },
+        {
+          id: 'hendrik-ebbers',
+          name: 'Hendrik Ebbers',
+          photo: 'profilbild_hendrik_ebbers.jpg',
+          time: '19:00',
+          title: 'Open Governance',
+          subtitle: 'Von Linux Foundation bis Gov Stack',
+          roles: [
+            'Geschäftsführer, Open Elements GmbH',
+            'Vice Chair im TAC der LF Decentralized Trust',
+            'Board of Directors, Eclipse Foundation',
+          ],
+        },
+        {
+          id: 'marc-ohm',
+          name: 'Dr. Marc Ohm',
+          photo: 'profilbild_marc_ohm.jpg',
+          credit: 'Foto: Universität Bonn, © Max Waidhas',
+          time: '19:40',
+          title: 'Software Supply Chain Angriffe und wo sie zu finden sind',
+          roles: [
+            'Forschung zu Software Supply Chain Security',
+            'Universität Bonn und Fraunhofer FKIE',
+          ],
+        },
+        {
+          id: 'sebastian-kawelke',
+          name: 'Sebastian Kawelke',
+          photo: 'profilbild_sebastian_kawelke.jpeg',
+          time: '20:10',
+          title: 'Schwachstellenbewertung skalierbar machen',
+          subtitle: 'Eine Einführung in den VEX',
+          roles: [
+            'Softwaresecurity-Expert, L3montree GmbH',
+            'Maintainer von DevGuard',
+            'Vorstand im Cyber Security Cluster Bonn',
+          ],
+        },
+      ]
+
+      const esc = (s) =>
+        s.replace(
+          /[&<>"]/g,
+          (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c],
+        )
+
+      const head = `
+        <div class="top">
+          <span class="eyebrow">Von Techies für Techies</span>
+          <span class="city">Bonn</span>
+        </div>
+        <div class="band">
+          <span class="band-title">OSS-Tech-Night</span>
+          <span class="band-date">11.12.2026<small>ab 18:00 Uhr</small></span>
+        </div>`
+
+      const when = `
+        <div>
+          <span class="label">Wann und Wo?</span>
+          <p class="facts"><b>${EVENT.date}, ${EVENT.time}</b><br />${EVENT.place}</p>
+        </div>`
+
+      const cta = `
+        <div class="cta">
+          <div class="qr"><img src="qr-oss-bonn.png" alt="" /></div>
+          <div class="cta-text">
+            <span>Kostenloses Ticket</span>
+            <strong>oss-bonn.de</strong>
+          </div>
+        </div>`
+
+      const foot = `
+        <footer class="foot">
+          <span class="foot-label">Presented by</span>
+          <img class="logo-l3" src="${ASSETS}l3montree-logo.svg" alt="L3montree" />
+          <img class="logo-devguard" src="${ASSETS}devguard-logo-white.svg" alt="DevGuard" />
+          <img class="logo-ccb" src="${ASSETS}ccb-logo-w.png" alt="Cyber Security Cluster Bonn" />
+        </footer>`
+
+      function eventSlide() {
+        return `${head}
+          <main class="content">
+            <h1 class="hero-title">Open Source<em>Technical Deep Dives</em></h1>
+            <p class="hero-text">Maintainer*innen und Entwickler*innen nehmen euch mit auf die technische Seite von Open Source: vier Tech-Talks, Pizza und viel Zeit zum Fachsimpeln.</p>
+            <img class="strip" src="${ASSETS}talk.jpeg" alt="" />
+            <div class="bottom-row">${when}${cta}</div>
+          </main>
+          ${foot}`
+      }
+
+      function talkSlide(s) {
+        const long = s.title.length > 40 ? ' long' : ''
+        return `${head}
+          <main class="content">
+            <div class="columns">
+              <div class="col">
+                <span class="label">Tech-Talk</span>
+                <h1 class="talk-title${long}">„${esc(s.title)}“</h1>
+                ${s.subtitle ? `<p class="talk-sub">${esc(s.subtitle)}</p>` : ''}
+                <div class="bottom">${when}${cta}</div>
+              </div>
+              <div class="col">
+                <img class="photo" src="${ASSETS}${s.photo}" alt="" />
+                ${s.credit ? `<p class="credit">${esc(s.credit)}</p>` : ''}
+                <p class="name">${esc(s.name)}</p>
+                <ul class="roles">${s.roles.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+              </div>
+            </div>
+          </main>
+          ${foot}`
+      }
+
+      function lineupSlide() {
+        const credits = SPEAKERS.filter((s) => s.credit)
+          .map((s) => `${s.name}: ${s.credit}`)
+          .join(' · ')
+        return `${head}
+          <main class="content">
+            <span class="label">Die Tech-Talks</span>
+            <ul class="lineup">
+              ${SPEAKERS.map(
+                (s) => `
+                <li>
+                  <img src="${ASSETS}${s.photo}" alt="" />
+                  <div>
+                    <p class="who">${esc(s.name)}</p>
+                    <p class="what">${esc(s.title)}</p>
+                  </div>
+                  <span class="time">${s.time}</span>
+                </li>`,
+              ).join('')}
+            </ul>
+            <div class="bottom-row">
+              <p class="facts"><b>${EVENT.date}, ${EVENT.time}</b><br />${EVENT.place}</p>
+              ${cta}
+            </div>
+          </main>
+          ${foot}
+          <p class="lineup-credit">${esc(credits)}</p>`
+      }
+
+      const SLIDES = {
+        event: eventSlide,
+        lineup: lineupSlide,
+        ...Object.fromEntries(SPEAKERS.map((s) => [s.id, () => talkSlide(s)])),
+      }
+
+      const id = new URLSearchParams(location.search).get('slide') || 'event'
+      document.getElementById('canvas').innerHTML = SLIDES[id]()
+    </script>
+  </body>
+</html>
